@@ -1,0 +1,1172 @@
+Persoonsinformatie
+Module: INDATAD
+Opdracht: Plan Van Aanpak
+Auteur(s): [NAAM], [NAAM], [NAAM], [NAAM], [NAAM]
+[NAAM]
+Studentnummer: [STUDENTNR], [STUDENTNR], [STUDENTNR], [STUDENTNR], [STUDENTNR]
+Groep: A2
+Datum: 11-11-2024
+Klas/groep: IN2A
+1
+
+Versiebeheer
+Versie Versienaam Datum Auteur Wijzigingen
+0.1 Initiële versie 08-11-2024 [NAAM] Al- Opzet document
+Muhana
+0.2 Ontwikkelversie 08-11-2024 [NAAM] Al- Structuur opgezet
+Muhana
+0.3 Ontwikkelversie 11-11-2024 [NAAM] Probleemstelling
+grotendeels gemaakt
+0.35 Ontwikkelversie 11-11-2024 [NAAM] Beschrijving van de
+[NAAM] organisatie gemaakt
+0.4 Ontwikkelversie 11-11-2024 [NAAM] Oplossingsrichtingen
+toegevoegd
+0.45 Ontwikkelversie 11-11-2024 [NAAM] Al- Scope beschrijving
+Muhana gemaakt
+0.5 Ontwikkelversie 12-11-2024 [NAAM] Requirement analyse
+[NAAM] grotendeels gemaakt
+0.55 Ontwikkelversie 14-11-2024 [NAAM] Huidige versie
+[NAAM]
+0.6 Ontwikkelversie 18-11-2024 [NAAM] Al- Ethics by Design
+Muhana gemaakt
+0.65 Ontwikkelversie 20-11-2024 [NAAM] Probleemstelling
+afgemaakt
+0.7 Ontwikkelversie 20-11-2024 [NAAM] Context gemaakt
+[NAAM]
+0.75 Ontwikkelversie 20-11-2024 [NAAM] Requirement analyse
+[NAAM] afgemaakt
+0.8 Ontwikkelversie 20-11-2024 [NAAM] Al- Risicoanalyse gemaakt
+Muhana
+0.9 Ontwikkelversie 20-11-2024 [NAAM] Al- Planning hoofdstuk
+Muhana toegevoegd
+0.95 Ontwikkelversie 20-11-2024 [NAAM] Gewenste situatie
+[NAAM]
+1.0 Verbeterversie 22-11-2024 [NAAM] Acceptatiecriteria
+[NAAM] gemaakt
+1.1 Verbeterversie 22-11-2024 [NAAM] Al- Ethics by Design
+Muhana aangepast en verbeterd
+1.2 Verbeterversie 25-11-2024 [NAAM] Context verbeterd
+[NAAM]
+1.3 Verbeterversie 25-11-2024 [NAAM] Beschrijving van
+[NAAM] organisatie aangevuld
+1.4 Verbeterversie 26-11-2024 [NAAM] Ethics by Design
+[NAAM] aangevuld
+2
+
+1.5 Verbeterversie 26-11-2024 [NAAM] Bij stakeholder analyse,
+[NAAM] de opdrachtgever
+toegevoegd
+1.6 Verbeterversie 18-12-2024 [NAAM] Oplossingsrichtingen
+verbeterd
+1.7 Verbeterversie 28-12-2024 [NAAM] Swimminglane gewenste
+[NAAM] situatie
+1.8 Verbeterversie 15-01-2025 [NAAM] Oplossingsrichtingen
+aangepast op de nieuwe
+hoofdvraag
+3
+
+Inhoudsopgave
+Versiebeheer .............................................................................................................. 16
+1. Context ............................................................................................................... 17
+2. Beschrijving van de organisatie ............................................................................. 17
+2.1 Overzicht en Kernactiviteiten .......................................................................... 17
+2.2 Missie ............................................................................................................... 18
+2.3 Visie .................................................................................................................. 18
+2.4 Relevante Afdelingen voor dit Project................................................................... 18
+2.5 Belangrijkste primaire processen ........................................................................ 19
+2.6 Samenwerkingspartners van GGZ Rivierduinen .................................................... 20
+2.7 Stakeholders ..................................................................................................... 20
+2.7.1 Organogram Organisatie .............................................................................. 21
+3. Huidige Situatie/Bedrijfsproces ............................................................................. 22
+4. Gewenste Situatie ................................................................................................ 22
+5. Probleemstelling .................................................................................................. 22
+5.1 Hoofdvraag ........................................................................................................ 23
+5.2 Deelvragen ........................................................................................................ 23
+6. Scope Beschrijving ............................................................................................... 24
+6.1 In-scope ............................................................................................................ 25
+6.2 Out of scope ...................................................................................................... 25
+6.3 Verwachtingen en aanpak: .................................................................................. 26
+7. Requirementsanalyse .......................................................................................... 26
+7.1 Functionele Requirements .................................................................................. 26
+7.2 Niet- Functionele Requirements.......................................................................... 26
+8. Acceptatiecriteria ................................................................................................ 26
+8.1 Acceptatiecriterium 1 ......................................................................................... 27
+8.2 Acceptatiecriterium 2 ......................................................................................... 28
+8.3 Acceptatiecriterium 3 ......................................................................................... 28
+8.4 Acceptatiecriterium 4 ......................................................................................... 28
+4
+
+8.5 Acceptatiecriterium 5 ......................................................................................... 28
+9. Ethics by Design ................................................................................................... 29
+9.1 Ethische waarden en intenties ............................................................................ 29
+9.2 Hoe passen we Ethics by Design toe? .................................................................. 30
+9.2.1 Initiatie van het project ................................................................................. 31
+9.2.2 Dataverzameling en verwerking .................................................................... 32
+9.2.3 Ontwerp en ontwikkeling .............................................................................. 33
+9.2.4 Testen en optimaliseren ............................................................................... 33
+9.2.5 Oplevering ................................................................................................... 34
+9.3 Morele gevolgen van onze ontwerpkeuzes ........................................................... 35
+9.3.1 Vertrouwen in privacy en veiligheid ............................................................... 35
+9.3.2 Toegankelijkheid en eerlijkheid voor iedereen ................................................ 36
+9.3.3 Transparantie en verantwoordelijkheid in gebruik ........................................... 36
+9.3.4 Minimalisering van onbedoelde negatieve gevolgen ....................................... 37
+9.3.5 Langdurige ethische waarde ......................................................................... 38
+9.4 Stakeholders en hun verantwoordelijkheden ........................................................ 40
+9.5 Conclusie Ethics by design ................................................................................. 43
+10. Oplossingsrichtingen ............................................................................................. 44
+11. Planning ........................................................................................................... 46
+11.1 Scrum Board .................................................................................................... 33
+11.2 Volledige planning ............................................................................................ 34
+12. Risicoanalyse .................................................................................................... 35
+12.1 Belangrijkste risico’s ........................................................................................ 35
+12.2 Gevolgen van risico’s ........................................................................................ 36
+12.3 Oplossingen om de risico’s te verminderen ........................................................ 36
+12.4 Conclusie risicoanalyse .................................................................................... 37
+Bronnenlijst ................................................................................................................ 38
+Bijlage 1: interview verslag ........................................................................................... 40
+Bijlage 2: onderbouwing van keuzes in het onderzoeksproces ........................................ 43
+5
+
+Thema analyse transcriptie interview met de opdrachtgever ................................... 44
+Desk research Beschrijving van organisatie ............................................................ 46
+6
+
+1. Context
+De organisatie waar het over gaat is GGZ, de branchevereniging voor geestelijke
+gezondheidszorg en verslavingszorg. Voor elke regio is er een vestiging van GGZ.
+De opdrachtgever, Jasper Duijndam, werkt aan een project over het werkgeluk van
+medewerkers in FACT-teams. Een FACT-team bestaat uit hulpverleners met uiteenlopende
+specialisaties, zoals psychiaters, psychologen, verpleegkundig specialisten en
+ervaringsdeskundigen (bron: GGZ Drenthe). Dit project, uitgevoerd bij GGZ-Rivierduinen,
+heeft als doel het werkgeluk van medewerkers in kaart te brengen. Hiervoor worden de
+acht kenmerken van werkgeluk gebruikt. (bron : Bergsma, A., Hamburger, O., & Klappe, E.
+(2020). Handboek Werkgeluk. Boom uitgevers Amsterdam).
+Afbeelding 1: De 8 kenmerken van
+werkgeluk
+De 8 kenmerken van werkgeluk
+zijn:
+• Vertrouwen
+• Verbinding
+• Zingeving
+• Waardering
+• Plezier
+• Voldoening
+• Competentie
+• Autonomie
+Deze kenmerken worden verdeeld in twee groepen: “Wij” en “Ik”.
+De eerste vier kenmerken (Vertrouwen, Verbinding, Zingeving en Waardering) zijn
+afhankelijk van de organisatiecultuur en vallen onder “Wij”. Bijvoorbeeld, vertrouwen
+hangt sterk af van hoe de werkcultuur is ingericht.
+De laatste vier kenmerken (Plezier, Voldoening, Competentie en Autonomie) worden
+beïnvloed door de individuele medewerker en vallen onder “Ik”. Zo kan een medewerker
+zelf plezier opzoeken in het werk, voldoening ervaren door keuzes te maken in taken of
+bewuster te worden van de resultaten.
+7
+
+Het project heeft als doel inzicht te krijgen in hoe het werkgeluk van medewerkers binnen
+de teams van GGZ-Rivierduinen verbeterd kan worden. Hiervoor is een enquête afgenomen
+onder alle medewerkers die lid zijn van de FNV. In de enquête werd gevraagd naar wat
+medewerkers belangrijk vinden in hun werk. De resultaten van deze enquête vormen de
+basis voor een rapport dat de uitkomsten van het onderzoek zal presenteren. Daarnaast
+zijn interviews afgenomen met medewerkers om extra inzicht te krijgen.
+8
+
+2. Beschrijving van de organisatie
+2.1 Overzicht en Kernactiviteiten
+GGZ Rivierduinen is een Nederlandse organisatie gespecialiseerd in geestelijke
+gezondheidszorg (GGZ). Zij biedt zorg aan mensen met psychische problemen en
+psychiatrische stoornissen, waarbij de focus ligt op herstel en ondersteuning om cliënten
+te helpen een betekenisvol leven te leiden. GGZ Rivierduinen richt zich op diverse
+zorgvormen, waaronder ambulante zorg (zorg zonder opname), poliklinische behandeling,
+en intensievere zorg voor cliënten die tijdelijk opgenomen moeten worden.
+De zorgverlening richt zich op verschillende doelgroepen, zoals kinderen, jongeren,
+volwassenen en ouderen, waarbij zorg en begeleiding worden afgestemd op de individuele
+behoeften van de cliënt. GGZ Rivierduinen werkt met multidisciplinaire teams, waaronder
+psychiaters, psychologen, verpleegkundigen en maatschappelijk werkers, die samen
+ondersteuning bieden op het gebied van geestelijke gezondheid, maatschappelijke re-
+integratie en het verminderen van het stigma rondom psychische aandoeningen.
+2.2 Missie
+GGZ Rivierduinen heeft als missie om cliënten met psychische klachten en hun naasten zo
+goed mogelijk te helpen bij het herstellen van hun mentale gezondheid en hen te
+ondersteunen in het herwinnen van hun zelfstandigheid. De organisatie streeft ernaar om
+een betrouwbare en professionele partner te zijn in de geestelijke gezondheidszorg,
+waarbij zorg op maat centraal staat.
+2.3 Visie
+De visie van GGZ Rivierduinen is om bij te dragen aan een samenleving waarin iedereen
+zich vrij en veilig voelt om over zijn of haar mentale gezondheid te praten en waar mensen
+met psychische klachten de zorg en ondersteuning krijgen die ze nodig hebben. De
+organisatie wil het welzijn en werkgeluk van zowel cliënten als medewerkers bevorderen
+door een gezonde, stimulerende werkomgeving en innovatieve behandelmethoden.
+9
+
+2.4 Relevante Afdelingen voor dit Project
+Voor dit project, dat gericht is op het verbeteren van het werkgeluk van medewerkers, zijn
+enkele specifieke afdelingen van GGZ Rivierduinen betrokken:
+• FACT-teams: FACT-teams zijn teams van verschillende zorgprofessionals die hulp
+bieden aan mensen met ernstige psychische problemen. Ze ondersteunen cliënten
+op meerdere gebieden, zoals gezondheid, wonen, werk en relaties. De hulp is
+flexibel en wordt vaak bij de cliënt thuis of in de buurt aangeboden. Dit helpt om
+cliënten stabiel te houden en terugval te voorkomen. Bij GGZ Rivierduinen zijn
+FACT-teams belangrijk voor het bieden van persoonlijke zorg en het ondersteunen
+van een zelfstandig en betekenisvol leven.
+• HR-afdeling (Human Resources): Verantwoordelijk voor het welzijn en de
+ontwikkeling van medewerkers. HR speelt een centrale rol in het ondersteunen van
+werkgeluk, duurzame inzetbaarheid en het behoud van personeel binnen de
+organisatie.
+• Duurzame Inzetbaarheid: Deze afdeling richt zich specifiek op het bevorderen van
+de gezondheid en inzetbaarheid van medewerkers. Dit omvat initiatieven op het
+gebied van werkdrukvermindering, balans tussen werk en privé en het
+ondersteunen van medewerkers in hun loopbaanontwikkeling.
+• Directie en Managementteams van Zorgteams: Deze teams zijn verantwoordelijk
+voor de operationele aansturing van de zorgteams en hebben belang bij het
+werkgeluk van hun medewerkers, aangezien werkgeluk bijdraagt aan de kwaliteit
+van zorg, de tevredenheid van cliënten en het verlagen van ziekteverzuim.
+10
+
+2.5 Belangrijkste primaire processen
+De kernprocessen binnen GGZ Rivierduinen zijn:
+1. Diagnostiek: Het stellen van nauwkeurige diagnoses door middel van uitgebreide
+psychologische en psychiatrische onderzoeken.
+2. Behandeling: Het bieden van gespecialiseerde therapieën en interventies om
+cliënten te ondersteunen bij het herstel.
+3. Preventie: Het voorkomen van psychische klachten door middel van vroegtijdige
+signalering en interventie.
+4. Rehabilitatie: Het begeleiden van cliënten bij het hervatten van een
+maatschappelijk actief leven, inclusief werk en onderwijs.
+5. Crisiszorg: Directe hulpverlening en ondersteuning bij acute psychische
+problemen.
+11
+
+2.6 Samenwerkingspartners van GGZ Rivierduinen
+Om hoogwaardige zorg te kunnen bieden, werkt GGZ Rivierduinen samen met een breed
+scala aan partners. Deze samenwerkingen spelen een cruciale rol in het realiseren van de
+missie en visie van de organisatie. Hieronder een overzicht van de belangrijkste partners en
+hun bijdrage:
+• Gemeenten: Ondersteunen bij de ontwikkeling van beleid en het financieren van
+zorgprogramma’s die aansluiten bij regionale behoeften.
+• Zorgverzekeraars: Faciliteren de bekostiging en toegankelijkheid van
+behandelingen door het vergoeden van zorgtrajecten.
+• Cliëntorganisaties: Dienen als waardevolle bron van feedback en brengen
+ervaringsdeskundigheid in bij de optimalisatie van zorgprocessen.
+• FNV (Federatie Nederlandse Vakbeweging): Actief betrokken bij initiatieven
+gericht op het verbeteren van werkgeluk en welzijn van medewerkers.
+• Onderwijs- en onderzoeksinstellingen: Bevorderen innovatie en kennisdeling door
+samenwerkingsprojecten met hogescholen en universiteiten.
+• Externe zorgorganisaties: Helpen bij het delen van specialistische kennis en het
+stroomlijnen van doorverwijzingen tussen zorgverleners.
+12
+
+2.7 Stakeholders
+Stakeholder Intern/Extern Belangen organisatie bij Belangen stakeholder bij
+stakeholder organisatie
+Gemeenten Extern Financiële ondersteuning en Effectieve uitvoering van
+beleidsvorming zorgprogramma’s en
+maatschappelijke impact
+Zorgverzekeraars Extern Bekostiging van Transparantie en
+behandelingen en zorg doelmatigheid in
+toegankelijk maken zorgverlening
+Klantorganisaties Extern Feedback van Gehoor krijgen en verbeterde
+ervaringsdeskundigen voor zorgervaringen
+kwaliteitsverbetering
+FNV (Vakbond) Extern Samenwerking bij Bescherming van
+initiatieven voor werkgeluk werknemersbelangen en
+en welzijn van medewerkers medezeggenschap
+Medewerkers Intern Actieve bijdrage aan Gezonde en ondersteunende
+zorgkwaliteit en werkomgeving
+organisatieontwikkeling
+HR-afdeling Intern Beleid en initiatieven voor Hulp bij implementatie van
+duurzame inzetbaarheid initiatieven
+Onderwijs- en Extern Innovatie en kennisdeling Toegang tot
+onderzoeksinstellingen praktijkervaringen en
+onderzoek data
+Externe zorgorganisaties Extern Samenwerking en Netwerken en expertise-
+doorverwijzing van klanten uitwisseling
+Opdrachtgever (Jasper Intern Kennisdeling. Dat door zijn studie
+Duijndam) Dat met de studie van gebruikers gelukkiger
+werkgeluk, de medewerkers worden.
+van GGZ gelukkiger worden
+en beter kunnen werken
+Tabel 1 Belangen Stakeholders
+13
+
+2.7.1 Organogram Organisatie
+Afbeelding 2: Organogram GGZ Rivierduinen
+Het organogram hierboven laat zien hoe GGZ Rivierduinen is georganiseerd. Het begint met
+de Raad van Toezicht en Raad van Bestuur en gaat door naar managementteams en
+zorgteams, zoals FACT-teams. Ook toont het de opbouw van de HR-afdeling en het project
+Duurzaam Inzetbaarheid, met rollen zoals HR-managers en projectleiders. Daarnaast geeft
+het een overzicht van samenwerkingen met externe partners, zoals gemeenten,
+zorgverzekeraars, de FNV en andere zorgorganisaties. Het laat zien hoe interne en externe
+partijen samenwerken om werkgeluk en inzetbaarheid te verbeteren.
+14
+
+3. Huidige Situatie/Bedrijfsproces
+De huidige situatie richt zich op een paar handmatige stappen van de opdrachtgever Jasper
+Duijndam.
+Jasper verzameld data door het opvragen van een FNV-enquête gehouden onder GGZ
+medewerkers en het doen van interviews van met mensen van verschillende expertise op
+het gebied van werkgeluk en verschillend ggz instellingen.
+Bij het analyseren van de FNV-data telt Jasper de antwoorden per kolom bij elkaar op. Zo
+wordt er geteld hoe vaak iemand het eens is met de top 3 voorstellen van de FNV. En wordt
+er een lijst gemaakt van de verschillend antwoorden die mensen geven in de kolom voor
+eigen toevoeging op FNV voorstellen.
+Hier zit het eerste knelpunt. Er is niet de capaciteit om al deze antwoorden handmatig door
+te lezen en te analyseren. De oorzaak is dat deze enquête 1800 keer is ingevuld.
+Daarnaast worden er ook een aantal interviews uitgevoerd. Deze worden opgenomen en er
+wordt een transcriptie van gemaakt. Deze transcriptie wordt vervolgens naar ons gestuurd.
+Ook zijn er in deze transcriptie regels blauw gemarkeerd. Dit zijn volgens de opdrachtgever
+interessante stukken voor het onderzoek.
+Ook hier is het knelpunt capaciteit. Er worden veel interviews gedaan en die moeten ook
+geanalyseerd worden.
+Afbeelding 3: Workflow Huidige
+Situatie
+15
+
+4. Gewenste Situatie
+In de gewenste situatie kan de opdrachtgever Jasper Duijndam op een dashboard zien
+welke data geanalyseerd is en wat de resultaten daarvan zijn.
+Dit dashboard staat op looker studio en de data is opgeslagen in een database binnen het
+hogeschoolnetwerk. Op dit dashboard zijn een aantal tabellen/grafieken te zien:
+- Tabel met hoe vaak de top 3 voorstellen zijn geselecteerd door de ggz medewerkers
+ten op zichtte van hoeveel medewerkers de enquête hebben ingevuld
+- Tabel met genoemde thema's in zelf toevoegen kolom van de FNV-enquête. En
+eventueel een vergelijking met de acht van werkgeluk die uit de literatuur naar voren
+komen.
+- Een tabel per interview met daar in de besproken thema's en eventueel een
+vergelijking met de acht van werkgeluk die uit de literatuur naar voren komen.
+Door het implementeren van het dashboard kan Jasper live meekijken met onze analyses
+en kan Jasper zich volledig focussen op het verzamelen van data. Op deze manier kan er
+een uitgebreider onderzoek worden gehouden.
+Afbeelding 4: Workflow
+Gewenste Situatie
+Bron hoofdstuk 3 en 4: De interviews met de opdrachtgever zie bijlage 1
+16
+
+5. Probleemstelling
+Medewerkers in de GGZ-sector ervaren een hoge werkdruk en mentale belasting. Volgens
+de Monitor Gezond Werken in de Zorg voelt 20% van de psychologen, psychiaters en
+therapeuten zich emotioneel uitgeput, vergeleken met 12,5% in ziekenhuizen. Voor jonge
+GGZ-medewerkers ligt dit percentage zelfs op 27%, waarbij velen psychologische hulp
+hebben gezocht, tegenover 13% in ziekenhuizen.
+Een van de oorzaken is dat zorgmedewerkers vaak zoveel mogelijk mensen willen helpen.
+Dit kan leiden tot volle agenda's en weinig ruimte voor herstelmomenten en indirecte
+taken. Hierdoor neemt de mentale druk toe. Tegelijkertijd blijkt dat interventies zoals het
+versterken van teamgevoel en het vieren van kleine successen effectief kunnen bijdragen
+aan werkgeluk en welzijn. Zie bijlage 3 voor de probleemstelling.
+5.1 Hoofdvraag
+Hoe kan je snel en effectief inzicht krijgen in de data uit de enquête en uit de interviews?
+5.2 Deelvragen
+Hoe worden de resultaten van implementaties gemeten en getoond op het data inzicht
+systeem?
+Welke tools en technologieën kunnen worden gebruikt om inzicht te geven in de data?
+Welke methodes zijn er om de gegeven data (interviews en enquête) te analyseren?
+Wat zijn de best practices voor een goed systeem voor data-inzicht?
+17
+
+6. Scope Beschrijving
+De scope van dit project gaat over het analyseren en verbeteren van het werkgeluk van
+medewerkers in de FACT-teams van GGZ Rivierduinen. Het doel is om te begrijpen wat het
+werkgeluk van medewerkers beïnvloedt door een enquête die is ingevuld door FNV-leden
+binnen GGZ. Op basis van de resultaten maken we rapporten, analyses en geven we
+aanbevelingen om het werkgeluk te vergroten en problemen zoals werkdruk,
+communicatie, cultuur en de werkomgeving te verbeteren.
+6.1 In-scope
+• Onderzoeken van de resultaten van de enquête om belangrijke trends en inzichten
+te vinden over werkgeluk.
+• Maken van dashboard met de resultaten.
+• Realisatie van de volgende functionele requirements:
+o FR01: Data importeren – Het systeem moet enquêtegegevens importeren
+voor verdere verwerking.
+o FR02: Data categoriseren en kwantificeren – Open antwoorden en ruwe
+gegevens moeten worden gestructureerd en omgezet naar bruikbare
+informatie.
+o FR03: Trends en patronen identificeren – Het systeem moet trends en
+terugkerende patronen in de data herkennen, zoals factoren die werkgeluk
+beïnvloeden.
+o FR04: Dashboard ontwikkelen – Het systeem moet een visueel dashboard
+bieden dat de belangrijkste factoren van werkgeluk weergeeft.
+o FR05: Visualisaties maken – Grafieken en tabellen tonen scores, trends en
+pieken in werkgeluk voor eenvoudige interpretatie.
+o FR06: Data opschonen – Het systeem moet fouten en onvolledige gegevens
+automatisch corrigeren of verwijderen.
+6.2 Out of scope
+• Zelf de voorgestelde oplossingen en aanbevelingen uitvoeren.
+• Individuele begeleiding van medewerkers.
+• Grote veranderingen in de organisatie die verder gaan dan ons werkgebied.
+18
+
+6.3 Verwachtingen en aanpak:
+• Gebruik van data: We houden ons aan de afspraken over welke gegevens we
+mogen gebruiken.
+• Eindresultaat: Een rapport met duidelijke uitleg, grafieken en aanbevelingen over
+hoe het werkgeluk kan worden verbeterd.
+Met deze scope richten we ons op het begrijpen van wat het werkgeluk van medewerkers
+beïnvloedt en het geven van praktische en bruikbare oplossingen om het te verbeteren.
+19
+
+7. Requirementsanalyse
+7.1 Functionele Requirements
+Naam Architecturele relevantie Geadresseerd in Prioritering (MoSCoW)
+FR01: Data importeren Het systeem moet data Interview met opdrachtgever Must Have: Zonder deze functionaliteit is het
+kunnen importeren. onmogelijk om analyses te starten en resultaten
+te genereren.
+FR02: Data analyseren Het systeem moet open Interview met opdrachtgever Must Have: Het is essentieel om ruwe data om
+antwoorden en ruwe data te zetten in bruikbare inzichten voor rapportages
+analyseren. en interventies.
+FR03: Trends en patronen Het systeem moet trends in Interview met opdrachtgever Must Have: Deze functionaliteit is noodzakelijk
+identificeren data analyseren. om kernproblemen en verbeterpunten te
+signaleren.
+FR04: Dashboard met Een visueel dashboard dat de - Must Have: Essentieel om resultaten inzichtelijk
+factoren van het factoren van het werkgeluk te maken en eenvoudig te communiceren naar
+werkgeluk toont. leidinggevenden en HR.
+FR05: Visualisaties van Het dashboard moet grafieken - Must Have: Duidelijke visualisaties maken
+werkgelukscores tonen zoals trends en pieken. complexe data begrijpelijker voor
+besluitvorming.
+FR06: Data opschonen Het data moeten opgeschoond - Must have: Data opschonen is een
+zijn om verdere analyses uit te standaardvereiste in elk analytisch proces, en
+voeren. het niet uitvoeren ervan ondermijnt de
+betrouwbaarheid van de resultaten.
+Tabel 2 Functionele Requirements
+20
+
+7.2 Niet- Functionele Requirements
+Naam Architecturele relevantie Geadresseer Prioritering (MoSCow)
+d in:
+NFR01: Systeemuptime Het systeem moet continu - Must Have: Essentieel voor gebruik en
+beschikbaar zijn voor gebruikers. implementatie in HR-processen.
+NFR02: Anonimiteit van Het systeem moet - Must Have: Wettelijk verplicht en voorkomt
+persoonsgegevens persoonsgegevens anonimiseren om datalekken.
+aan AVG te voldoen.
+NFR03: Versleutelde data- Data moet veilig opgeslagen worden - Must Have: Cruciaal voor AVG-naleving en
+opslag binnen het schoolsysteem. bescherming van vertrouwelijke informatie.
+NFR04: Uitbreidbaarheid van Het systeem moet flexibel zijn voor - Should Have: Verhoogt toekomstbestendigheid,
+het systeem toekomstige integratie van modules. maar niet essentieel voor initiële implementatie.
+NFR05: Gebruiksvriendelijkheid Het dashboard moet intuïtief en - Should Have: Belangrijk om acceptatie en
+van dashboard toegankelijk zijn voor de gebruiksgemak te garanderen.
+opdrachtgever
+NFR06: Uitgebreide systeem Het systeem moet uitgebreide ISO 25000 Could Have: Nodig voor analyse en audit van het
+logfiles logfiles bevatten (postgreSQL en systeem.
+software logging).
+NFR07: Volledigheid van Logfiles moeten duidelijk zijn (datum, ISO 25000 Could Have: Essentieel voor foutanalyse en
+logfiles wie, wanneer, wat). auditing.
+NFR08: Foutafhandeling Het systeem moet robuuste ISO 25000 Should Have: Verbetert betrouwbaarheid en
+foutafhandeling hebben. gebruiksvriendelijkheid.
+NFR09: Modularity Het gebruik van herbruikbare ISO 25000 Should Have: Zorgt voor betere
+libraries en functies. onderhoudbaarheid van de software.
+NFR10: Testbaarheid Het systeem moet testrapportage ISO 25000 Could Have: Belangrijk voor kwaliteitsborging en
+ondersteunen. debugging.
+NFR11: Veilige Gegevensuitwisseling moet veilig ISO 27000 SHould Have: Essentieel voor
+gegevensuitwisseling gebeuren via VPN, authenticatie en gegevensbescherming en AVG-compliance.
+encryptie.
+NFR12: Versiebeheer Versiebeheer en processen om dit te ISO 27000 Must Have: Belangrijk om integriteit van het
+controleren moeten aanwezig zijn. systeem te behouden.
+NFR13: Transparantie (GDPR) Duidelijk overzicht van GDPR Should Have: Noodzakelijk voor AVG-
+gegevensverwerking en compliance en transparantie naar gebruikers.
+bewaartermijnen.
+Tabel 3 Niet-Functionele Requirements
+21
+
+8. Acceptatiecriteria
+8.1 Acceptatiecriterium 1
+Kenmerk Details
+Omschrijving Het systeem moet data kunnen importeren.
+Eigenaar Opdrachtgever
+Doel, Streefwaarde en Toleranties Doel: Data importeren vanuit gespecificeerde
+bronnen.
+Streefwaarde: Alle vereiste data kan zonder
+fouten worden geïmporteerd.
+Tolerantie: Max. 1% fouten.
+Planning Sprint 1
+8.2 Acceptatiecriterium 2
+Kenmerk Details
+Omschrijving Het systeem moet ruwe data structureren en
+kwantificeren.
+Eigenaar Opdrachtgever
+Doel, Streefwaarde en Toleranties Doel: Ruwe data omzetten in kwantificeerbare
+categorieën.
+Streefwaarde: 95% correcte classificatie.
+Tolerantie: Max. 5% incorrecte classificatie.
+Planning Sprint 1
+22
+
+8.3 Acceptatiecriterium 3
+Kenmerk Details
+Omschrijving Een visueel dashboard tonen met factoren van
+werkgeluk.
+Eigenaar Opdrachtgever
+Doel, Streefwaarde en Toleranties Doel: Overzichtelijk dashboard met
+werkgeluksfactoren.
+Streefwaarde: Top 3 werkgeluksfactoren.
+Tolerantie: Max. 1 ontbrekende factor
+toegestaan.
+Planning Sprint 3
+8.4 Acceptatiecriterium 4
+Kenmerk Details
+Omschrijving Het dashboard moet grafieken tonen zoals
+werkgelukscores.
+Eigenaar Opdrachtgever
+Doel, Streefwaarde en Toleranties Doel: Duidelijke visualisaties van
+werkgelukscores.
+Streefwaarde: 100% grafieken correct
+weergegeven.
+Tolerantie: Geen grafiek mag incorrecte data
+bevatten.
+Planning Sprint 3
+23
+
+8.5 Acceptatiecriterium 5
+Kenmerk Details
+Omschrijving Het systeem moet data opschonen voor verdere
+analyses.
+Eigenaar Opdrachtgever
+Doel, Streefwaarde en Toleranties Doel: Opgeschoonde data voor betrouwbare
+analyses.
+Streefwaarde: 100% schone data zonder
+overbodige ruis.
+Tolerantie: Max. 2% onopgemerkte fouten in de
+data.
+Planning Sprint 1
+24
+
+9. Ethics by Design
+Bij dit project hebben we gewerkt binnen de kaders van Ethics by Design, waarbij ethische
+waarden vanaf het begin systematisch en op verschillende niveaus in het ontwerp zijn
+geïntegreerd. Onze aanpak richtte zich op het waarborgen van kernwaarden zoals privacy,
+gelijkheid, toegankelijkheid, transparantie en verantwoordelijkheid, met het doel een
+veilige, eerlijke en duurzame oplossing te bieden.
+9.1 Ethische waarden en intenties
+1. Privacy: We zorgen ervoor dat niemand herkenbaar is in de gegevens. We maken
+alle persoonlijke informatie anoniem, zodat deze veilig is en niemand kan worden
+herkend.
+2. Gelijkheid: Iedereen wordt eerlijk behandeld. We voorkomen dat er fouten of
+vooroordelen in de analyses zitten.
+3. Toegankelijkheid: Het dashboard is simpel en makkelijk te begrijpen, zodat
+iedereen het kan gebruiken, ongeacht hun kennis of ervaring.
+4. Transparantie: We laten aan de opdrachtgever en andere betrokkenen duidelijk
+zien wat we doen, hoe we het doen, en waarom.
+We willen oplossingen bieden die eerlijk en duurzaam zijn, zonder onverwachte negatieve
+gevolgen. We zorgen ervoor dat iedereen eerlijk wordt behandeld en dat hun mening
+meetelt.
+25
+
+9.2 Hoe passen we Ethics by Design toe?
+In dit project hebben we Ethics by Design toegepast door ethische overwegingen
+systematisch te integreren in elke fase van het proces. Hieronder wordt beschreven hoe dit
+is aangepakt:
+9.2.1 Initiatie van het project
+• Doelen vaststellen: In overleg met de opdrachtgever hebben we kernwaarden
+zoals privacybescherming, eerlijkheid en transparantie vastgesteld als leidende
+principes.
+• Risicoanalyse: We hebben potentiële ethische risico’s, zoals datalekken of
+bevooroordeelde analyses, geïdentificeerd en maatregelen ontwikkeld om deze te
+voorkomen.
+• Privacy beleid opstellen: Er is een plan opgesteld voor het veilig opslaan van
+persoonlijke gegevens, waarbij duidelijk is gedefinieerd wie toegang heeft tot deze
+data.
+9.2.2 Dataverzameling en verwerking
+• Privacy waarborgen: Persoonlijke informatie is geanonimiseerd of verwijderd,
+zodat gebruikers niet herkenbaar zijn.
+• Controle op vooroordelen: Alle verzamelde gegevens en analyses zijn
+gecontroleerd om te voorkomen dat vooroordelen of fouten een rol spelen.
+• Eerlijke verwerking: Het team heeft gezamenlijk de data verwerkt om eenzijdige
+interpretaties te vermijden.
+9.2.3 Ontwerp en ontwikkeling
+• Toegankelijkheid: Het dashboard is ontworpen en getest met input van
+verschillende gebruikersgroepen, zoals de opdrachtgever en de teamleden, om de
+gebruiksvriendelijkheid te garanderen.
+• Privacy by design: Alleen veilige, geanonimiseerde gegevens worden verwerkt in
+het dashboard, waarbij technische maatregelen zoals dataminimalisatie zijn
+toegepast.
+9.2.4 Testen en optimaliseren
+• Ethische evaluatie: In deze fase hebben we beoordeeld of alle ethische afspraken
+en principes uit eerdere fasen correct zijn geïmplementeerd.
+26
+
+• Gebruikersfeedback: Eindgebruikers zijn betrokken bij het testen van het product.
+Hun feedback heeft geholpen bij het identificeren van verbeterpunten en bij het
+aanpassen van het ontwerp.
+9.2.5 Oplevering
+• Transparante documentatie: Bij de oplevering hebben we de ethische
+ontwerpkeuzes en de achterliggende processen gedocumenteerd en toegelicht.
+• Veiligheidsrichtlijnen: We hebben de opdrachtgever voorzien van adviezen en
+richtlijnen om het dashboard ethisch en veilig te blijven gebruiken.
+Met deze aanpak is Ethics by Design niet een losstaand onderdeel, maar een geïntegreerd
+proces in elke stap van het project. Dit resulteert in een product dat ethisch verantwoord,
+veilig en gebruiksvriendelijk is en tegelijkertijd voldoet aan de behoeften van de gebruikers
+en opdrachtgever.
+27
+
+9.3 Morele gevolgen van onze ontwerpkeuzes
+Onze ontwerpkeuzes binnen het kader van Ethics by Design hebben belangrijke morele
+gevolgen gehad. Deze gevolgen zijn direct gekoppeld aan de kernwaarden die we vanaf het
+begin hebben geïntegreerd in het proces:
+9.3.1 Vertrouwen in privacy en veiligheid
+• Gevolg: Gebruikers hebben vertrouwen in de manier waarop hun gegevens worden
+verzameld, verwerkt en beschermd. Door persoonlijke informatie te anonimiseren
+en alleen strikt noodzakelijke gegevens te verwerken, voorkomen we risico’s zoals
+datalekken of ongeautoriseerde toegang.
+• Impact: Dit vertrouwen zorgt ervoor dat gebruikers bereid zijn om het product te
+gebruiken, omdat ze weten dat hun privacy wordt gerespecteerd. Het verlaagt ook
+ethische en juridische risico's voor de opdrachtgever, zoals boetes of
+reputatieschade.
+9.3.2 Toegankelijkheid en eerlijkheid voor iedereen
+• Gevolg: Het product is ontworpen met toegankelijkheid en inclusiviteit als
+prioriteiten. Dit betekent dat mensen van verschillende achtergronden, met
+uiteenlopende kennisniveaus en mogelijke beperkingen, het product kunnen
+begrijpen en gebruiken.
+• Impact: Door barrières weg te nemen, vergroten we de impact en bruikbaarheid van
+het product. Bovendien dragen we bij aan een samenleving waarin technologie
+niemand uitsluit, wat zowel ethisch als maatschappelijk verantwoord is.
+9.3.3 Transparantie en verantwoordelijkheid in gebruik
+• Gevolg: Door transparant te communiceren over onze ontwerpkeuzes, de werking
+van het product en de verwerking van gegevens, maken we het systeem begrijpelijk
+en controleerbaar voor gebruikers en belanghebbenden.
+• Impact: Transparantie verhoogt niet alleen het vertrouwen in het product, maar
+moedigt ook verantwoord gebruik aan. Dit helpt de opdrachtgever om ethische
+standaarden te waarborgen tijdens de toepassing van het product en vermindert
+risico’s van misbruik of verkeerde interpretaties.
+28
+
+9.3.4 Minimalisering van onbedoelde negatieve gevolgen
+• Gevolg: Door een grondige risicoanalyse en ethische toetsing in elke fase van het
+project, hebben we mogelijke negatieve gevolgen, zoals discriminatie door
+algoritmische bias of complexe gebruiksinterfaces, beperkt.
+• Impact: Dit zorgt ervoor dat het product niet alleen ethisch verantwoord is bij
+oplevering, maar ook tijdens gebruik. Het voorkomt maatschappelijke of
+economische schade door bijvoorbeeld verkeerde interpretatie van gegevens.
+9.3.5 Langdurige ethische waarde
+• Gevolg: Het naleven van ethische principes zoals duurzaamheid en veiligheid zorgt
+ervoor dat het product een positieve impact blijft hebben op de lange termijn.
+• Impact: Dit helpt de opdrachtgever om een oplossing te bieden die niet alleen direct
+effectief is, maar ook in lijn blijft met toekomstige normen en verwachtingen.
+29
+
+9.4 Stakeholders en hun verantwoordelijkheden
+Wettelijke Afgesproken Morele
+Stakeholder verantwoordelijkh verantwoordelijkh verantwoordelijkh
+eden eden eden
+Zorgen voor Bijdragen aan het
+Samenwerken met
+financiering en welzijn van de
+Gemeenten GGZ aan lokaal
+ondersteuning van bevolking door
+beleid.
+GGZ-programma's. passende GGZ-zorg.
+Zorgen dat zorg
+Betalen voor GGZ- Transparant
+toegankelijk blijft
+Zorgverzekeraars behandelingen omgaan met
+voor alle
+volgens de zorgwet. zorgbudgetten.
+verzekerden.
+Helpen bij het
+Vertegenwoordigen Feedback geven om verminderen van
+Klantorganisaties van rechten van de zorgkwaliteit te stigma en het
+klanten. verbeteren. verbeteren van de
+zorg.
+Toezicht houden op Samenwerken aan Werknemers
+naleving van werkgeluk- ondersteunen en
+FNV (Vakbond)
+arbeidswetten en initiatieven voor zorgen voor hun
+cao’s. medewerkers. welzijn en inspraak.
+Goed zorgen voor
+Bijdragen aan goede
+Werken volgens patiënten en
+zorgkwaliteit en
+Medewerkers arbeidswetten en collega's, en
+organisatieontwikke
+privacyregels (AVG). werkgeluk
+ling.
+stimuleren.
+Initiatieven
+Medewerkers
+Arbeidswetten en ontwikkelen voor
+helpen groeien,
+HR-afdeling privacyregels (AVG) werkgeluk en
+zowel professioneel
+naleven. duurzame
+als persoonlijk.
+inzetbaarheid.
+Helpen bij innovatie
+Ethische richtlijnen Samenwerken met
+Onderwijs- en en ethisch
+volgen voor GGZ voor
+onderzoeksinstelli verantwoord
+onderzoek en data- kennisdeling en
+ngen onderzoek in de
+analyse. praktijkervaring.
+GGZ.
+Werken binnen de Goede afspraken Zorgen voor een
+Externe regels voor maken over soepele overgang
+zorgorganisaties samenwerking en klantondersteuning van klanten en
+doorverwijzingen. en samenwerking. delen van expertise.
+Onderzoek doen Samenwerken met Een bijdrage leveren
+Opdrachtgever
+volgens wet- en het team aan data- aan werkgeluk en
+(Jasper Duijndam)
+privacyregels. analyse en een een betere
+30
+
+werkbaar werkomgeving in de
+dashboard. GGZ.
+Tabel 4 Stakeholders verantwoordelijkheden
+9.5 Conclusie Ethics by design
+Onze aanpak van Ethics by Design heeft gezorgd voor een product dat niet alleen goed
+werkt, maar ook ethisch verantwoord is en een positieve impact heeft op de samenleving.
+Door belangrijke waarden zoals privacy, toegankelijkheid en transparantie centraal te
+stellen, hebben we een oplossing gemaakt die vertrouwen opbouwt, makkelijk te
+gebruiken is en negatieve effecten beperkt.
+We hebben ethiek in elke fase van het project meegenomen, van het begin tot aan de
+oplevering. Dit laat zien dat je technologie kunt ontwerpen die niet alleen technisch goed
+is, maar ook voldoet aan hoge ethische standaarden. Dit helpt gebruikers en de
+opdrachtgever om met vertrouwen en verantwoordelijkheid met het product te werken.
+Onze keuzes dragen bij aan een eerlijkere en duurzamere samenleving.
+Met deze aanpak laten we zien dat ethiek en innovatie goed samen kunnen gaan, en dat
+een zorgvuldige aanpak leidt tot betere en toekomstgerichte oplossingen.
+31
+
+10. Oplossingsrichtingen
+Hieronder worden drie mogelijke richtingen beschreven, samen met onze uiteindelijke
+aanpak.
+Handmatige rapporten en visualisaties
+Een mogelijke aanpak is het handmatig verwerken en visualiseren van data met tools zoals
+Excel of Google Sheets. Hierbij worden trends en patronen inzichtelijk gemaakt met behulp
+van tabellen, staafdiagrammen of lijngrafieken. Deze aanpak vereist weinig technische
+kennis en is eenvoudig toe te passen, maar het kost veel tijd en is foutgevoelig. Daarom is
+dit vooral geschikt voor kleinere datasets of situaties waarin een eenvoudige presentatie
+voldoende is.
+Interactief dashboard ontwikkelen
+Een tweede oplossingsrichting is het ontwikkelen van een interactief dashboard met tools
+zoals Tableau, Power BI of Google Looker Studio. Dit dashboard biedt gebruikers de
+mogelijkheid om data dynamisch te verkennen en zelf filters toe te passen. Hierdoor
+kunnen gegevens beter worden geïnterpreteerd en toegepast in verschillende besluiten.
+Het bouwen van een dashboard vraagt om meer technische kennis en tijd, maar het biedt
+een krachtig en schaalbaar platform voor datavisualisatie. (Wat Is een Data Dashboard?
+Uitleg, Meerwaarde & Tips Summix)
+Automatische rapportage met programma's
+Een derde mogelijkheid is het automatiseren van datavisualisatie en rapportage met
+programmeertalen zoals Python. Hierbij kunnen workflows worden opgezet die de data
+periodiek verwerken en automatisch rapporten genereren. Deze rapporten kunnen
+bijvoorbeeld worden geëxporteerd als PDF’s of beschikbaar worden gesteld via een
+website. Deze methode is erg efficiënt voor grote datasets en zorgt voor consistente
+analyses. Wel is er veel technische expertise vereist om de workflows goed te maken.
+(Smits, 2022)
+32
+
+11. Planning
+In dit hoofdstuk laten we een planning zien. Hierin staan alle belangrijke taken die tijdens
+het project gedaan moeten worden. Voor elke taak staat erbij hoelang het ongeveer duurt,
+zodat het duidelijk is wat er moet gebeuren en wanneer het klaar moet zijn. Dit helpt het
+team om het werk goed te plannen en het project makkelijk in de gaten te houden.
+11.1 Scrum Board
+In dit project is de back log een belangrijk onderdeel van onze SCRUM-aanpak. De back log
+is een lijst met alle taken en ideeën die we tijdens het project willen uitvoeren. Dit is de
+basis voor ons werk en bevat zowel kleine taken als grotere onderdelen van het project.
+Taken op de back log worden regelmatig bijgewerkt en geprioriteerd, zodat we altijd weten
+wat het belangrijkste is om aan te werken. Het bord heeft verschillende kolommen:
+• New: Hier komen nieuwe taken.
+• In Progress: Taken waar we op dat moment aan werken.
+• Ready for Test: Taken die klaar zijn om getest te worden.
+• Closed: Taken die helemaal af zijn.
+• Needs Info: Taken waarbij we nog meer informatie nodig hebben.
+De back log kan bekeken worden via deze link: Back log.
+33
+
+11.2 Volledige planning
+Geschatte
+Activiteit Startdatum Einddatum
+tijdsduur
+Sprint Planning 1 7 november 2024 7 november 2024 1 dag
+Plan van Aanpak
+7 november 2024 14 november 2024 14 dagen
+maken
+Beschrijvende
+Analyse/Data 14 november 2024 20 november 2024 7 dagen
+Opschonen
+Sprint Review 1 21 november 2024 21 november 2024 1 dag
+Sprint Planning 2 21 november 2024 22 november 2024 1 dag
+Ontwerpdocument
+21 november 2024 5 december 2024 14 dagen
+maken
+Dashboard bouwen
+29 november 2024 4 december 2024 7 dagen
+1/2
+Sprint Review 2 5 december 2024 5 december 2024 1 dag
+Sprint Planning 3 5 december 2024 5 december 2024 1 dag
+POC maken 16 december 2024 20 januari 2024 14 dagen
+Dashboard bouwen
+6 december 2024 18 december 2024 14 dagen
+2/2
+Sprint Review 3 19 december 2024 19 december 2024 1 dag
+Sprint Planning 4 2 januari 2025 2 januari 2025 1 dag
+Adviesrapport 7 januari 2025 24 januari 2025 7 dagen
+Presentatie maken 14 januari 2025 24 januari 2025 7 dagen
+Sprint Review 4 16 januari 2025 16 januari 2025 1 dag
+Eindoplevering 24 januari 2025 24 januari 2025 1 dag
+Presenteren 30 januari 2025 30 januari 2025 1 dag
+Tabel 5 Volledige Planning van alle sprints
+34
+
+12. Risicoanalyse
+Hieronder staan de belangrijkste risico’s van het project, samen met de mogelijke gevolgen
+en manieren om de risico’s kleiner te maken.
+12.1 Belangrijkste risico’s
+Risico Beschrijving Impact Kans
+Fouten in de enquête- Er kunnen fouten of lege Hoog Middelmatig
+data (Steensma, 2023) antwoorden in de
+enquête zitten, wat het
+lastig maakt om goede
+resultaten te krijgen.
+AVG-regels niet volgen Als we de gegevens niet Zeer Hoog Middelmatig
+(Steensma, 2023) goed anoniem maken,
+kunnen we problemen
+krijgen met de wet.
+Resultaten niet goed Het kan gebeuren dat de Hoog Middelmatig
+begrijpen (Steensma, resultaten van de
+2023) enquête niet duidelijk
+zijn of verkeerd worden
+uitgelegd.
+Weerstand bij Medewerkers of Middelmatig Hoog
+medewerkers leidinggevenden kunnen
+het niet eens zijn met de
+aanbevelingen, wat het
+moeilijker maakt om
+veranderingen door te
+voeren.
+Vertraging bij interviews Het plannen van Middelmatig Middelmatig
+(Datapage - Informatie interviews of
+en Bronnen Voor Data- verzamelen van andere
+analyse, z.d.) gegevens kan langer
+duren dan verwacht.
+Technische problemen Problemen met Hoog Middelmatig
+software of dashboards
+kunnen ervoor zorgen
+dat het project
+vertraging oploopt of de
+kwaliteit slechter wordt.
+Tabel 6 Risico's
+35
+
+12.2 Gevolgen van risico’s
+De risico’s hebben invloed op verschillende gebieden:
+• Planning: Het kan langer duren om het project af te ronden.
+• Techniek: Problemen met software kunnen de kwaliteit van het werk beïnvloeden.
+• Medewerkers: Mensen kunnen minder tevreden zijn als ze het niet eens zijn met de
+resultaten of als er fouten in de analyse zitten.
+12.3 Oplossingen om de risico’s te verminderen
+Risico Oplossing
+Fouten in de enquête-data Controleer de gegevens goed en vul lege
+antwoorden op met gemiddelden of
+schattingen. Schoon de data op (FR06).
+AVG-regels niet volgen Maak alle persoonsgegevens anoniem
+(NFR02). Zorg dat gegevens veilig worden
+opgeslagen met versleuteling (NFR03).
+Resultaten niet goed begrijpen Maak duidelijke grafieken en tabellen
+(FR04, FR05). Laat tussentijdse resultaten
+zien aan de opdrachtgever voor feedback.
+Weerstand bij medewerkers Laat zien hoe de resultaten uit de enquête
+aansluiten bij wat medewerkers zelf
+belangrijk vinden. Bespreek duidelijk de
+voordelen van de aanbevelingen.
+Vertraging bij interviews Plan interviews op tijd in en gebruik
+voorlopige data om alvast aan het project
+te werken.
+Technische problemen Test de software en het dashboard goed
+voordat het wordt gebruikt. Maak een
+back-upplan voor als er iets misgaat.
+Tabel 7 Oplossingen voor risico's
+36
+
+12.4 Conclusie risicoanalyse
+De risico’s in dit project kunnen worden aangepakt door slimme oplossingen toe te
+passen. Het is belangrijk om fouten in de gegevens op te lossen, goed op de privacy te
+letten, en duidelijke resultaten te maken die iedereen begrijpt. Door regelmatig te kijken of
+alles goed gaat, voorkomen we dat problemen groot worden. Zo zorgen we ervoor dat we
+een goed rapport en een werkend dashboard opleveren.
+37
+
+Bronnenlijst
+• Hulp aan huis (FACT) - GGZ Drenthe. (n.d.). GGZ Drenthe.
+https://ggzdrenthe.nl/behandelingen/fact
+• Uitleg 8 kenmerken van werkgeluk met afbeelding: Hoofdstuk 1 blz. 28 en 29
+Bergsma, A., Hamburger, O., & Klappe, E. (2020). Handboek Werkgeluk. Boom
+uitgevers Amsterdam.
+• Vier inzichten voor een gezonde werk-privébalans. (n.d.-b). Inspiratieplatform.
+https://inspiratie.uwv.nl/werkgeverschap/tips-voor-werkprive-balans
+• SkillsTown. (z.d.). 8 tips om een goede werk-privé balans bij medewerkers te
+stimuleren, van https://skillstown.nl/blog/8-tips-goede-werk-prive-balans-
+stimuleren/
+• Great Place to Work. (z.d.). Werk-privé balans: 7 adviezen voor werkgevers, van
+https://www.greatplacetowork.nl/inspiratie/blog/werk-priv%C3%A9-balans
+• Boek die Jasper gegeven heeft: Bergsma, A., Hamburger, O., & Klappe, E. (2020).
+Handboek Werkgeluk. Boom uitgevers Amsterdam.
+• Officiële rapporten en publicaties van de FNV over werkgeluk en werkdruk
+(Enquête).
+• Stichting IZZ. (z.d.). Monitor Gezond Werken in de Zorg, van
+https://www.izz.nl/zorgorganisaties/inbalans-aanpak-werkdruk-de-ggz
+• Zorgvisie. (z.d.). Werk aan werkplezier in de ggz, van https://www.zorgvisie.nl/werk-
+aan-werkplezier-in-de-ggz/
+• Brey, P., & Dainow, B. (2023). Ethics by design for artificial intelligence. AI And
+Ethics. https://doi.org/10.1007/s43681-023-00330-4
+• Ethics by Design: An organizational approach to responsible use of technology.
+(2024, September 10). World Economic Forum.
+https://www.weforum.org/publications/ethics-by-design-an-organizational-
+approach-to-responsible-use-of-technology/
+• Fourtané, S. (2020, December 14). Ethics by Design: Steps for the Responsible Use
+of technology. Interesting Engineering.
+https://interestingengineering.com/culture/ethics-by-design-steps-for-the-
+responsible-use-of-technology
+• Nurock, V., Chatila, R., & Parizeau, M. (2021). What does “Ethical by design” mean?
+In Lecture notes in computer science (pp. 171–190). https://doi.org/10.1007/978-3-
+030-69128-8_11
+• Ethics by design: wij hebben ook de PowerPoint gebruikt die tijdens de lessen
+gedeeld werden over ethics by design.
+38
+
+• GGZ Interventie. (2022, 11 november). Missie & Visie | GGZ Interventie.
+https://ggzinterventie.nl/over-ons/missie-visie/
+• GGZ Rivierduinen. (2024, 27 september). Wat is GGZ Rivierduinen? - GGZ
+Rivierduinen. https://www.rivierduinen.nl/wat-is-ggz-rivierduinen/
+• Rivierduinen. (2024, 19 december). Wij zijn GGZ Rivierduinen - De werkgever met
+ruimte. Werken Bij GGZ Rivierduinen. https://werkenbijrivierduinen.nl/dit-zijn-wij/
+• GGZ Rivierduinen. (2023, 8 november). Ons verhaal - GGZ Rivierduinen.
+https://www.rivierduinen.nl/ons-verhaal/
+• Wat is een data dashboard? Uitleg, meerwaarde & tips | Summix. (z.d.-b).
+https://www.summix.nl/blog/data-
+dashboard#:~:text=Een%20data%20dashboard%20is%20een,van%20een%20afde
+ling%20en%20bedrijf.
+• Smits, J. (2022, 9 augustus). De voordelen van een automatisch rapportageproces -
+Orbis Software (Blog). Orbis Software. https://www.orbis-software.nl/blogs/blogs-
+documenten-rapportages/de-voordelen-van-een-automatisch-rapportageproces/
+• Steensma, S. (2023, 1 augustus). De vier grootste risico’s van slechte data governance.
+Vlammrs. https://vlammrs.nl/blog/de-vier-grootste-risicos-van-slechte-data-governance/
+• Steensma, S. (2023, 1 augustus). De vier grootste risico’s van slechte data
+governance. Vlammrs. https://vlammrs.nl/blog/de-vier-grootste-risicos-van-
+slechte-data-governance/
+• Datapage - Informatie en bronnen voor data-analyse. (z.d.). https://datapage.nl/het-
+belang-van-datakwaliteit-en-datareiniging
+•
+39
+
+Bijlage 1: interview verslag
+Inleiding
+GGZ Rivierduinen biedt zorg aan mensen met ernstige psychische aandoeningen. Het team
+van medewerkers ondersteunt klanten bij hen thuis en helpt hen met hun dagelijkse
+activiteiten, zoals het vinden van werk, behandelingen en begeleiding door casemanagers.
+De dagindeling van de medewerkers bestaat meestal uit een combinatie van overleg,
+bezoeken en evaluaties.
+Doel van het Onderzoek
+Onze opdrachtgever, Jasper, voert een onderzoek uit als onderdeel van zijn opleiding tot
+manager. Het doel is om het werkgeluk van medewerkers in de FACT-teams van GGZ
+Rivierduinen te verbeteren en werkuitval te verminderen. Het onderzoek richt zich op:
+• Het identificeren van factoren die het werkgeluk beïnvloeden.
+• Het voorstellen van innovatieve interventies die kunnen bijdragen aan een hoger
+werkgeluk.
+Data en Methodologie
+Jasper beschikt over een groot databestand van de FNV met enquêteresultaten van GGZ-
+medewerkers. In deze enquête wordt gevraagd waar de vakbond zich op moet richten.
+Daarnaast heeft Jasper toegang tot gegevens van een medewerkers
+tevredenheidsonderzoek, maar hij ontvangt hiervan alleen samenvattingen en
+percentages, geen ruwe data.
+Om de resultaten van de enquête aan te vullen, voert Jasper interviews uit met:
+• HR-medewerkers.
+• Medewerkers die zich bezighouden met duurzame inzetbaarheid.
+• Managers.
+• Externe experts, zoals happyness officers.
+De interviews worden opgenomen en kunnen bijdragen aan het vormen van conclusies
+over werkgeluk.
+Hoofdvraag en Deelvragen
+40
+
+De kernvraag van het onderzoek is:
+"Welke innovatieve interventies kunnen het werkgeluk van medewerkers in de FACT-
+teams van GGZ Rivierduinen verbeteren?"
+Om deze vraag te beantwoorden, zijn de volgende deelvragen opgesteld:
+1. Hoe wordt het werkgeluk van medewerkers van GGZ Rivierduinen ervaren in
+vergelijking met andere (GGZ) zorginstellingen?
+2. Welke rol zien medewerkers voor zichzelf om het werkgeluk te vergroten?
+3. Welke specifieke maatregelen of interventies denken de leidinggevenden en de
+organisatie dat effectief kunnen zijn voor het werkgeluk binnen de FACT-teams,
+rekening houdend met initiatieven op brancheniveau?
+Belangrijke Onderzoekspunten
+• Dissatisfiers: Jasper heeft vier dissatisfiers geïdentificeerd die eerst opgelost
+moeten worden. Als deze problemen worden aangepakt, kan het werkgeluk niet
+verder verslechteren.
+• Werkgelukverhogers: Naast de dissatisfiers zijn er acht factoren die actief
+bijdragen aan een beter werkgeluk. Deze punten krijgen speciale aandacht in het
+onderzoek.
+Verwachtingen van het Eindproduct
+Het eindproduct is een uitgebreide analyse van de FNV-enquête, aangevuld met inzichten
+uit interviews. Het moet Jasper helpen om de resultaten van GGZ Rivierduinen te
+vergelijken met andere instellingen. Daarnaast wordt het resultaat gepresenteerd in de
+vorm van:
+• Grafieken en tabellen die trends en verbeterpunten weergeven.
+• Een dashboard dat belangrijke werkgeluksfactoren inzichtelijk maakt.
+• Praktische aanbevelingen om het werkgeluk te verbeteren.
+Uitdagingen
+1. Grote dataset: Het databestand van de FNV is omvangrijk, waardoor het lastig is
+om alle informatie samen te vatten. Jasper heeft hulp nodig om de data te filteren
+en te analyseren.
+41
+
+2. Koppeling met interviews: Uitspraken uit interviews moeten gekoppeld worden
+aan werkgeluk, wat een uitdaging kan zijn bij het maken van visuele weergaven
+zoals grafieken.
+3. Verschillende communicatiemethoden: Jasper heeft flexibele werktijden,
+waardoor communicatie goed gepland moet worden. Hij is bereikbaar op maandag,
+dinsdagavond en in het weekend.
+Conclusie
+Dit onderzoek speelt een belangrijke rol bij het verbeteren van het werkgeluk van
+medewerkers in de FACT-teams van GGZ Rivierduinen. Door enquêtes, interviews en
+visuele analyses te combineren, kunnen er gerichte aanbevelingen worden gedaan. Het
+projectteam werkt nauw samen met Jasper om duidelijke en bruikbare inzichten te leveren.
+Het eindproduct zal niet alleen bijdragen aan werkgeluk, maar ook aan een beter begrip
+van wat medewerkers nodig hebben om goed te functioneren in een uitdagende
+werkomgeving.
+42
+
+Bijlage 2: onderbouwing van keuzes in het
+onderzoeksproces
+Visueel Dashboard Ontwikkelen
+Een belangrijk onderdeel van het project is het maken van een visueel dashboard. Met
+tools zoals Looker Studio worden de resultaten van de enquête en interviews omgezet in
+duidelijke tabellen en grafieken. Dit maakt de informatie overzichtelijk en makkelijk te
+begrijpen voor de opdrachtgever en andere betrokkenen, zoals HR-medewerkers en
+managers. Het dashboard helpt om trends en inzichten snel te zien en ondersteunt het
+nemen van goede beslissingen.
+Anonimiseren van Gegevens
+Omdat er gevoelige informatie wordt gebruikt, is het anonimiseren van persoonsgegevens
+erg belangrijk. Dit betekent dat namen en andere persoonlijke gegevens worden verwijderd
+of beveiligd, zodat niemand herkenbaar is. Dit voldoet aan de regels van de AVG
+(privacywetgeving). Dit verkleint ook de kans op fouten of datalekken.
+Ethics by Design
+Ethisch werken stond vanaf het begin centraal in het project. Dit betekent dat we in alle
+stappen rekening hebben gehouden met zaken als privacy, eerlijkheid en toegankelijkheid.
+Zo is er bijvoorbeeld gezorgd dat gegevens veilig worden bewaard, de analyses eerlijk zijn
+en dat iedereen het dashboard makkelijk kan gebruiken. Door deze aanpak is het
+eindproduct niet alleen nuttig, maar ook verantwoord en betrouwbaar.
+Werkgelukkenmerken
+De 8 kenmerken van werkgeluk (vertrouwen, verbinding, zingeving, waardering, plezier,
+voldoening, competentie, autonomie) zijn gebruikt als basis voor het onderzoek. Deze
+kenmerken helpen om te begrijpen wat medewerkers gelukkig maakt in hun werk. Met deze
+structuur kunnen we beter uitleggen wat er verbeterd kan worden en duidelijke adviezen
+geven aan de organisatie.
+43
+
+Thema analyse transcriptie interview met de opdrachtgever
+Spreker 1 00:26
+We kijken naar verschillende databronnen om een compleet beeld te krijgen. Ik ga een
+enquête afnemen bij een specialist op dit gebied. Daarnaast organiseer ik een
+focusoverleg met medewerkers van HR, personeelsleden, duurzame inzetbaarheid en
+managers.
+(FR01: Data importeren)
+Spreker 1 01:31
+Ik heb ook een grote dataset van de FNV gekregen, met bijna 2000 enquêtes van
+medewerkers in de GGZ. Deze dataset is erg interessant, want het laat zien waar
+medewerkers in onze sector prioriteit aan geven.
+(FR02: Data analyseren)
+Spreker 1 02:28
+Daarnaast is er een psychosociaal arbeidsbelastingsonderzoek. Helaas kan ik vanwege
+privacy alleen percentages inzien en geen ruwe data koppelen aan andere bronnen. Dit
+beperkt de analyse wat.
+(NFR02: Anonimiteit van persoonsgegevens / NFR03: Versleutelde data-opslag)
+Spreker 1 03:23
+Ik wil ook interviews afnemen met 'happiness officers' van andere bedrijven. Zij hebben
+ervaring met het verbeteren van werkgeluk en kunnen waardevolle inzichten bieden. De
+antwoorden worden opgenomen als audiobestanden.
+(FR02: Data analyseren / FR06: Data opschonen)
+Spreker 1 04:37
+Wat ik uiteindelijk wil bereiken, is inzicht in de belangrijkste elementen die bijdragen aan
+werkgeluk. Dit helpt om gerichte verbeteringen door te voeren binnen de organisatie.
+44
+
+(FR03: Trends en patronen identificeren)
+Spreker 1 05:58
+De uitdaging ligt in het combineren van deze verschillende databronnen. Vooral de FNV-
+dataset lijkt een goede start, maar het wordt lastig om alles goed aan elkaar te koppelen.
+(FR06: Data opschonen / NFR08: Foutafhandeling)
+Spreker 1 06:24
+Ik stel me voor dat de resultaten worden gepresenteerd in een dashboard of grafiek. Dit
+kan bijvoorbeeld gebruikt worden om de directie te laten zien waar aandacht nodig is.
+(FR04: Dashboard met factoren van het werkgeluk / FR05: Visualisaties van
+werkgelukscores / NFR05: Gebruiksvriendelijkheid van dashboard)
+Spreker 1 07:23
+Ik zie de prioriteit vooral bij de grote dataset van 2000 enquêtes. Dit biedt de meeste data
+om mee te werken, al blijft het combineren met andere bronnen een uitdaging.
+(FR02: Data analyseren / FR03: Trends en patronen identificeren)
+Spreker 1 08:20
+Het lijkt me belangrijk dat we duidelijk maken welke data bruikbaar is en hoe deze
+gecombineerd kan worden. Een overzichtelijk dashboard kan helpen om alles inzichtelijk
+te maken.
+(FR04: Dashboard met factoren van het werkgeluk / NFR05: Gebruiksvriendelijkheid van
+dashboard)
+Spreker 1 18:41
+Ik denk dat het interessant zou zijn om werkgeluk regelmatig te meten, bijvoorbeeld via een
+app of e-mailsysteem. Dit valt echter buiten de huidige tijdslijnen, dus dat kunnen we later
+bekijken.
+(NFR04: Uitbreidbaarheid van het systeem)
+Spreker 1 20:27
+45
+
+De data die we nu hebben, laat al zien dat er binnen de GGZ werkgeluk niet altijd op orde
+is. Dit is een belangrijk aandachtspunt waar we actie op moeten ondernemen.
+(FR03: Trends en patronen identificeren)
+Spreker 1 24:05
+Ik wil graag dat er een duidelijk requirements document komt voor de data-analyse, zodat
+iedereen weet wat er van hen wordt verwacht.
+(NFR12: Versiebeheer)
+Spreker 1 26:10
+Het belangrijkste is dat we iets ontwikkelen wat de directie goed inzicht geeft in waar het
+werkgeluk verbeterd kan worden. Dit moet praktisch toepasbaar zijn, bijvoorbeeld in de
+vorm van een dashboard.
+(FR04: Dashboard met factoren van het werkgeluk / FR05: Visualisaties van
+werkgelukscores)
+Desk research Beschrijving van organisatie
+De onderstaande tabel toont de resultaten van een verkennend onderzoek naar GGZ
+Rivierduinen, met als doel inzicht te krijgen in hun organisatie, activiteiten en werkwijze.
+Elk rij bevat drie zoekwoorden die gebruikt zijn om relevante informatie te vinden en het
+beoogde doel van deze zoekactie. Deze informatie vormt de basis voor een beter begrip
+van de organisatie en de context van het project, zoals werkgeluk, FACT-teams en privacy
+(AVG).
+Zoekwoord 1 Zoekwoord 2 Zoekwoord 3 Doel
+GGZ Belangrijkste Geestelijke Begrijpen wat GGZ Rivierduinen doet
+Rivierduinen taken GGZ gezondheidszorg en wat hun belangrijkste activiteiten
+zijn.
+Werkgeluk Werkgeluk Werkgeluk Leren hoe GGZ Rivierduinen
+GGZ verbeteren meten werkgeluk bij medewerkers verbetert
+en controleert.
+FACT-teams Teams bij GGZ Ondersteuning Uitleggen wat FACT-teams zijn en
+GGZ door FACT- hoe ze helpen met werkgeluk en
+teams zorg.
+46
+
+Privacy GGZ AVG in de zorg Anonimiteit bij Begrijpen hoe GGZ Rivierduinen
+GGZ omgaat met privacy en voldoet aan
+AVG-regels.
+47
+
+Bijlage 3 Probleemanalyse
+Medewerkers in de GGZ hebben vaak te maken met hoge werkdruk en veel mentale
+belasting. Uit onderzoek blijkt dat een groot deel van de zorgprofessionals, vooral jongere
+medewerkers, zich emotioneel uitgeput voelt. Dit leidt vaak tot stress, ziekteverzuim en
+minder motivatie, wat de kwaliteit van zorg beïnvloedt. De oorzaak ligt onder andere in
+overvolle agenda’s en weinig tijd voor herstel of reflectie. Dit laat zien dat het belangrijk is
+om inzicht te krijgen in wat medewerkers gelukkig maakt op het werk en hoe dit kan worden
+verbeterd.
+De hoofdvraag, "Hoe kan je snel en effectief inzicht krijgen in de data uit de enquête en uit
+de interviews?", helpt ons om een oplossing te vinden voor dit probleem. Met behulp van
+data-analyse en slimme tools willen we beter begrijpen welke factoren bijdragen aan
+werkgeluk en hoe we gerichte verbeteringen kunnen doorvoeren. Het is belangrijk dat dit
+snel en eenvoudig gebeurt, zodat de resultaten bruikbaar zijn om het welzijn van GGZ-
+medewerkers te vergroten.
+Het analyseren van gegevens uit enquêtes en interviews geeft ons de kans om belangrijke
+patronen en problemen te ontdekken. Dit maakt het mogelijk om gerichte acties te
+ondernemen die echt een verschil maken. Omdat de gegevens soms ingewikkeld zijn,
+hebben we goede tools en methoden nodig om alles duidelijk en toepasbaar te maken. Zo
+kunnen we stappen zetten om een betere en gezondere werkomgeving in de GGZ te
+creëren.
+48
+
+TOGAF
+Figuur 1 TOGAF
+49

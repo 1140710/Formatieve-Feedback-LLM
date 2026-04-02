@@ -1,0 +1,210 @@
+Plan van Aanpak
+Hogeschool Leiden - Haaglanden Medisch Centrum
+TUSSENTIJDSE VERSIE
+Studie: Bachelor Informatica
+Module: INDATAD Data Advanced
+Groep: C8
+Opdrachtgever: Xandra Riswick
+Datum: 20-11-2024
+Versie: 0.5 (tussentijds)
+Studenten:
+(cid:127) [NAAM] ([STUDENTNR])
+(cid:127) [NAAM] ([STUDENTNR])
+(cid:127) [NAAM] ([STUDENTNR])
+(cid:127) [NAAM] ([STUDENTNR])
+(cid:127) [NAAM] ([STUDENTNR])
+Dit document betreft een tussentijdse oplevering en is bedoeld voor formatieve feedback.
+
+Inhoudsopgave
+1. Inleiding
+2. Context
+3. Organisatie
+4. Bedrijfsproces
+5. Doelstelling
+6. Probleemstelling
+7. Scope
+8. Risico's en Mitigaties
+9. Requirementsanalyse
+10. Ethics by Design
+11. Oplossingsrichtingen
+12. Planning
+13. Literatuurlijst
+14. Bijlagen
+15. TOGAF Model
+
+1. Inleiding
+Dit document heeft als doel inzicht te bieden in het proces voor het ontwikkelen van een praktisch
+product in opdracht van een externe opdrachtgever, uitgevoerd onder begeleiding van Hogeschool
+Leiden. In dit document worden de context en organisatie beschreven, samen met een analyse van
+de relevante bedrijfsprocessen en een uitwerking van de projectdoelstelling.
+Verder worden de probleemstelling geformuleerd, de scope afgebakend en een
+requirementsanalyse uitgevoerd. Daarnaast worden ethische kwesties toegelicht en
+oplossingsrichtingen gepresenteerd.
+Tijdens dit proces wordt de SCRUM-methode toegepast, een iteratieve aanpak waarbij in
+tweewekelijkse sprints stapsgewijs wordt toegewerkt naar een functioneel eindproduct.
+2. Context
+Organisatie
+Het Haaglanden Medisch Centrum (HMC) zet de patient centraal en streeft ernaar een van de
+meest innovatieve ziekenhuizen van Nederland te worden. Het ziekenhuis is ontstaan uit een fusie
+van drie ziekenhuizen: HMC Antoniushove, HMC Bronovo en HMC Westeinde.
+Maatschappelijke ontwikkelingen
+HMC heeft zich gericht op het verbeteren van zorgtoegankelijkheid en duurzaamheid. Door de zorg
+te specialiseren per locatie worden patienten sneller geholpen. Er is ook een personeelstekort in de
+zorgsector wat een grote uitdaging is.
+Technologische ontwikkelingen
+HMC investeert in digitalisering. In 2023 is het elektronische patientendossier HiX geimplementeerd,
+wat de registratie stroomlijnt.
+Actualiteiten
+Per januari 2024 is er nieuwe regelgeving die de inzet van zzp'ers beperkt. Dit heeft gevolgen voor
+de personeelsbezetting op de operatiekamers.
+3. Organisatie
+HMC is een groot ziekenhuis in de regio Den Haag met meerdere locaties. Het ziekenhuis biedt
+diverse zorgdiensten aan, waaronder specialistische zorg, chirurgie en spoedeisende hulp.
+Primaire processen
+De belangrijkste processen zijn diagnose, behandeling, zorgverlening en spoedeisende hulp. Het
+ziekenhuis werkt samen met diverse partners in de regio.
+IT-systemen
+
+HMC maakt gebruik van het HiX EPD-systeem voor patientendossiers. Daarnaast zijn er
+laboratoriumsystemen en een zorgportaal in gebruik.
+De missie en visie van HMC zijn gericht op het bieden van hoogwaardige zorg met de patient
+centraal.
+
+4. Bedrijfsproces
+BPMN-schema van het huidige operatieproces
+Het BPMN-schema beschrijft de workflow van het operatieproces in het HMC. Het proces loopt van
+de planning van een operatie tot de afronding. Er zijn vier lagen: OK-Planning, Operatieassistenten,
+Chirurg en Specialist.
+Bij de OK-Planning wordt de operatie ingevoerd en wordt beoordeeld of er voldoende personeel is.
+De operatieassistenten bereiden de OK voor en voeren een veiligheidscheck uit. De chirurg voert
+de operatie uit en bij complicaties wordt een specialist ingeschakeld.
+BPMN-schema van het gewenste operatieproces
+In het gewenste proces wordt een nieuw beslissingspunt toegevoegd: is de operatie laag- of
+middencomplex? Zo ja, dan gaat de operatie naar MOZ-medewerkers. Zo nee, dan gaat het naar de
+reguliere operatieassistenten.
+5. Doelstelling
+Het doel van dit project is om een efficientere personeelsinzet op de operatiekamers van het HMC
+te realiseren door het analyseren van operationele data. Hiermee willen we:
+(cid:127) Werkdruk verlagen voor operatieassistenten
+(cid:127) Personeelstekort aanpakken na het wegvallen van zzp'ers
+(cid:127) Kosten verminderen door betere inzet van personeel
+(cid:127) Data-inzichten bieden over OK-tijd en capaciteit
+6. Probleemstelling
+Het ziekenhuis staat voor de uitdaging om te voldoen aan nieuwe wetgeving die het inhuren van
+zzp'ers verbiedt. Dit creeert de noodzaak om inzicht te verkrijgen in het aantal uren dat de
+operatiekamers in gebruik zijn, met onderscheid naar complexiteit van operaties. Daarnaast
+ontbreekt duidelijkheid over de benodigde personeelscapaciteit (FTE's).
+De probleemstelling is gevormd op basis van het kennismakingsgesprek met de opdrachtgever en
+feedback uit de sprint reviews.
+
+7. Scope
+Het project richt zich op de inzet en planning van MOZ-medewerkers voor laag- en
+middencomplexe operaties binnen het OKA van HMC.
+7.1 Binnen de scope
+(cid:127) Analyseren van operationele data in Excel-formaat
+(cid:127) Categoriseren van operaties op complexiteitsniveau
+(cid:127) Berekenen van OK-tijd per specialisme
+(cid:127) Bepalen benodigde FTE MOZ-medewerkers
+(cid:127) Visualiseren resultaten in Power BI
+7.2 Buiten de scope
+(cid:127) Data-anonimisatie (verzorgd door zorgmanager)
+(cid:127) Wijzigingen in de QBUS-database
+(cid:127) Volledig AI-model
+(cid:127) Analyse hoogcomplexe operaties
+8. Risico's en Mitigaties
+Risico Impact Mitigatie
+Data is onvolledig of Hoog Valideren bij import,
+bevat ontbrekende waarden overleg opdrachtgever
+Operatienamen zijn Gemiddeld Normalisatiescript
+niet uniform gebruiken
+Te weinig tijd om Hoog Agile aanpak,
+alles af te ronden MVP eerst opleveren
+Database niet op Gemiddeld Back-ups maken,
+centrale server beveiligde verbinding
+Terugkoppeling Gemiddeld Parallel werken aan
+opdrachtgever vertraagd andere onderdelen
+
+9. Requirementsanalyse
+De requirements zijn opgesteld op basis van gesprekken met de opdrachtgever en geprioriteerd
+volgens het MoSCoW-principe.
+9.1 Constraints
+(cid:127) De oplossing moet binnen 8 weken (4 sprints) worden opgeleverd
+(cid:127) Data wordt alleen verwerkt binnen de Hogeschool Leiden-omgeving
+(cid:127) Analyse beperkt zich tot operationele data van de afgelopen 12 maanden
+9.2 Functionele requirements
+ID Requirement Prioriteit
+FR01 Dataset valideren Must-have
+FR02 Dataset normaliseren Must-have
+FR03 Operaties categoriseren op complexiteit Must-have
+FR04 OK-tijd per complexiteitsniveau berekenen Must-have
+FR05 OK-tijd per specialisme berekenen Must-have
+FR06 FTE-behoefte berekenen Must-have
+FR07 FTE-besparing berekenen Must-have
+FR08 Visualisaties genereren Must-have
+FR09 Simulatie genereren Could-have
+9.3 Niet-functionele requirements
+(cid:127) De oplossing moet voldoen aan de AVG-richtlijnen
+(cid:127) De oplossing moet documentatie leveren voor niet-technische stakeholders
+(cid:127) De data-analyse moet consistent en reproduceerbaar zijn
+(cid:127) De oplossing moet alleen toegankelijk zijn voor geautoriseerde stakeholders
+10. Ethics by Design
+Bij dit project zijn ethische overwegingen belangrijk omdat we werken met operatiedata van een
+ziekenhuis. We houden rekening met de volgende principes:
+(cid:127) Privacy: Alle data is vooraf geanonimiseerd door de opdrachtgever in lijn met de AVG.
+(cid:127) Transparantie: Stakeholders kunnen zien hoe de gegevens worden verwerkt.
+(cid:127) Rechtvaardigheid: We zorgen voor een eerlijke verdeling zonder vooroordelen.
+(cid:127) Verantwoording: Het adviesrapport legt verantwoording af over de gemaakte keuzes.
+
+11. Oplossingsrichtingen
+Onderzoeksmethoden
+We gebruiken deskresearch en interviews om mogelijke oplossingen te onderzoeken.
+Oplossingsrichtingen
+Oplossing A Oplossing B Oplossing C
+Naam Onafhankelijk Microsoft Google
+Tools Python, Jupyter, Power BI, Python, Looker Studio,
+Plotly PostgreSQL Google Sheets
+Voordeel Open-source, Gebruiksvriendelijk, Gratis,
+geen kosten cloud-deling samenwerking
+Nadeel Technische kennis Licentiekosten Beperkt buiten
+nodig Google
+12. Planning
+Fase Periode Activiteiten
+Sprint 1 Week 1-2 Plan van Aanpak, kennismaking opdrachtgever
+Sprint 2 Week 3-4 Dataset analyseren en normaliseren
+Sprint 3 Week 5-6 Categorisatie, berekeningen, dashboard
+Sprint 4 Week 7-8 Adviesrapport, presentatie, oplevering
+
+13. Literatuurlijst
+1. GeeksforGeeks. (n.d.). Data analysis and visualization with Jupyter Notebook. Geraadpleegd van
+https://www.geeksforgeeks.org/
+2. Microsoft Power BI. (n.d.). Features and pricing overview. Geraadpleegd van https://powerbi.microsoft.com/
+3. Plotly. (n.d.). Interactive dashboards with Plotly. Geraadpleegd van https://plotly.com/
+4. PostgreSQL Documentation. (n.d.). Geraadpleegd van https://www.postgresql.org/docs/
+5. Scribbr. (n.d.). Onderzoeksmethoden. Geraadpleegd van https://www.scribbr.nl/
+6. Innovalor. (2024). Ethics by Design in 4 stappen. Geraadpleegd van https://innovalor.nl/
+14. Bijlagen
+14.1 Interview met opdrachtgever
+Op 7 november 2024 is een kennismakingsgesprek gevoerd met Xandra Riswick, zorgmanager bij
+het HMC. Hieruit kwam naar voren dat het ziekenhuis problemen verwacht met de nieuwe
+wetgeving rondom zzp'ers per 1 januari 2025. De opdrachtgever wil inzicht in het aantal uren dat de
+OK's in gebruik zijn, uitgesplitst naar complexiteit van operaties. Ook wil zij weten hoeveel FTE aan
+MOZ-medewerkers nodig zou zijn.
+De data wordt aangeleverd in Excel en bevat operatienamen, OK-tijden en specialismen. De
+categorisatie van complexiteit wordt gedaan op basis van een lijst van de opleiders.
+14.2 Probleemanalyse
+Het probleem is dat er na 1 januari een tekort aan personeel op de operatiekamers ontstaat.
+Hoogopgeleide medewerkers doen nu ook eenvoudige taken die door MOZ-medewerkers
+uitgevoerd zouden kunnen worden. Door inzicht te krijgen in welke operaties laag- en
+middencomplex zijn en hoeveel OK-tijd deze kosten, kan bepaald worden hoeveel
+MOZ-medewerkers nodig zijn.
+
+15. TOGAF Model
+Het TOGAF-model voor dit project is opgebouwd uit vier lagen:
+(cid:127) Business Layer: Stakeholders (operatieassistenten, MOZ-medewerkers, bestuur HMC) en
+business processen (analyse van operatiedata, toewijzing aan MOZ-medewerkers).
+(cid:127) Data Layer: Externe databronnen (CSV/Excel) worden via ETL-processen verwerkt naar een
+PostgreSQL database.
+(cid:127) Application Layer: De operatiedata wordt via ETL verwerkt, opgeslagen in PostgreSQL en
+gevisualiseerd in een dashboard.
+(cid:127) Infra Layer: Lokale werkomgeving op de laptop van de student, met TCP-verbinding naar de
+database en het dashboard.

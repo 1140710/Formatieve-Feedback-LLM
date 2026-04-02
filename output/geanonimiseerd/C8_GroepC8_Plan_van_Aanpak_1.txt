@@ -1,0 +1,1625 @@
+Plan van Aanpak
+Hogeschool Leiden – Haaglanden Medisch Centrum
+Studie: Bachelor Informatica
+Module: INDATAD Data Advanced
+Groep: C8
+Opdrachtgever: Xandra Riswick
+Studenten:
+• [NAAM] ([STUDENTNR])
+• [NAAM] ([STUDENTNR])
+• [NAAM] ([STUDENTNR])
+• [NAAM] ([STUDENTNR])
+• [NAAM] ([STUDENTNR])
+Datum: 20-11-2024
+Versie: 1.0
+
+Inhoudsopgave
+1. Inleiding ............................................................................................................................. 3
+2. Context .............................................................................................................................. 4
+3. Organisatie ........................................................................................................................ 5
+4. Bedrijfsproces .................................................................................................................... 7
+5. Doelstelling ........................................................................................................................ 9
+7. Probleemstelling .......................................................................................................... 10
+Onderbouwing van de Probleemstelling ............................................................................ 10
+7. Scope .............................................................................................................................. 11
+7.1 Binnen de scope ......................................................................................................... 11
+7.2 Buiten de scope .......................................................................................................... 12
+7.3 Kaders en Grenzen van het Project ............................................................................... 12
+8. Potentiële Risico’s en Mitigaties ........................................................................................ 13
+9. Requirementsanalyse ....................................................................................................... 16
+8.1 Constraints ................................................................................................................. 16
+8.2 Niet-functionele requirements .................................................................................... 17
+9.3 Functionele requirements ........................................................................................... 18
+9.4 Acceptatiecriteria ....................................................................................................... 19
+10. Ethics by Design ............................................................................................................. 20
+10.1 Ethics by design in de Praktijk .................................................................................... 21
+11. Oplossing ....................................................................................................................... 22
+11.1 Onderzoeksmethoden ............................................................................................... 22
+11.2 Oplossingsrichting A: Onafhankelijk .......................................................................... 22
+11.3 Oplossingsrichting B: Microsoft ................................................................................. 23
+11.4 Oplossingsrichting C: Google .................................................................................... 24
+12. Planning ......................................................................................................................... 26
+12.1 Tabel ........................................................................................................................ 26
+12.2 Gantt Chart ............................................................................................................... 28
+13. Literatuurlijst .................................................................................................................. 29
+14. Bijlage ............................................................................................................................ 30
+14.1 Bijlage A: Interview Verslagen .................................................................................... 30
+14.2 Bijlage B: probleemanalyse ....................................................................................... 41
+14.3 Bijlage D: Bewijsvoering ............................................................................................. 43
+14.4 Bijlage D: Thematische analyse ................................................................................. 44
+14.5 Bijlage E : Desk Research Tabel Oplossing Onderzoek ................................................ 46
+1
+
+15. TOGAF Model ................................................................................................................. 48
+2
+
+1. Inleiding
+Dit document heeft als doel inzicht te bieden in het proces voor het ontwikkelen van een
+praktisch product in opdracht van een externe opdrachtgever, uitgevoerd onder begeleiding van
+Hogeschool Leiden. In dit document worden de context en organisatie waarin het project
+plaatsvindt beschreven, samen met een analyse van de relevante bedrijfsprocessen en een
+uitwerking van de projectdoelstelling.
+Verder worden de projectprobleemstelling geformuleerd, de scope van het project afgebakend
+en een requirementsanalyse uitgevoerd. Daarnaast worden de ethische kwesties rondom de
+doelstelling toegelicht en onderbouwd. Tot slot worden drie mogelijke oplossingsrichtingen
+gepresenteerd, die inzicht bieden in hoe het probleem kan worden aangepakt.
+Tijdens dit proces wordt de SCRUM-methode toegepast, een iteratieve aanpak waarbij in
+tweewekelijkse sprints stapsgewijs wordt toegewerkt naar een functioneel eindproduct. Hierbij
+wordt gebruik gemaakt van een product backlog, sprintplanning, sprint backlog, sprintreviews
+en retrospectives. Voor het beheren van de voortgang, het prioriteren van taken en het
+coördineren van de samenwerking wordt Taiga gebruikt.
+Met dit document wordt een compleet overzicht gepresenteerd van de probleemstelling, de
+doelstelling, de uitvoering en de verwachtingen rondom deze casus.
+3
+
+2. Context
+Organisatie
+Het Haaglanden Medisch Centrum (HMC) zet de patiënt centraal en streeft ernaar een van de meest
+innovatieve ziekenhuizen van Nederland te worden, zonder onnodige obstakels voor patiënten. Het
+ziekenhuis is ontstaan uit een fusie van drie ziekenhuizen: HMC Antoniushove, HMC Bronovo en
+HMC Westeinde, die samen een geïntegreerd zorgsysteem onder de HMC-vlag vormen.
+Maatschappelijke ontwikkelingen
+HMC heeft zich de afgelopen jaren gericht op het verbeteren van zorgtoegankelijkheid,
+duurzaamheid, en sociale gelijkheid. Door de zorg te specialiseren per locatie – zoals traumazorg in
+HMC Westeinde en oncologische zorg in HMC Antoniushove – worden patiënten sneller en
+efficiënter geholpen. Om het personeelstekort aan te pakken, heeft HMC verbeterde
+arbeidsvoorwaarden, een leiderschapsprogramma en teamroosteren ingevoerd, waarmee het
+werkklimaat en de aantrekkelijkheid als werkgever worden versterkt.
+Duurzaamheid is ook een belangrijk speerpunt: HMC heeft een plan opgesteld om de ecologische
+voetafdruk te verkleinen, met initiatieven zoals de “Groene OK” en de “Groene Dialyse.” Verder zet
+HMC zich in voor betere communicatie met laaggeletterden in de regio door de "Direct Duidelijk
+Deal" te ondertekenen, waardoor zorg toegankelijker wordt voor iedereen. Met deze initiatieven
+toont HMC zich als een betrokken zorgverlener die inspeelt op maatschappelijke behoeften en
+duurzame, toegankelijke zorg nastreeft
+Technologische ontwikkelingen
+Het Haaglanden Medisch Centrum (HMC) investeert volop in digitalisering en technologische
+innovaties om de zorgkwaliteit en efficiëntie te verbeteren. In 2023 implementeerde HMC het
+elektronische patiëntendossier (EPD) HiX, wat de registratie stroomlijnt en zorgverleners snelle
+toegang biedt tot actuele patiëntgegevens. Deze integratie helpt zorgverleners om beter
+geïnformeerde beslissingen te nemen, wat de patiëntveiligheid en zorgcoördinatie ten goede komt.
+Daarnaast speelt technologie een belangrijke rol in de verbetering van de interne werkprocessen bij
+HMC. Met de verdere uitrol van digitalisering binnen het ziekenhuis kan HMC flexibeler en efficiënter
+werken, wat bijdraagt aan de continuïteit van zorg en de efficiëntie binnen verschillende afdelingen.
+Actualiteiten
+Het Haaglanden Medisch Centrum (HMC) wordt geconfronteerd met verschillende actuele
+ontwikkelingen die van invloed zijn op de zorgverlening en bedrijfsvoering. Een belangrijke
+verandering is de nieuwe regelgeving die per januari 2024 de inzet van zzp'ers in bepaalde
+zorgfuncties beperkt. Dit stelt HMC voor de uitdaging om flexibel in te spelen op personeelstekorten
+zonder de gebruikelijke ondersteuning van zzp'ers. Daarnaast is er een toenemende
+maatschappelijke druk op zorginstellingen om transparanter te zijn over de kwaliteit van zorg en
+verantwoording af te leggen over hun processen. HMC speelt hierop in door zorgkwaliteit,
+patiëntveiligheid en efficiëntie voortdurend te verbeteren, bijvoorbeeld door het optimaliseren van
+interne werkprocessen en het gebruik van technologie. Deze maatregelen helpen HMC om
+zorgcontinuïteit te waarborgen en te voldoen aan de verwachtingen van patiënten en de
+samenleving
+4
+
+3. Organisatie
+Organogram
+Belangrijkste primaire processen
+Het Haaglanden Medisch Centrum (HMC) richt zich op hoogwaardige en toegankelijke zorg via de
+volgende primaire processen:
+1. Diagnose: Het vaststellen van gezondheidsproblemen met onderzoeken zoals beeldvorming
+en laboratoriumtesten.
+2. Behandeling: Het uitvoeren van medische en chirurgische ingrepen, inclusief zorg binnen het
+OK-centrum.
+3. Zorgverlening: Verpleegkundige zorg, nazorg en begeleiding van patiënten bij herstel of
+chronische aandoeningen.
+4. Spoedeisende Hulp: Directe zorg voor acute medische problemen via de SEH.
+5. Preventieve Zorg: Voorlichting, screening en het voorkomen van ziekten.
+6. Revalidatie en Herstel: Ondersteuning bij fysiek en mentaal herstel na ingrepen.
+Deze processen worden ondersteund door technologie, goed opgeleid personeel en efficiënte
+logistiek om de best mogelijke zorg te garanderen.
+Belangrijke partners
+1. Ziekenhuizen en Zorginstellingen: Samenwerking met regionale en academische
+ziekenhuizen, zoals het LUMC.
+2. Onderwijsinstellingen: Partnerships met Hogeschool Leiden, Universiteit Leiden en ROC’s
+voor opleidingsprogramma’s.
+3. Gemeente en Overheid: Samenwerking met de gemeente Den Haag en GGD Haaglanden
+voor publieke gezondheid.
+4. Zorgverzekeraars: Partners zoals Zilveren Kruis en CZ voor zorgpakketten en
+zorgoptimalisatie.
+5. Leveranciers: Medische technologie, IT-systemen (zoals HiX) en farmaceutische bedrijven.
+6. Regionale Netwerken: Deelname aan netwerken zoals het Netwerk Acute Zorg en
+oncologische samenwerkingen.
+Deze partners ondersteunen HMC in het leveren van hoogwaardige en toegankelijke zorg.
+Producten en diensten
+Het Haaglanden Medisch Centrum (HMC) biedt een breed scala aan zorg, waaronder specialistische
+en poliklinische zorg, chirurgische ingrepen, en 24/7 acute hulp via de Spoedeisende Hulp. Daarnaast
+levert HMC preventieve zorg, revalidatie, en nazorg om patiënten te ondersteunen bij herstel. Het
+ziekenhuis speelt ook een belangrijke rol in het opleiden van zorgprofessionals door samenwerkingen
+met onderwijsinstellingen en interne bijscholingen. Met aanvullende diensten, zoals psychologische
+ondersteuning en maatschappelijk werk, zet HMC zich in voor patiëntgerichte zorg op maat.
+5
+
+Missie van HMC
+Het Haaglanden Medisch Centrum (HMC) streeft ernaar om hoogwaardige, veilige en toegankelijke
+zorg te bieden aan alle inwoners van de regio Den Haag en omstreken. Het ziekenhuis stelt de patiënt
+centraal en werkt vanuit de kernwaarden mededogen, integriteit en samenwerking. HMC zet zich in
+om zorg van de hoogste kwaliteit te leveren, met aandacht voor zowel de fysieke als mentale
+gezondheid van patiënten.
+Visie van HMC
+HMC wil een van de meest innovatieve en vooruitstrevende ziekenhuizen in Nederland zijn. Het
+ziekenhuis focust op het continu verbeteren van zorgprocessen door middel van technologie,
+samenwerking en het centraal stellen van de patiënt. HMC streeft naar een toekomst waarin zorg
+niet alleen genezing betekent, maar ook preventie, welzijn en inclusiviteit bevordert. Door sterke
+verbindingen met partners, zoals onderwijsinstellingen en andere zorgaanbieders, blijft HMC een
+belangrijke spil in de gezondheidszorg in de regio.
+Belangrijke IT-systemen
+Het Haaglanden Medisch Centrum (HMC) maakt gebruik van diverse IT-systemen om zorgprocessen
+te ondersteunen:
+1. HiX (EPD): Voor het beheer van medische dossiers en patiëntinformatie.
+2. Laboratorium- en Radiologiesystemen (LIS/RIS): Voor testresultaten en radiologische
+beelden, gekoppeld aan PACS.
+3. Zorgportaal: Voor communicatie tussen patiënten en zorgverleners.
+4. ERP-systeem: Voor financiële administratie, personeelsbeheer en inkoop.
+5. Apotheeksysteem: Voor medicatiebeheer en distributie.
+6. E-learningplatform: Voor scholing en bijscholing van medewerkers.
+7. Beveiligingssystemen: Voor het beschermen van patiëntgegevens en IT-infrastructuur.
+Deze systemen verbeteren de efficiëntie en kwaliteit van zorg en zorgen voor veilige en soepele
+informatiestromen binnen het ziekenhuis.
+6
+
+4. Bedrijfsproces
+BPMN-schema van het huidige HMC-operatieproces
+Toelichting BPMN-schema
+Het BPMN-schema beschrijft de workflow van een operatieproces in het HMC, vanaf de
+planning tot en met de afronding van de operatie. Het schema heeft vier lagen:
+• OK-Planning: Beheert de invoer van operaties en het toewijzen van personeel.
+• Operatieassistenten: Voert voorbereidende taken en ondersteunende taken tijdens de
+operatie uit.
+• Chirurg: Voert de operatie uit en neemt beslissingen over complicaties.
+• Specialist: Wordt opgeroepen bij problemen en lost deze op.
+OK-Planning laag
+• Operatie ingevoerd: Het OK-planningsteam voert de operatiegegevens in via een
+systeem.
+• Patiëntinformatie ophalen: Het systeem haalt automatisch de patiëntinformatie op uit
+de database.
+• Complexiteit beoordelen: Een planner beoordeelt de complexiteit van de operatie. Dit is
+lage, midden of hoge complexiteit. Dit met behulp van een systeem.
+• Personeel toewijzen: Het systeem biedt suggesties aan, maar de planner wijst
+personeel toe op basis van beschikbaarheid.
+7
+
+Operatieassistenten laag
+• OK-voorbereiden: De operatieassistenten bereiden de OK voor door instrumenten en
+apparatuur klaar te zetten.
+• Patiënt positioneren: De patiënt wordt fysiek klaargelegd op de operatietafel.
+• Veiligheidscheck uitvoeren: De operatieassistent voert een checklist in om te
+controleren of alles klopt: patiëntgegevens, operatiegebied en instrumenten.
+• OK-opruimen: De operatieassistenten maken de OK schoon en gereed voor de volgende
+operatie.
+Chirurg laag
+• Operatie uitvoeren: De chirurg voert de operatie uit, met ondersteuning van
+operatieassistenten.
+Specialist laag
+• Specialist oproepen: Als er complicaties zijn, wordt een specialist automatisch
+opgeroepen door een melding vanuit het systeem.
+• Probleem analyseren: De specialist voert een analyse uit om het probleem te begrijpen.
+BPMN-elementen
+Personeel beschikbaar?
+• Locatie in het proces: Tijdens de OK-planning, na het beoordelen van de complexiteit.
+• Functie: De OK-planning kijkt of er voldoende personeel is om een operatie te starten.
+• Mogelijke uitkomsten:
+o Ja, Er is voldoende personeel beschikbaar; de operatie kan worden ingepland.
+o Nee, Er is onvoldoende personeel; de operatie wordt uitgesteld.
+Specialist nodig na veiligheidscontrole?
+• Locatie in het proces: Na de veiligheidscontrole, vlak voor de start van een operatie.
+• Functie: De operatieassistent evalueert of er, op basis van de resultaten van de
+veiligheidscontrole, een specialist moet worden ingeschakeld.
+• Mogelijke uitkomsten:
+o Ja, Er is een specialist nodig; de specialist wordt opgeroepen en betrokken bij de
+operatie.
+o Nee, Er is geen specialist nodig; de operatie kan doorgaan en afgerond worden.
+Complicaties tijdens de operatie?
+• Locatie in het proces: Tijdens de operatie.
+• Functie: Bij complicaties neemt de chirurg een beslissing om een specialist in te
+schakelen.
+• Mogelijke uitkomsten:
+o Ja, Er zijn complicaties; een specialist wordt opgeroepen.
+o Nee, Er zijn geen complicaties; de operatie wordt afgerond.
+Associaties
+8
+
+Patiëntgegevens: Database objecten zijn gekoppeld aan taken. Dit zijn de volgende taken:
+Patiëntinformatie ophalen, Complexiteit bepalen en Veiligheidscheck uitvoeren om te laten zien
+dat deze taken afhankelijk zijn van de gegevens in het database object.
+5. Doelstelling
+Het doel van dit project is om een efficiëntere personeelsinzet op de operatiekamers van het
+HMC te realiseren. Dit wordt gedaan door het analyseren van operationele data (en wanneer en
+tijd over is: het ontwikkelen van een capaciteitsplanning die de inzet van MOZ medewerkers
+optimaliseert). Hiermee willen we:
+• Werkdruk verlagen: Hoogopgeleide operatieassistenten ontlasten door “makkerlijkere”
+operaties te verschuiven naar MOZ-medewerkers.
+• Personeelstekort aanpakken: dezelfde hoeveelheid operaties te kunnen doen na het
+wegnemen van zzp’ers per 1 januari.
+• Kosten verminderen: De operationele kosten verlagen door een betere inzet van personeel.
+• Data-inzichten bieden: Met behulp van een duidelijke data-analyse inzicht geven in de
+benodigde capaciteit en OK-tijd voor laag- en middencomplexe operaties voor het HMC.
+Doel: Met dit project willen we het HMC helpen om een oplossing te zoeken voor het probleem
+van personeelstekort na het wegnemen van zzp’ers per 1 januari (nieuwe regelgeving overheid)
+BPMN-schema van het gewenste HMC-operatieproces
+Verschillen met BPMN-schema huidige situatie
+9
+
+Beslissingspunt: Is de operatie laag- of midden complex?
+• Ja, het beslissingspunt gaat naar de MOZ-medewerkers laag die dezelfde taken
+aanhouden als een operatieassistent.
+• Nee, het beslissingspunt gaat naar de operatieassistenten laag. Deze laag is
+onveranderd.
+7. Probleemstelling
+Het ziekenhuis staat voor de uitdaging om te voldoen aan een nieuwe wetgeving die het inhuren
+van zzp’ers verbiedt. Dit creëert de noodzaak om inzicht te verkrijgen in het aantal uren dat de
+operatiekamers jaarlijks in gebruik zijn, met onderscheid naar de complexiteit van de
+uitgevoerde operaties. Daarnaast ontbreekt momenteel duidelijkheid over de benodigde
+personeelscapaciteit (FTE’s) om de operatiekamers effectief in te roosteren en aan de nieuwe
+regelgeving te voldoen.
+Onderbouwing van de Probleemstelling
+De probleemstelling is tot stand gekomen door middel van een combinatie van gesprekken met
+de werkgever, sprint reviews, en een analyse van de huidige operatiegegevens. Hieronder wordt
+toegelicht welke stappen zijn doorlopen om tot deze probleemstelling te komen.
+Kennismaking + mailcorrespondentie
+Tijdens het kennismakingsgesprek op 07-11-2024 is vastgesteld dat het ziekenhuis problemen
+krijgt met de nieuwe wetgeving die het inhuren van zzp’ers verbiedt per 1 januari 2025. De
+zorgmanager/werkgever geeft aan dat dit een direct effect heeft op de hoeveelheid personeel
+die dan inzetbaars zijn in de operatiekamers. Verder is besproken dat er een tekort is aan
+hooggekwalificeerd personeel en dat er inzicht nodig is in de uren die de operatiekamers in
+gebruik zijn, uitgesplitst naar complexiteit van de operaties. Deze eerste gesprekken hebben de
+kaders van de probleemstelling gevormd.
+Sprint Reviews en Feedback
+Tijdens de sprint reviews is regelmatig feedback verkregen van de opdrachtgever. Hieruit kwam
+naar voren dat inzicht in de benodigde FTE’s een cruciale rol speelt in het voldoen aan de
+nieuwe regelgeving. Specifiek werd gevraagd om een model dat inzicht geeft in het aantal
+benodigde medewerkers per operatiecomplexiteit, zodat betere roosterbeslissingen kunnen
+worden genomen. En dat daaruit beslissing gedaan kan worden op de hoeveelheid nieuwe
+personeel.
+10
+
+7. Scope
+Het project richt zich op de inzet en planning van MOZ-medewerkers voor laag- en midden
+complexe operaties binnen het OKA van HMC. Het doel is om met behulp van data-analyse de
+personeelsbehoefte in kaart te brengen.
+7.1 Binnen de scope
+Data-analyse
+• Analyseren van de aangeleverde operationele data in Excel-formaat, inclusief
+operatienamen, complexiteitsniveaus en OK-tijden.
+• Categoriseren van operaties in laag-, midden- en hoogcomplexe ingrepen op basis van
+de lijst van de opleiders.
+• Identificeren en sorteren van operaties die uitgevoerd kunnen worden door MOZ-
+medewerkers.
+Capaciteitsplanning
+• Berekenen van de benodigde OK-tijd voor laag- en middencomplexe operaties per
+specialisme.
+• Bepalen hoeveel FTE (Full-Time Equivalent) aan MOZ-medewerkers nodig is om deze
+operaties te ondersteunen.
+• Visualiseren van de resultaten van de capaciteitsanalyse in Power BI.
+Scenario-ontwikkeling
+• Simuleren van verschillende scenario’s voor de verdeling van taken tussen
+operatieassistenten en MOZ-medewerkers.
+• Analyseren van de impact van deze taakverdeling op personeelsbehoeften en werkdruk.
+• Ontwikkelen van een tool die de benodigde FTE's per operatiecomplexiteit berekent.
+Rapportage en advies
+• Opstellen van een adviesrapport waarin de bevindingen en aanbevelingen worden
+samengevat.
+• Voorstellen doen voor de implementatie van MOZ-medewerkers in het operatieproces.
+• Eventueel ontwikkelen van een simulatiemodel voor OK-roosters als er tijd over is.
+11
+
+7.2 Buiten de scope
+Data-anonimisatie en juridische goedkeuring
+• Het verkrijgen van juridische goedkeuring wordt verzorgd door de zorgmanager.
+Ruwe data ophalen of bewerken in de QBUS
+• Wijzigingen in de QBUS-database worden niet uitgevoerd vanwege beperkingen vanuit
+het ziekenhuis.
+Automatisering buiten de huidige scope
+• Complexe automatisering, zoals het ontwikkelen van een volledig AI-model voor
+voorspellingen, is niet inbegrepen.
+• Geavanceerde aanpassingen van OK-tijden op basis van specifieke situaties (zoals
+onverwachte complicaties tijdens operaties) vallen buiten de scope.
+Analyse van hoogcomplexe operaties
+• Operaties die als hoogcomplex worden geclassificeerd, worden niet in dit project
+meegenomen.
+Personeel-gerelateerde data
+• Analyse van persoonlijke gegevens of historische gegevens van operatiepersoneel wordt
+uitgesloten.
+Werving en selectie van personeel
+• Het proces van werving en selectie van medewerkers valt buiten de scope.
+Implementatie van nieuwe zorgprotocollen
+• Het ontwikkelen en implementeren van nieuwe zorgprotocollen is geen onderdeel van
+dit project.
+Veranderingen in het beleid van HMC
+• Besluitvorming en beleidswijzigingen binnen het ziekenhuis worden niet door het
+projectteam uitgevoerd.
+7.3 Kaders en Grenzen van het Project
+• Data: De analyse beperkt zich tot de operationele data van de afgelopen 12 maanden,
+afkomstig uit drie ziekenhuislocaties (West-Eind, Antoniushoven, en Bronovo).
+• Focus: De nadruk ligt op laag- en middencomplexe operaties en de rol van MOZ-
+medewerkers in het uitvoeren van deze taken.
+• Tools: Power BI wordt gebruikt voor de visualisatie van data en resultaten. De analyse
+zal zich richten op tools en technieken binnen de kennis en mogelijkheden van het
+projectteam.
+• Tijd: Het project is beperkt tot de looptijd van de module, met een duidelijke prioritering
+van taken en haalbare doelen.
+12
+
+• Bevoegdheden: Beslissingen over implementaties en personeelsbeleid liggen bij de
+zorgmanager en het ziekenhuisbestuur; de projectgroep levert een advies.
+8. Potentiële Risico’s en Mitigaties
+Bij het ontwikkelen en implementeren van de oplossing zijn er verschillende risico’s
+geïdentificeerd die de voortgang en het eindresultaat van het project kunnen beïnvloeden.
+Hieronder worden de belangrijkste risico’s en de voorgestelde maatregelen beschreven om deze
+te mitigeren.
+1. Inconsistentie in operatienamen
+• Risico: Operatienamen in de dataset zijn niet uniform, omdat deze handmatig door
+medewerkers zijn ingevoerd. Dit kan leiden tot problemen bij het categoriseren van
+operaties op basis van complexiteit.
+• Impact: Moeilijkheden bij de categorisatie kunnen de nauwkeurigheid van de analyse en
+berekeningen beïnvloeden.
+• Mitigatie:
+o Gebruik van een normalisatiescript in Python om veelvoorkomende variaties in
+namen te identificeren en om te zetten naar uniforme namen.
+o Betrek de opdrachtgever bij het opstellen van een lijst met geaccepteerde
+operatienamen en hun varianten.
+o Ontwikkel een "catch-all"-categorie om niet-gematchte operatienamen apart te
+identificeren en later handmatig te valideren.
+2. Gebrek aan medische kennis binnen het team
+• Risico: Het projectteam heeft geen zorgachtergrond en kan niet met zekerheid bepalen
+of een operatie laag, midden of hoog complex is.
+• Impact: Onjuiste categorisatie kan leiden tot onnauwkeurige analyses en conclusies.
+• Mitigatie:
+o Lever een lijst van onbekende operaties aan de opdrachtgever en vraag hen om
+de complexiteit te classificeren.
+o Stel een duidelijke deadline voor terugkoppeling om vertragingen te
+minimaliseren.
+o Integreer een iteratieve benadering waarbij het dashboard met gedeeltelijke data
+wordt ontwikkeld en later wordt aangevuld met correct geclassificeerde
+operaties.
+13
+
+3. Vertraging in terugkoppeling van opdrachtgever
+• Risico: De tijd die nodig is voor de opdrachtgever om operaties te classificeren, kan de
+voortgang van het project vertragen.
+• Impact: Dit kan ertoe leiden dat het dashboard niet tijdig klaar is of dat incomplete data
+wordt gebruikt.
+• Mitigatie:
+o Parallel werken: Ontwikkel andere delen van het dashboard, zoals de FTE-
+berekeningen, terwijl wordt gewacht op terugkoppeling.
+o Stel een minimale dataset vast waarmee het dashboard functioneel kan zijn en
+voeg ontbrekende gegevens later toe.
+o Gebruik placeholders in de database voor operaties zonder complexe
+classificatie.
+4. Database is niet op een centrale schoolserver
+• Risico: De PostgreSQL-database wordt gehost op een individuele computer in plaats
+van op een gedeelde schoolserver, wat problemen kan veroorzaken met
+toegankelijkheid, schaalbaarheid en back-ups.
+• Impact: Een lokaal gehoste database verhoogt de kans op gegevensverlies en maakt
+samenwerking moeilijker.
+• Mitigatie:
+o Maak dagelijkse back-ups van de database naar een veilige cloudopslag of
+externe harde schijf.
+o Overweeg het gebruik van een remote database server (zoals een
+cloudgebaseerde PostgreSQL-database) als toekomstige uitbreiding.
+o Zorg voor toegang tot de database via een beveiligde verbinding (bijv. VPN).
+5. Tijdslimieten binnen het project
+• Risico: Het project heeft een strakke planning, en onverwachte vertragingen bij data-
+analyse, feedback, of technische problemen kunnen deadlines in gevaar brengen.
+• Impact: Niet alle functionaliteiten kunnen op tijd worden geïmplementeerd.
+• Mitigatie:
+o Gebruik een agile aanpak om prioriteiten te stellen en eerst de meest essentiële
+functionaliteiten (MVP) op te leveren.
+o Stel duidelijke deadlines voor elke projectfase en monitor de voortgang
+wekelijks.
+14
+
+o Plan een bufferperiode voor onvoorziene vertragingen (bijvoorbeeld een extra
+week aan het einde van de ontwikkelfase).
+o Transparantie met de opdrachtgever: Wees eerlijk over de voortgang en
+communiceer tijdig als niet alle functionaliteiten binnen de gestelde tijd
+gerealiseerd kunnen worden. Bespreek alternatieve oplossingen, zoals het
+leveren van een gedeeltelijk werkend product met vervolgafspraken voor
+uitbreiding.
+6. Onvolledige data of ontbrekende waarden
+• Risico: De dataset bevat mogelijk ontbrekende waarden of is niet volledig.
+• Impact: Analyses kunnen onnauwkeurig zijn of niet alle relevante informatie bevatten.
+• Mitigatie:
+o Valideer de dataset bij het importeren en verwijder of vul ontbrekende waarden
+aan met schattingen (bijv. gemiddelden).
+o Werk met de opdrachtgever samen om ontbrekende data te achterhalen of
+alternatieve datapunten te identificeren.
+7. Beveiliging en toegangsbeheer
+• Risico: De data is toegankelijk via een individuele computer, wat beveiligingsrisico’s met
+zich meebrengt.
+• Impact: Onbevoegde toegang of datalekken kunnen vertrouwelijkheid en integriteit van
+de data in gevaar brengen.
+• Mitigatie:
+o Beperk de toegang tot de database met behulp van gebruikersrollen en sterke
+wachtwoorden.
+o Gebruik encryptie voor gevoelige gegevens en regel toegang via een beveiligde
+VPN-verbinding.
+o Zorg voor naleving van databeveiligingsprotocollen en anonimiseer alle
+persoonsgegevens in de dataset.
+8. Onvoldoende tijd voor testen
+• Risico: Door een strakke planning blijft er mogelijk onvoldoende tijd over om het
+product uitgebreid te testen.
+15
+
+• Impact: Onopgemerkte fouten of gebruiksproblemen kunnen de werking van het
+dashboard beïnvloeden.
+• Mitigatie:
+o Plan een aparte testfase waarin alle functionaliteiten worden gevalideerd.
+o Prioriteer testen van kernfunctionaliteiten, zoals categorisatie en berekeningen.
+o Verzamel feedback van de opdrachtgever en potentiële gebruikers in een vroeg
+stadium om fouten sneller te identificeren.
+Conclusie
+Door deze potentiële risico’s vroegtijdig te identificeren en passende maatregelen te nemen,
+kan het projectteam de kans op problemen minimaliseren en ervoor zorgen dat het product
+binnen de gestelde tijd en met de gewenste functionaliteiten wordt opgeleverd. Het team blijft
+flexibel en reageert adequaat op nieuwe uitdagingen die tijdens het project kunnen ontstaan.
+9. Requirementsanalyse
+In dit hoofdstuk worden constraints, niet-functionele en functionele requirements en
+acceptatiecriteria opgesteld die aansluiten bij de projectdoelstelling. De requirements zijn
+geprioriteerd volgens het MoSCoW-principe om primaire requirements te benadrukken. Ook zijn
+de acceptatiecriteria geformuleerd volgens het SMART-principe om voorwaarden te definiëren
+die bepalen wanneer de doelstelling is behaald en de software als volledig functioneel kan
+worden beschouwd.
+8.1 Constraints
+Hieronder volgt een overzicht van alle constraints:
+Constraint Relevantie Geadresseerd in
+CONSTR01: Deadline De dataoplossing dient te Moduledocumentatie door
+worden opgeleverd binnen Hogeschool Leiden
+een termijn van 8 weken (4
+sprints), waarbij de
+eindoplevering is gepland op
+16-01-2025.
+CONSTR02: Verwerking De dataoplossing dient Overeenkomst tussen
+uitsluitend te worden verwerkt Hogeschool Leiden en
+binnen de Hogeschool Haaglanden Medisch
+Leiden-omgeving die onder Centrum
+beheer staat van de
+opdrachtnemer.
+CONSTR03: Dekking De dataoplossing dient te Interview 1 door Xandra
+worden uitgevoerd op Riswick
+operationele data van de
+afgelopen 12 maanden,
+16
+
+afkomstig van drie OK-centra.
+CONSTR04: Doelbinding De dataoplossing dient Interview 1 door Xandra
+expliciet operationele data te Riswick
+gebruiken die relevant is voor
+het behalen van de
+projectdoelstelling.
+CONSTR05: Categorisatie De operatiecategorisatie dient Interview 1 door Xandra
+te worden gebaseerd op een Riswick
+door de opdrachtgever
+aangeleverde lijst met
+complexiteitsniveaus.
+8.2 Niet-functionele requirements
+Hieronder volgt een overzicht van alle niet-functionele requirements:
+Requirement Relevantie Prioriteit Geadresseerd in
+NFR01: Wetgeving De dataoplossing dient Must-have Interview 1 door
+volledig te voldoen aan de Xandra Riswick
+AVG-richtlijnen en de naleving
+van privacywetgeving te
+verzekeren.
+NFR02: Dossier De dataoplossing dient Must-have Sprint 1 door
+documentatie te leveren over opdrachtnemer
+de gebruikte methoden en
+modellen, geschikt voor niet-
+technische stakeholders.
+NFR03: Integriteit De data-analyse dient Must-have Interview 1 door
+consistent te blijven, waarbij Xandra Riswick
+ontbrekende waarden in
+complexe gevallen door de
+opdrachtgever gevalideerd
+moeten worden.
+NFR04: Objectiviteit De dataoplossing dient Must-have Sprint 1 door
+classificaties te genereren die opdrachtnemer
+volledig vrij zijn van impliciete
+of expliciete vooroordelen
+tegen specifieke groepen.
+NFR05: Consistentie De dataoplossing dient Must-have Sprint 1 door
+reproduceerbaar te zijn, opdrachtnemer
+waarbij herhaalde data-
+analyses met dezelfde
+dataset altijd tot identieke
+resultaten leiden.
+NFR06: Toegang De dataoplossing dient Must-have Sprint 1 door
+uitsluitend toegankelijk te zijn opdrachtnemer
+voor geautoriseerde
+stakeholders.
+NFR07: Interface De dataoplossing dient Should-have Sprint 1 door
+17
+
+intuïtieve en toegankelijke opdrachtnemer
+visualisaties te presenteren,
+geschikt voor niet-technische
+stakeholders.
+NFR08: Respons De dataoplossing dient Should-have Sprint 1 door
+minimale reactietijden te opdrachtnemer
+bieden bij het toepassen van
+filters, zodat inzichten direct
+analyseerbaar zijn.
+9.3 Functionele requirements
+Hieronder volgt een overzicht van alle functionele requirements:
+Requirement Relevantie Prioriteit Geadresseerd in
+FR01: Validatie De applicatie dient de dataset Must-have Sprint 1 door
+te valideren door ontbrekende opdrachtnemer
+waarden aan te vullen of te
+verwijderen.
+FR02: Normalisatie De applicatie dient de dataset Must-have Sprint 1 door
+te normaliseren door opdrachtnemer
+variabelen consistent te
+maken in formaat, schaal en
+structuur.
+FR03: Categorisatie De applicatie dient operaties Must-have Interview 1 door
+te categoriseren op Xandra Riswick
+complexiteitsniveaus (laag,
+midden, hoog).
+FR04: OK-tijd per De applicatie dient de OK-tijd Must-have Interview 1 door
+complexiteitsniveau per complexiteitsniveau te Xandra Riswick
+berekenen door de data te
+groeperen op
+complexiteitsniveau en de
+som van de OK-tijd per
+categorie te bepalen.
+FR05: OK-tijd per De applicatie dient de OK-tijd Must-have Interview 1 door
+specialisme per specialisme te berekenen Xandra Riswick
+door de data te groeperen op
+specialisme en de som van de
+OK-tijd per specialisme te
+bepalen.
+FR06: FTE-behoefte De applicatie dient het aantal Must-have Interview 1 door
+benodigde FTE's per Xandra Riswick
+specialisme te berekenen
+door de totale OK-tijd per
+specialisme te delen door de
+standaard werkbelasting per
+FTE.
+FR07: FTE-besparing De applicatie dient de Must-have Interview 1 door
+potentiële besparing te Xandra Riswick
+18
+
+berekenen door de OK-tijd van
+laag- en middencomplexe
+operaties om te zetten naar
+benodigde FTE's MOZ-
+medewerkers en verminderde
+FTE's operatieassistenten.
+FR08: Visualisatie De applicatie dient Must-have Interview 1 door
+verschillende visualisaties te Xandra Riswick
+genereren om inzicht te
+bieden, zoals grafieken,
+diagrammen en tabellen.
+FR09: Simulatie De applicatie dient een Could-have Interview 1 door
+simulatie te genereren door Xandra Riswick
+de geanalyseerde gegevens
+over operatiecomplexiteit,
+OK-tijd en FTE-behoefte per
+specialisme te combineren.
+9.4 Acceptatiecriteria
+Hieronder volgt een overzicht van alle acceptatiecriteria:
+Criteria AC01: Minimum Viable Product (MVP)
+Beoordelaar Xandra Riswick
+Eigenaar Opdrachtnemer
+Beschrijving De dataoplossing dient te voldoen aan 100% van de
+requirements die als 'Must-have' worden beschouwd.
+Doel Het doel is om een MVP op te leveren dat antwoord biedt op de
+hoofdvraag van de projectprobleemstelling.
+Meetmethode Akkoord van Xandra Riswick en een presentatie van de
+opgeleverde dataoplossing tijdens de productmarkt.
+Planning Sprint 4
+19
+
+10. Ethics by Design
+In ons project hebben we vanaf het begin gewerkt volgens de principes van Ethics by Design. Dit
+houdt in dat ethische overwegingen niet alleen een laatste controlepunt waren, maar een
+integraal onderdeel van elke fase van ons proces. Door ethiek te embedden in ons ontwerp en
+onze methodologie, hebben we ervoor gezorgd dat ons werk niet alleen technisch robuust is,
+maar ook voldoet aan maatschappelijke en wettelijke normen.
+Volgens de benadering van de Europese Commissie (zoals aangehaald in de blog van Innovalor,
+2024) betekent Ethics by Design dat ethische principes worden ingebed in het ontwikkelproces,
+zodat problemen vroegtijdig worden geïdentificeerd en aangepakt. We hebben ons laten
+inspireren door deze aanpak en de nadruk gelegd op de volgende ethische principes:
+1. Privacy by Design
+Privacy was vanaf het begin een kernwaarde. Alle gegevens waren vooraf door de
+opdrachtgever volledig geanonimiseerd, in lijn met de Algemene Verordening
+Gegevensbescherming (AVG). Dit betekende dat we geen toegang hadden tot
+persoonsgegevens of details over medewerkers, wat cruciaal was om de rechten van
+betrokkenen te beschermen. Deze aanpak sloot aan bij het principe van Non-
+maleficence (geen schade berokkenen) en het waarborgen van vertrouwen.
+2. Transparantie in Besluitvorming
+Transparantie stond centraal in onze aanpak. Gebruikers van het dashboard kunnen
+precies zien hoe de gegevens worden verwerkt en welke aannames eraan ten grondslag
+liggen. Dit komt overeen met het ethische vereiste van traceerbaarheid in de hele
+levenscyclus van technologie (Innovalor, 2024). De keuze om een slider te
+implementeren voor het aanpassen van het percentage parttime medewerkers was niet
+alleen praktisch, maar maakte ook onze berekeningen begrijpelijk en inzichtelijk voor
+stakeholders.
+3. Waarden-gebaseerd Ontwerp
+Onze focus lag op waarden zoals rechtvaardigheid, inclusie en verantwoordelijkheid.
+Omdat er geen gegevens over individuele medewerkers beschikbaar waren, hebben we
+gezorgd voor een eerlijke verdeling van de werkdruk door een flexibele simulatie op het
+dashboard. Dit benadrukt het belang van het ethisch ontwerpen van oplossingen die
+eerlijk en neutraal zijn.
+4. Iteratieve Evaluatie en Reflectie
+Gedurende elke fase van het project hebben we ethische keuzes geëvalueerd en
+bijgestuurd. Reflectiemomenten en feedback van de opdrachtgever hebben ons
+geholpen om consistent te blijven in onze toewijding aan ethiek. Dit iteratieve proces
+sluit aan bij de vier stappen van Ethics by Design, zoals beschreven door Innovalor
+(2024), waarin ethische principes worden vertaald naar concrete vereisten en praktisch
+worden geïmplementeerd.
+5. Verantwoording en Toetsbaarheid
+Het adviesrapport biedt niet alleen de resultaten, maar legt ook verantwoording af over
+de gemaakte keuzes en aannames. Hiermee zorgen we ervoor dat de opdrachtgever
+onze aanbevelingen goed geïnformeerd kan toepassen. Dit sluit aan bij het idee dat
+ethische en juridische afwegingen traceerbaar moeten zijn in het hele ontwikkelproces
+(Innovalor, 2024).
+20
+
+10.1 Ethics by design in de Praktijk
+Ethiek is niet iets dat we aan het einde afvinken, maar een integraal onderdeel van elk aspect
+van ons project. Vanaf de start tot aan de oplevering hebben we ethische principes geïntegreerd
+in onze aanpak.
+Startfase
+Tijdens het eerste overleg met de opdrachtgever hebben we direct afspraken gemaakt over
+data-anonimisering en juridische goedkeuring. Dit stelde duidelijke grenzen en richtlijnen vast
+voor het project. De keuze om de AVG als uitgangspunt te nemen, heeft geleid tot een solide
+basis voor verdere stappen. Door deze afspraken was het vanaf het begin duidelijk dat we alleen
+met volledig geanonimiseerde data zouden werken.
+Ontwikkelfase
+Tijdens de analyse hebben we regelmatig onze methodologie geëvalueerd om ervoor te zorgen
+dat gegevens eerlijk en zonder bias werden verwerkt. Bijvoorbeeld, bij het categoriseren van
+operaties hebben we subjectieve interpretaties vermeden door gebruik te maken van objectieve
+gegevens. Daarnaast hebben we ervoor gezorgd dat onze berekeningen en visualisaties
+gebaseerd waren op betrouwbare data, zoals aanbevolen door VertX (2022), en datakwaliteit
+centraal gesteld in onze aanpak.
+Dashboard en Simulatie
+In plaats van een rooster-simulatie te ontwikkelen, hebben we ons gericht op het creëren van
+een dashboard dat flexibel is voor verschillende scenario’s. Omdat we geen gegevens over
+individuele medewerkers konden verkrijgen vanwege de anonimiseringsvereisten, hadden we
+geen inzicht in het exacte aantal medewerkers of de verhouding tussen fulltime en parttime
+contracten. Om dit op te lossen, hebben we een slider geïmplementeerd waarmee gebruikers
+het percentage parttime medewerkers konden aanpassen. Dit beïnvloedde de berekening van
+FTE’s op het dashboard, zodat de werkdruk op een visueel en begrijpelijk niveau inzichtelijk
+werd gemaakt.
+Adviesrapport
+Het adviesrapport biedt niet alleen de resultaten, maar legt ook verantwoording af over de
+gemaakte keuzes en aannames. Hiermee zorgen we ervoor dat de opdrachtgever goed
+geïnformeerd is en onze aanbevelingen op een verantwoorde manier kan toepassen. We
+hebben hierbij expliciet aandacht besteed aan de beperkingen die voortkwamen uit de
+geanonimiseerde data en hoe deze zijn opgelost met flexibele dashboardscenario’s.
+Reflectie en Feedback
+Gedurende het project hebben we reflectiemomenten ingebouwd om onze ethische keuzes te
+toetsen. Feedback van de opdrachtgever heeft ons geholpen om ons werk verder te verfijnen en
+aan te laten sluiten bij hun morele standaarden. Bijvoorbeeld, de keuze voor een slider in plaats
+van harde cijfers over medewerkers was een directe reactie op de beschikbare data en het
+belang van transparantie.
+Conclusie
+Ethiek loopt als een rode draad door ons project. Door waarden zoals privacy, gelijkheid,
+transparantie en verantwoordelijkheid te integreren in elke fase van ons werk, zorgen we ervoor
+dat ons eindproduct niet alleen technisch robuust is, maar ook moreel verantwoord. Dit
+21
+
+benadrukt het belang van ethiek als een continu proces dat bijdraagt aan duurzame en eerlijke
+oplossingen.
+11. Oplossing
+In dit hoofdstuk worden de onderzoeksmethoden beschreven en de oplossingsrichtingen
+gepresenteerd die aansluiten bij de projectdoelstelling. De oplossingsrichtingen worden
+geformuleerd op basis van de onderzoeksmethoden.
+11.1 Onderzoeksmethoden
+Om mogelijke oplossingen te onderzoeken, wordt gebruikgemaakt van kwalitatieve methoden
+om zowel theoretische kennis te verzamelen als de praktische uitvoerbaarheid van de
+oplossingen te onderzoeken. Hieronder volgt een overzicht van alle onderzoeksmethoden:
+• Deskresearch: Via deskresearch worden bestaande gegevens, onderzoeken, rapporten
+en andere bronnen geanalyseerd om relevante inzichten en best practices te
+verzamelen. Deze methode is essentieel voor het verkrijgen van secundaire data die
+kostenefficiënt en snel beschikbaar is, mits de bronnen betrouwbaar zijn (Scribbr, n.d.).
+Deze informatie draagt bij aan het ontwerpen van een effectieve en onderbouwde
+oplossing.
+• Interviews: Via interviews met stakeholders wordt input verzameld over hun behoeften,
+verwachtingen en uitdagingen. Interviews bieden de mogelijkheid om kwalitatieve
+inzichten te verkrijgen en de toepasbaarheid van oplossingen af te stemmen op de
+praktijk (Scribbr, n.d.). Deze informatie draagt bij aan het afstemmen van de tools,
+modellen en strategieën op de praktijk, waardoor de toepasbaarheid en effectiviteit
+worden vergroot.
+Meer toelichting over het onderzoek is terug te vinden in de bijlage.
+11.2 Oplossingsrichting A: Onafhankelijk
+Oplossingsrichting A richt zich op de toepassing van Python, Jupyter Notebook, Plotly en enkele
+aanvullende Python-packages voor de ontwikkeling van een analyse.
+11.2.1 Implementatie
+Bij het implementeren van oplossingsrichting A zijn enkele stappen vereist. Hieronder volgt een
+overzicht van dit proces:
+1. ETL: Excel-bestanden met operationele gegevens worden ingelezen, opgeschoond en
+genormaliseerd met behulp van Jupyter Notebook. Python biedt robuuste tools voor
+data-opruiming en transformatie, waardoor gegevens efficiënter worden voorbereid voor
+verdere analyse (GeeksforGeeks, n.d.).
+2. Categorisatie: De gegevens worden gecategoriseerd op basis van complexiteitsniveaus
+(laag, midden, hoog). Dit helpt bij het visualiseren en analyseren van trends.
+22
+
+3. Visualisatie: Interactieve dashboards worden gecreëerd met Plotly en de bijbehorende
+module Graph Objects om operationele trends te visualiseren. Plotly biedt uitgebreide
+functionaliteiten voor interactieve datavisualisatie (Plotly, n.d.).
+4. Publicatie: Analyses en resultaten worden in Jupyter Notebook gedocumenteerd en
+geëxporteerd naar PDF-bestanden, waardoor het eenvoudiger wordt om bevindingen te
+delen met stakeholders.
+11.2.2 Voordelen
+• Consistentie: Jupyter Notebook verhoogt de reproduceerbaarheid en transparantie van
+analyses door data en visualisaties in één document te combineren (GeeksforGeeks,
+n.d.).
+• Ecosysteem: Tools zoals Python, Jupyter Notebook en Plotly zijn open-source,
+waardoor ze breder toepasbaar zijn en onafhankelijk van commerciële software
+functioneren.
+• Interactiviteit: Plotly biedt de mogelijkheid om KPI’s op een visueel aantrekkelijke en
+interactieve manier te presenteren (Plotly, n.d.).
+• Licentiekosten: Tools zoals Python, Jupyter Notebook en Plotly zijn gratis beschikbaar,
+waardoor er geen licentiekosten aan verbonden zijn.
+11.2.3 Nadelen
+Bij het kiezen van oplossingsrichting A moeten verschillende nadelen in overweging worden
+genomen. Hieronder volgt een overzicht van enkele nadelen:
+• Complexiteit: Het opzetten van analyses en dashboards met Python en Plotly vereist
+technische kennis van programmeertalen en bibliotheken. Niet-technische
+stakeholders kunnen hierdoor moeite hebben met de interface en gebruik
+(GeeksforGeeks, n.d.).
+• Prestatie: Bij grote datasets kan de prestatie van Plotly minder efficiënt zijn in
+vergelijking met gespecialiseerde BI-tools (Plotly, n.d.).
+11.3 Oplossingsrichting B: Microsoft
+Oplossingsrichting B richt zich op de toepassing van PowerBI, Python, Jupyter Notebook,
+PostgreSQL en enkele aanvullende Python-packages, voor de ontwikkeling van een dashboard.
+11.3.1 Implementatie
+Bij het implementeren van oplossingsrichting B zijn enkele stappen vereist. Hieronder volgt een
+overzicht van dit proces:
+1. ETL: Excel-bestanden met operationele gegevens worden ingelezen, opgeschoond en
+genormaliseerd met behulp van Jupyter Notebook.
+2. Categorisatie: De gegevens worden gecategoriseerd op basis van complexiteitsniveaus
+(laag, midden, hoog).
+23
+
+3. Persistentie: De opgeschoonde gegevens worden opgeslagen in een PostgreSQL-
+database voor gestructureerde toegang en verdere analyse. PostgreSQL is een krachtige
+tool voor data-opslag en -beheer (PostgreSQL Documentation, n.d.).
+4. Visualisatie: Interactieve dashboards worden gecreëerd in Power BI, gekoppeld aan de
+database, om operationele trends te visualiseren. Power BI is eenvoudig te integreren
+met verschillende databronnen en biedt uitgebreide visualisatieopties (Microsoft Power
+BI, n.d.).
+11.3.2 Voordelen
+Bij het kiezen van oplossingsrichting B zijn verschillende voordelen van belang. Hieronder volgt
+een overzicht van enkele voordelen:
+• Cloud: Power BI maakt het eenvoudig om dashboards via de cloud te delen, wat
+samenwerking vergemakkelijkt.
+• Interface: Power BI heeft een gebruiksvriendelijke interface, waardoor het geschikt is
+voor niet-technische gebruikers.
+• Interactiviteit: Power BI biedt geavanceerde interactieve mogelijkheden voor het
+analyseren van KPI’s (Microsoft Power BI, n.d.).
+11.3.3 Nadelen
+Bij het kiezen van oplossingsrichting B moeten verschillende nadelen in overweging worden
+genomen. Hieronder volgt een overzicht van enkele nadelen:
+• Configuratie: Het configureren van de koppeling tussen PostgreSQL en PowerBI vereist
+technische kennis.
+• Ecosysteem: PowerBI werkt het best binnen het Microsoft-ecosysteem, wat beperkend
+kan zijn bij het gebruik van andere tools of systemen.
+• Licensiekosten: PowerBI biedt een gratis plan, maar voor toegang tot geavanceerde
+functionaliteiten is een abonnement vereist (Microsoft Power BI, n.d.).
+11.4 Oplossingsrichting C: Google
+Oplossingsrichting C richt zich op de toepassing van het Google-ecosysteem, waaronder
+Looker Studio, Sheets en Workflows, voor de ontwikkeling van een dashboard.
+11.4.1 Implementatie
+Bij het implementeren van oplossingsrichting C zijn enkele stappen vereist. Hieronder volgt een
+overzicht van dit proces:
+1. Importeren: Excel-bestanden met operationele gegevens worden handmatig ingevoerd
+of geïmporteerd in Google Sheets.
+2. Categorisatie: De gegevens worden gecategoriseerd op basis van complexiteitsniveaus
+(laag, midden, hoog).
+3. Automatisering: Gegevensstromen worden geautomatiseerd met Google Workflows,
+zoals het synchroniseren van gegevens tussen Google Sheets en Looker Studio.
+24
+
+4. Visualisatie: Interactieve dashboards worden gecreëerd in Looker Studio om
+operationele trends te visualiseren.
+5. Publicatie: Het dashboard wordt gedeeld via een link of geïntegreerd in bestaande
+Google Workspaces van de stakeholders (Google Documentation, n.d.).
+11.4.2 Voordelen
+Bij het kiezen van oplossingsrichting C zijn verschillende voordelen van belang. Hieronder volgt
+een overzicht van enkele voordelen:
+• Cloud: Het Google-ecosysteem maakt het eenvoudig om dashboards via de cloud te
+delen met teamleden of stakeholders.
+• Interface: Het Google-ecosysteem vereist geen uitgebreide technische kennis,
+waardoor het geschikt is voor niet-technische stakeholders.
+• Licensiekosten: Het Google-ecosysteem biedt veel functionaliteiten die gratis
+beschikbaar zijn (Google Documentation, n.d.).
+• Samenwerking: Het Google-ecosysteem faciliteert realtime samenwerking, zodat
+meerdere stakeholders gelijktijdig gegevens en dashboards kunnen analyseren.
+11.4.3 Nadelen
+Bij het kiezen van oplossingsrichting C moeten verschillende nadelen in overweging worden
+genomen. Hieronder volgt een overzicht van enkele nadelen:
+• Ecosysteem: Looker Studio werkt het best binnen het Google-ecosysteem, wat
+beperkend kan zijn bij het gebruik van andere tools of systemen.
+• ETL: Het opschonen en transformeren van data in Google Sheets is minder flexibel en
+krachtig dan tools zoals Python, Jupyter Notebook of SQL.
+• Prestatie: Google Sheets is minder efficiënt bij het verwerken van complexe datasets in
+vergelijking met gespecialiseerde BI-tools (Google Documentation, n.d.)..
+25
+
+12. Planning
+12.1 Tabel
+Taak Subtaak Toegewezen Startdatum Einddatum
+Plan van Inleiding opstellen [NAAM] 19-11-2024 25-11-2024
+Aanpak
+opstellen
+Plan van Context beschrijven [NAAM] 19-11-2024 25-11-2024
+Aanpak
+opstellen
+Plan van Organisatie [NAAM] 19-11-2024 25-11-2024
+Aanpak beschrijven
+opstellen
+Plan van Bedrijfsproces [NAAM] 19-11-2024 25-11-2024
+Aanpak analyseren
+opstellen
+Plan van Doelstelling [NAAM], [NAAM] 19-11-2024 25-11-2024
+Aanpak formuleren
+opstellen
+Plan van Probleemstelling [NAAM] 19-11-2024 25-11-2024
+Aanpak definiëren
+opstellen
+Plan van Scope afbakenen [NAAM] 19-11-2024 25-11-2024
+Aanpak
+opstellen
+Plan van Requirementsanalyse [NAAM] 19-11-2024 25-11-2024
+Aanpak definiëren
+opstellen
+Plan van Ethiek behandelen [NAAM] 19-11-2024 25-11-2024
+Aanpak
+opstellen
+Plan van Oplossing uitwerken [NAAM] 19-11-2024 25-11-2024
+Aanpak
+opstellen
+Plan van Document Risico lijst: 19-11-2024 25-11-2024
+Aanpak voorbereiden [NAAM]
+opstellen
+Plan van Document Planning: 19-11-2024 25-11-2024
+Aanpak voorbereiden [NAAM]
+opstellen
+Dataset inzien - [NAAM] 26-11-2024 27-11-2024
+Ontwerp Document [NAAM] 26-11-2024 27-11-2024
+Document voorbereiden
+maken
+Ontwerp Inleiding opstellen [NAAM] 26-11-2024 27-11-2024
+Document
+maken
+Ontwerp Referentiearchitectuur [NAAM] 28-11-2024 28-11-2024
+26
+
+Document beschrijven
+maken
+Ontwerp Ontwerp uitwerken [NAAM] 29-11-2024 29-11-2024
+Document
+maken
+Ontwerp Tooling analyseren [NAAM] 30-11-2024 30-11-2024
+Document
+maken
+Ontwerp Implementatie [NAAM] 01-12-2024 01-12-2024
+Document beschrijven
+maken
+Ontwerp Proof of Concept [NAAM], [NAAM] 02-12-2024 02-12-2024
+Document uitwerken
+maken
+Dataset - [NAAM], [NAAM] 03-12-2024 04-12-2024
+analyseren
+Dataset - [NAAM] 05-12-2024 06-12-2024
+valideren
+Dataset - Team 07-12-2024 09-12-2024
+normaliseren
+Stermodel - [NAAM], [NAAM] 10-12-2024 16-12-2024
+ontwerpen en
+database
+vullen
+Categorisatie - [NAAM], [NAAM] 17-12-2024 23-12-2024
+van operaties
+Berekening OK- - [NAAM], [NAAM] 24-12-2024 30-12-2024
+tijden
+Dashboard - [NAAM], [NAAM] 31-12-2024 06-01-2025
+ontwikkeling
+Feedback - [NAAM] 07-01-2025 13-01-2025
+verzamelen en
+verbeteren
+Adviesrapport - [NAAM] 14-01-2025 20-01-2025
+opstellen
+Presentatie - Team 21-01-2025 24-01-2025
+voorbereiden
+Sprint Review 1 - Team 21-11-2024 21-11-2024
+Sprint Review 2 - Team 05-12-2024 05-12-2024
+Sprint Review 3 - Team 19-12-2024 19-12-2024
+Sprint Review 4 - Team 16-01-2025 16-01-2025
+27
+
+12.2 Gantt Chart
+Figuur 1 Groeps planning in een Gantt Chart
+28
+
+13. Literatuurlijst
+➢ Autoriteit Persoonsgegevens. (z.d.-a). Gezondheidsgegevens verwerken.
+Geraadpleegd op 22 januari 2025, van
+https://www.autoriteitpersoonsgegevens.nl/themas/gezondheid/gezondheidsgegev
+ens-gebruiken-en-delen
+➢ Autoriteit Persoonsgegevens. (z.d.-b). Gezondheidsgegevens gebruiken en delen.
+Geraadpleegd op 22 januari 2025, van
+https://www.autoriteitpersoonsgegevens.nl/themas/gezondheid/gezondheidsgegev
+ens-gebruiken-en-delen
+➢ GeeksforGeeks. (n.d.). Data analysis and visualization with Jupyter Notebook.
+Geraadpleegd op 22 januari 2025, van https://www.geeksforgeeks.org/data-
+analysis-and-visualization-with-jupyter-notebook/
+➢ Google Workspace Documentation. (n.d.). Google Workflows and Looker Studio.
+Geraadpleegd op 22 januari 2025, van https://workspace.google.com/
+➢ Innovalor. (2024, 25 oktober). Ethics by Design in 4 stappen. Geraadpleegd op 22
+januari 2025, van https://innovalor.nl/Blogs/ethics-by-design
+➢ Microsoft Power BI. (n.d.). Features and pricing overview. Geraadpleegd op 22
+januari 2025, van https://powerbi.microsoft.com/
+➢ Plotly. (n.d.). Interactive dashboards with Plotly. Geraadpleegd op 22 januari 2025,
+van https://plotly.com/
+➢ PostgreSQL Documentation. (n.d.). PostgreSQL: Documentation and features.
+Geraadpleegd op 22 januari 2025, van https://www.postgresql.org/docs/
+➢ VertX. (2022, 18 september). Datakwaliteit - Het belang van betrouwbare data.
+Geraadpleegd op 22 januari 2025, van https://www.vertx.nl/nieuws/datakwaliteit-
+het-belang-van-betrouwbare-data
+➢ Scribbr. (n.d.). Onderzoeksmethoden: Deskresearch en kwalitatieve methoden.
+Geraadpleegd op 22 januari 2025, van
+https://www.scribbr.nl/onderzoeksmethoden/deskresearch/
+29
+
+14. Bijlage
+14.1 Bijlage A: Interview Verslagen
+Casusbeschrijving
+In dit interview wordt verslag gedaan van een gesprek met Xandra Riswick, gehouden op 7
+november 2024 aan de Hogeschool Leiden. Hieronder volgt het transcript van dit gesprek:
+[1] Zorgmanager: Hier heb ik gezegd: zoals jij HR onder je hebt op de afdeling, ga jij nadenken of
+er nog meer kansen zijn voor andere medewerkers. We gaan onderzoeken, een
+operatieassistent is het grootste tekort, dus ik ga me daar eerst op focussen.
+[2] Zorgmanager: Toen heb ik gekeken: wat hebben we aan soorten operatieassistenten? We
+hebben allemaal eerste deskundigheid operatieassistenten op de werkvloer lopen. Maar we zijn
+een ziekenhuis dat ook met andere operatieassistenten werkt, dus we mogen alleen maar lage
+tot middencomplexe operaties omlopen en instrumenteren. Dat is gericht op het ondernemen
+van zorg tijdens de operaties.
+[3] Zorgmanager: En toen dacht ik: nou, dat is een onderzoek waar ik verder op in wil gaan,
+want daarin zie ik kansen voor de afdelingen. Ik weet dat we nu met de zzp’ers in gesprek zijn om
+ze in dienst te nemen. We weten dat dat uiteindelijk een illusie is, dus ik verwacht dat we straks
+nog meer tekorten zullen krijgen.
+[4] Zorgmanager: Daarom ziet nu ook de raad van bestuur het belang in van dit onderzoek. De
+druk bij mij is op dit moment hoog, bij jullie niet, laten we daar gewoon heel duidelijk over zijn.
+Toen werd gezegd dat we voor de opleiding een dataonderzoek moeten doen samen met
+studenten, en dat leek me ook interessant.
+[5] Zorgmanager: Alleen, data in het ziekenhuis is lastig, want dat moet geanonimiseerd
+worden en juridisch worden gecheckt voordat ik het met jullie mag delen. Het ligt nu bij de
+bedrijfsjurist, dat is de laatste stap. Ik heb al wat stappen doorlopen en heb aangegeven welke
+data er in het ziekenhuis beschikbaar is.
+[6] Zorgmanager: Ik denk dat ik die data wil gaan delen met jullie. Pas als de bedrijfsjurist
+akkoord geeft, zal ik dat ook daadwerkelijk doen. Volgens mij geef ik geen ruwe data, maar het
+ligt aan mij. Als dat niet kan, moeten we even schakelen, ook met jullie docenten, om te kijken
+hoe we dat dan aanpakken. Misschien kunnen we met een soort dummy werken, die ik dan
+samen met jullie maak.
+[7] Zorgmanager: Goed, dus dat is een deel. De data die ik met jullie wil onderzoeken, gaat
+eigenlijk over het afgelopen jaar. Wat voor operaties hebben we gedaan in het OCAS-centrum?
+Het OCAS-centrum van Haaglanden Medisch Centrum bestaat uit drie locaties. Op het
+Westeinde hebben we de traumasetting, waarbij ik betrokken ben.
+30
+
+[8] Zorgmanager: Op Antoniushove is de onkologische zorg gevestigd, dat doen we vanuit het
+kankercentrum. En op Bronovo, dat natuurlijk een kleiner ziekenhuis is, wordt alleen nog maar
+planbare zorg uitgevoerd. Als je denkt aan planbare zorg, dan is dat vaak laag tot
+middencomplex.
+[9] Zorgmanager: De data die ik heb gaat over alle OCAS-operaties die zijn uitgevoerd op de drie
+centra. We moeten kijken hoeveel data dat is. Misschien moeten we dat beperken tot drie
+maanden, zodat het behapbaar wordt. Maar als we met een grote groep zijn, is het misschien
+wel te doen. Dat weet ik nog niet.
+[10] Student 2: Twee groepen zijn het.
+[11] Zorgmanager: Oké, nou dan moeten we denk ik even gezamenlijk kijken, want ik heb geen
+idee hoe snel en hoeveel jullie kunnen doen zodat het werkbaar is voor jullie. Dat is ook wel mijn
+tekortkoming, daar weet ik niets van. Dan moeten we eigenlijk een splitsing maken van al die
+operaties.
+[12] Zorgmanager: Wat is dan laag- en middencomplex? Wat kunnen eventueel
+gefunctioneerde medewerkers ook doen? Daar zit dan ook een bepaalde OK-tijd
+(operatiekamer-tijd) aan verbonden. Mijn vraag is: als we dat weten, kunnen we dat ook nog
+specificeren per specialisme?
+[13] Zorgmanager: Want ik werk met heelkunde, trauma, orthopedie en alle specialismen
+behalve open hart. Als we dat dan gespecificeerd hebben, kunnen we daar misschien verder
+over nadenken. Maar alleen als er tijd over is, kunnen we een simulatie-rooster maken. Dat zou
+ingericht kunnen worden op een OK (operatiekamer).
+[14] Zorgmanager: Maar ik weet niet of dat aansluit bij waar jullie in de opleiding zitten.
+[15] Zorgmanager: Ik wil weten hoeveel FTE (fulltime equivalent) andere soortige medewerkers
+ik zou moeten aannemen om deze zorg te kunnen waarborgen. Heel praktisch.
+[16] Student 3: En dat is eigenlijk nu het idee: we hebben data over heel praktisch uitgevoerde
+operaties. Die moeten we dus gaan categoriseren op middellaag en daarboven. Dat is wat je
+eigenlijk zou kunnen aannemen.
+[17] Zorgmanager: Laag- en middencomplexe operaties, dat is de eerste stap: sorteren. Als we
+die eruit hebben, hangt daar een OK-tijd aan. Ik zorg ervoor dat in die data de OK-tijd al is
+verwerkt, bijvoorbeeld in Excel. Dan kunnen we per specialisme optellen hoeveel tijd het in
+totaal betreft.
+[18] Student 3: Want we moeten eigenlijk naar die middellaag kijken. Daar moeten we op
+focussen.
+31
+
+[19] Zorgmanager: De operatieassistenten die ik nu heb, zijn van de eerste deskundigheid, die
+kunnen alles. Maar op laag- en middencomplex heb ik een tekort. Ik denk dat als ik andere
+medewerkers met ambitie, bijvoorbeeld doktersassistenten in het ziekenhuis, opleid, en zeg:
+"Als je anderhalf jaar opleiding doet, word je een MOZ-medewerker."
+[20] Zorgmanager: Dan mag je laag- en middencomplexe operaties doen. Dat is leuk voor
+mensen met ambities, en misschien kunnen we daar medewerkers voor aannemen.
+[21] Zorgmanager: Ja, en over hoeveel operaties hebben we het dan nu? Maar het is misschien
+wel leuk voor jullie om te weten, voor de context. Ik ga ook nog kijken wat we eigenlijk
+verwachten, want komend jaar gaan we steeds meer van dit soort zorg naar centra sturen.
+[22] Zorgmanager: Gewoon puur omdat het voor de ziekenhuizen niet meer te doen is, met de
+toenemende vraag naar zorg. Maar voor mij is het wel belangrijk om te weten: kan ik dit soort
+medewerkers aannemen?
+[23] Zorgmanager: En hoeveel operaties zouden we daarmee dan kunnen uitvoeren, zodat de
+eerste deskundigheid zich kan richten op de zeer complexe operaties?
+[24] Student 3: Dus we gaan ook een beetje kijken naar hoeveel operaties in een dag kunnen
+worden ingericht.
+[25] Zorgmanager: Dat zou zo’n simulatie kunnen zijn. Het zou leuk zijn als ze aan het einde
+zoiets hebben.
+[26] Student 3: Oké, dan moeten we eerst een soort analyse uitvoeren om te kijken wat
+allemaal kan.
+[27] Zorgmanager: In principe heb ik vanuit de opleiding informatie over welke categorieën
+operaties laag- en middencomplex zijn. Alleen, als we die gaan sorteren, weet ik nu al dat er
+namen naar voren komen die net niet op dat lijstje staan, omdat ze bijvoorbeeld net een andere
+DBC hebben gehad ooit.
+[28] Zorgmanager: Daarbij hebben jullie waarschijnlijk ook inhoudelijke kennis nodig van de
+OK, en dat zal ik aanvullen. Dat verwacht ik niet van jullie, dat kan niet. Ik heb een lijstje van de
+opleiders waarin dit soort operaties per specialisme is gecategoriseerd als hoog-, laag- of
+middencomplex.
+[29] Zorgmanager: Daarmee zouden we al een grove schets kunnen maken en alles wat dan
+een vraagteken oplevert, zal ik moeten doorlopen. Of ik doe dat zelf, of ik zet iemand aan het
+werk die op dit moment bij mij aan het re-integreren is.
+32
+
+[30] Student 3: Er is, neem ik aan, in de data die we daadwerkelijk kunnen krijgen, wel een lijst
+van wat voor soort operaties er zijn. Daar kun je natuurlijk ook mee categoriseren. Als we
+gewoon een lijst eroverheen halen van: dit is wat we hebben gemeten, dan kunnen we dat
+sowieso indelen. Voor de outliers maken we een aparte lijst, zodat we een overzicht hebben van
+hoeveel het er zijn en waar ze nog gecategoriseerd moeten worden.
+[31] Student 3: Zodat we het even versimpelen.
+[32] Zorgmanager: Dat ligt dan meer bij mij. Ik zorg er dan voor dat het weer wordt
+gecategoriseerd waar het naartoe moet. Dus dat is verder prima.
+[33] Student 3: Dat zou een stap zijn.
+[34] Zorgmanager: Daarna heb je de OK-tijden en de specialismen.
+[35] Zorgmanager: Ja, dus de OK-tijd die in die Excel zit, is echt de platte snijtijd die gebruikt is.
+Ook die is verschillend, kan ik je vertellen, per operatie. We hebben namelijk ook verschillende
+opentuurtijden.
+[36] Student 2: Ja, dingen kunnen uitlopen, compleet rare dingen kunnen gebeuren tijdens een
+operatie.
+[37] Zorgmanager: We hebben ook verschillende specialisten, waarvan de ene sneller werkt
+dan de andere. Dat is ook bekend. Maar goed, dat is wat het is. We gaan gewoon uit van
+gemiddelde standaarden.
+[38] Student 2: Ja, precies. We moeten daar geen rekening mee houden. Bijvoorbeeld als we in
+de MD de automatische tijden moeten aanpassen.
+[39] Zorgmanager: Nee, ik denk dat dat te ver gaat. Voor deze opdracht en de tijd die we
+hebben, moet je daar je handen niet aan branden. Dat denk ik. Maar vul me aan met jullie
+kennis.
+[40] Student 2: Misschien als we tijd over hebben.
+[41] Zorgmanager: Ja, dan moet ik alleen even kijken of ik de specialisten er nog bij kan
+betrekken. Ik heb al data verzameld voor jullie. Ondertussen ben ik natuurlijk al bezig geweest
+met het verzamelen van data, en wij hebben een kubus daarvoor.
+[42] Zorgmanager: We werken met een EPD, en uit die kubus kun je natuurlijk van alles filteren.
+Misschien heb ik dat niet goed aangepakt, dus daar ga ik jullie ook nog even over bevragen.
+[43] Zorgmanager: Maar ik moet wel toestemming krijgen dat ik het mag delen. Op dit moment
+heb ik niks. Mijn streven is dat ik vandaag wat meer duidelijkheid krijg, en het zou maandag bij
+de jurist duidelijk moeten zijn.
+33
+
+[44] Student 4: We gaan straks een adviesrapport schrijven. Ik wil concreet horen wat je van
+ons verwacht.
+[45] Zorgmanager: Dat snap ik. Voor nu gaat het vooral om de analyse: hoeveel laag- en
+middencomplexe operaties hebben we? En hoeveel daarvan zouden daadwerkelijk door andere
+medewerkers kunnen worden uitgevoerd, uitgesplitst per specialisme?
+[46] Student 4: Hoe kunnen wij je bereiken?
+[47] Zorgmanager: Zeker. Er is bij ons in de klas een lijstje rondgegaan. Daar staat mijn privé 06-
+nummer op. Het is wel mijn privé 06-nummer, dus ik wil vragen dat als er afspraken nodig zijn, je
+eerst een appje stuurt om te checken of ik bereikbaar ben.
+[48] Zorgmanager: Vaak als ik op mijn werk ben, werk ik met twee telefoons, Teams-meetings,
+en vijf mensen die aan mijn bureau staan. Dan moet ik even kijken wat een handig tijdstip is,
+zodat we dat kunnen afstemmen.
+[49] Zorgmanager: Dat is de realiteit, laat ik daar eerlijk over zijn. Mijn e-mailadres staat er ook
+bij en dat is mijn werkmailadres. Die check ik elke dag, ook in het weekend. Juist omdat ik in het
+acute segment werk, kunnen er 24/7 dingen spelen.
+[50] Zorgmanager: Dus die houd ik altijd in de gaten. Zijn er nog andere vragen of zaken die
+jullie met mij willen bespreken? Dat is wat we nu kunnen doen.
+[51] Student 2: Op zich wel. Als ik het even samenvat: er zijn drie stappen, en de derde stap is
+de grootste, als we extra tijd over hebben. De eerste stap is de data analyseren en een advies
+opstellen over hoeveel extra mensen er nodig zijn per niveau. Daarna is het per specialisme
+bekijken.
+[52] Student 2: Het gaat eigenlijk om een advies, bijvoorbeeld: voor volgend jaar, voor de
+komende drie maanden, moeten er 20 mensen worden aangenomen. Tien daarvan op dat
+niveau, vijf op een ander niveau, of gericht op een bepaalde specialisatie.
+[53] Student 2: En de laatste stap is dan echt kijken of we een rooster kunnen maken of dit
+koppelen aan de OK. Bijvoorbeeld als je een simulatiedag zou willen organiseren.
+[54] Zorgmanager: Ja, dan kan ik meer inzicht geven aan de raad van bestuur.
+[55] Student 2: Ja, volgens mij is het dan vrij duidelijk wat er van ons verwacht wordt.
+[56] Zorgmanager: Dat is iets waarvan je denkt: dat is leuk. Of zeg je: nou, laten we heel eerlijk
+zijn, dat mag ook, hè?
+[57] Student 2: Ik denk op zich, qua basis, de eerste twee vragen over hoe complex de data is,
+dat het relatief...
+34
+
+[58] Zorgmanager: Thank you.
+[59] Student 2: Ja, een goede start om mee te beginnen. Data is wel ingebouwd, maar ook
+zomaar te gebruiken. Dus als we dat kunnen aanpakken en verbeteren, kan het echt wel heel
+leuk worden, vooral als we automatisering eromheen kunnen bouwen met bijvoorbeeld een
+rooster in het systeem.
+[60] Student 2: Misschien kunnen we zelfs een heel simpel AI-model eraan koppelen, dat kan
+voorspellen hoeveel extra personeel er nodig is in de komende maanden. Bijvoorbeeld: over een
+jaar heb je zoveel extra medewerkers nodig, want het groeit, of juist niet, want het daalt.
+[61] Student 2: Dat zou natuurlijk allemaal extra zijn, maar wel interessant.
+[62] Student 4: Heb jij een voorkeur voor tools die wij kunnen gebruiken?
+[63] Zorgmanager: Nee, ik denk dat jullie zelf het beste weten welke tools het meest geschikt
+zijn en waar jullie comfortabel mee werken. Aangezien dit voor jullie ook een module-opdracht
+is waar punten aan verbonden zijn, lijkt het me verstandig om te blijven bij wat jullie al kunnen
+en waar jullie goed in zijn. Ga niet te veel experimenteren.
+[64] Zorgmanager: Als je iets echt leuk vindt, moet je dat natuurlijk ook doen. Dat is de andere
+kant. Kies wat jou blij maakt, dat is belangrijk.
+[65] Student 2: Wat ook handig is om te weten, is wat de bedrijfsjurist goedkeurt. Wat is de vorm
+van deze data? Hoe krijgen we het aangeleverd? Hoe moet het eruitzien?
+[66] Zorgmanager: Dat komt in Excel. Er is ook een vraag of jullie in de KUBUS mee mogen
+kijken. Als ik die anoniem kan maken voordat jullie hem inzien, zou dat kunnen, maar ik weet
+niet of dat lukt. De KUBUS werkt ook in Excel met allemaal draaitabellen.
+[67] Zorgmanager: Misschien kunnen jullie kijken wat jullie handiger vinden. Die vragen heb ik
+al neergelegd, maar de KUBUS is gekoppeld aan het hele EPD. We mogen daar niets in
+aanpassen. Als je op 'opslaan' drukt, heeft dat meteen gevolgen voor de hele organisatie.
+[68] Zorgmanager: Het is mij heel duidelijk gezegd dat ik daar niet te veel aan moet zitten, want
+anders gaat de hele organisatie gillen. Maar goed, ik hoop dat jullie in ieder geval meekijken en
+kunnen bepalen wat we het beste eruit kunnen halen.
+[69] Zorgmanager: Misschien kunnen jullie dat anders aanpakken. Als dat niet lukt, heb ik een
+opzet waarvan ik denk dat het goed is. Ik verwacht dat jullie daar de juiste informatie uit kunnen
+halen.
+[70] Zorgmanager: Mijn ideale beeld, en dat is misschien een droom en vaak niet haalbaar, is
+dat ik globaal weet wat ik per maand aan FTE nodig heb van dit type medewerker om de
+productie te blijven draaien. Daarmee kan ik meer productie draaien, doordat de eerste
+deskundigheid wordt vrijgespeeld.
+35
+
+[71] Zorgmanager: Wat ik van jullie verwacht, is eigenlijk dat we globaal weten hoeveel OK-tijd
+ik kan toewijzen aan zo’n medewerker. Daar kan ik al heel veel mee. Supergaaf zou het natuurlijk
+zijn als we een soort simulatie-rooster kunnen maken, maar dat vind ik zelf gewoon leuk.
+[72] Zorgmanager: Dat is niet het doel op zich, maar dat soort dingen vind ik zelf hartstikke leuk
+om te laten zien aan de rest van mijn collega’s. Want niet iedereen is zo geschoold dat alle
+cijfers direct iets zeggen.
+[73] Zorgmanager: Zou duidelijk zijn, toch?
+[74] Zorgmanager: We hebben, en dat geldt natuurlijk niet alleen voor de zorg, te maken met
+een groot personeelstekort in veel sectoren. In de ziekenhuiszorg is dat tekort enorm.
+[75] Zorgmanager: We weten dat we de komende jaren veel meer personeel nodig zullen
+hebben om alles aan te kunnen, vooral door de enorme vergrijzing. Ik weet nu al dat ruim 20
+procent van mijn uren door anderen wordt ingevuld, en niet door vaste krachten.
+[76] Zorgmanager: En ik kan je vertellen, we zitten nu natuurlijk echt in de problemen. De
+afgelopen weken had ik alleen maar gesprekken met zzp’ers, want per 1 januari mogen we niet
+meer met zzp’ers werken. Dat betekent dat ik bijna één locatie moet sluiten als die zzp’ers
+wegvallen.
+[77] Zorgmanager: De druk is dus hoog om na te denken over andere oplossingen. Misschien
+kunnen we personeel omscholen of opleiden om op de OK te werken, zonder dat ze alles
+hoeven te doen. Ik heb ook ouder personeel dat aangeeft dat de diensten in het westen te zwaar
+zijn.
+[78] Zorgmanager: Ze zeggen letterlijk: “Mag ik alsjeblieft geen diensten meer doen?” Daar zou
+ik op in kunnen spelen door hen naar beneden te schalen naar een functiedifferentiatie,
+bijvoorbeeld als een MOZ-medewerker. Dan hoeven ze geen diensten meer te draaien.
+[79] Zorgmanager: Maar dat houdt ook in dat ik ervoor zorg dat mijn uitstroom wordt
+verminderd.
+[80] Student 6: Dus je wilt inderdaad ander personeel overzetten en kijken wie die kennis al
+hebben.
+[81] Zorgmanager: Ja, en ik zie ook veel uitstroom bij studenten die net dat laatste jaar niet
+doorkomen. Theoretisch of praktisch. Tegen hen zou je kunnen zeggen: “Je bent al zover
+gekomen. Jij kunt in principe gewoon als MOZ-medewerker aan de slag.”
+[82] Zorgmanager: Laten we ze dat diploma geven en bij ons houden. Dat is beter dan ze te
+laten uitstromen, want dat doet gewoon pijn.
+[83] Zorgmanager: Bovendien zijn de scholingskosten op mijn afdeling al erg hoog, dat kan ik je
+vertellen.
+36
+
+[84] Student 3: Het is iets, ja.
+[85] Zorgmanager: Dus dat is de grootste vraag, zeg maar.
+[86] Student 6: Ja, het probleem is dat er te weinig mensen zijn die operaties kunnen
+uitvoeren...
+[87] Student 2: Zij kunnen het wel, maar ze worden het niet.
+[88] Zorgmanager: Gekwalificeerd. Ik heb gekwalificeerd personeel nodig.
+[89] Student 2: En op deze manier kan er meer inzicht komen in hoeveel er nodig zijn. We
+moeten ook eens kijken of ze dat niveau kunnen halen. Misschien kunnen we daar wat aan
+trekken en bijschaven.
+[90] Zorgmanager: En ik heb, stiekem omdat ik ook met mijn opdracht bezig ben, al geregeld
+dat mijn opleidingsinstituut, waar ik de eerste deskundigheidsopleiding doe, ook erkenning gaat
+regelen voor de MOZ-medewerkers. Er is een grote kans dat dit binnenkort rond is.
+[91] Zorgmanager: Die hoeven dan theoretisch maar één jaar te volgen in plaats van drie jaar
+voor de eerste deskundigheid.
+[92] Student 2: Zijn er drie niveaus?
+[93] Zorgmanager: Nou, vroeger waren er drie niveaus: eerste deskundigheid, tweede
+deskundigheid en derde deskundigheid. Dat bestaat nog steeds. De tweede deskundigheid
+wordt nu MOZ-medewerker genoemd, terwijl de derde deskundigheid vooral iemand betreft die
+op één specialisme operaties uitvoert.
+[94] Zorgmanager: Die houdt toezicht op zijn omloop. Een derde deskundigheid is voor mijn OK
+niet meer relevant. Ik heb te weinig alleen maar laagcomplexe operaties om dat te
+rechtvaardigen. Global gezien kan ik dat inschatten: iemand die alleen op één specialisme
+werkt is niet praktisch. Terwijl een MOZ-medewerker op alle specialismen kan werken, zolang
+het maar laag- en middencomplexe zorg betreft.
+[95] Zorgmanager: Dus dat maakt het ook wat makkelijker, ook voor de planning. Hoe meer
+verschillende...
+[96] Zorgmanager: Ja, hoe meer verschillende soorten personeel we op de afdeling hebben,
+hoe minder blij mijn roosterplanner is. Ja, dat klopt. En ik zag net ook dat er een meeting is
+waarin jullie mogelijk bij de werkgever en de opdrachtgever komen.
+[97] Zorgmanager: Ga rustig nadenken of je je comfortabel genoeg voelt om op een OK te
+lopen.
+37
+
+[98] Zorgmanager: Dat moet ik natuurlijk ook even checken, wat mag en wat kan, maar denk er
+zelf ook even over na. Want ik kan me voorstellen dat niet iedereen daar blij van wordt.
+[99] Zorgmanager: Maar goed, ik zit al meer dan 22 jaar in het vak, zeg maar. Voor mij is dit ook
+een opdracht, en dit is één stuk van mijn deelfragen. Voor mijn onderzoek heb ik daarnaast nog
+twee andere deelfragen.
+[100] Student 4: Interessant.
+[101] Zorgmanager: Ja, je mag alles vragen. Stel vooral veel vragen.
+[102] Student 5: Spannend? Ja, ik denk het. In principe zal de opzet best voldoen. Alleen hangt
+dat heel erg af van hoeveel data we krijgen en wat we daaruit kunnen halen. Dat zullen we
+moeten afwachten.
+[103] Zorgmanager: Het is veel data.
+[104] Student 2: Ja, de omvang is op zich iets waarbij ik denk dat ik in de groep liever meer
+specificaties zie van de data zelf. Hoe duidelijker en overzichtelijker het is, hoe makkelijker het
+wordt om daar direct conclusies uit te trekken.
+[105] Student 2: Of het nu om een paar duizend sets gaat of om een paar miljoen, de structuur
+van de sets blijft hetzelfde. Uiteindelijk komt het daar een beetje op neer. Ik denk dat we wel een
+idee hebben van hoe we het zouden willen aanpakken.
+[106] Student 2: Alleen, we kunnen nog geen definitief antwoord geven omdat we de data nog
+niet fysiek voor ons hebben. Maar ik denk dat het wel duidelijk is. Persoonlijk heb ik het nog niet
+helemaal helder, want we moeten nu weten wat we precies moeten doen. Voor mij is dat nog
+niet helemaal duidelijk.
+[107] Student 2: We kijken naar de richting die we opgaan. Ik denk dat er nog wat dingen zijn die
+jullie duidelijker moeten maken.
+[108] Zorgmanager: De moeilijkste stap wordt hoe we alle laag- en middencomplexe operaties
+gaan uitfilteren. En of we dan de juiste steekwoorden hebben om dat te doen.
+[109] Student 3: Hier is het lijstje van de opleiders.
+[110] Zorgmanager: Als dat heel lastig wordt, kan ik ook nog kijken of we het ergens kunnen
+versimpelen met iemand uit mijn team. Dat is natuurlijk ook een optie.
+[111] Zorgmanager: Nee, je kijkt puur naar de operaties. De geschiedenis van de operaties, niet
+van het personeel. Dus alle operaties die we hebben uitgevoerd.
+[112] Zorgmanager: Daaruit moeten we filteren welke operaties laag- en middencomplex zijn.
+Hoeveel OK-tijd blijft er dan over?
+38
+
+[113] Student 5: Waarop wordt precies bepaald of iets hoog- of laagcomplex is?
+[114] Zorgmanager: Dat is een goede vraag. Voor een operatieassistent zijn er bepaalde eisen,
+zoals hoeveel instrumenten je nodig hebt, wat de risico’s van de operatie zijn, en de kans op
+complicaties. Als de kans groot is dat er iets misgaat of als er een hoge mortaliteit is, dan valt
+dat onder hoogcomplex. Dat klinkt misschien vervelend, maar het is wel een belangrijke factor.
+[115] Zorgmanager: Daarnaast speelt ook mee hoe ingewikkeld de operatie zelf is. Kijk, als je
+alleen een mes nodig hebt, klinkt dat heel eenvoudig. Als je daarnaast drie instrumenten
+gebruikt, is dat laagcomplex. Maar als je een operatie hebt met tienduizend stappen waarbij je
+drie uur bezig bent met blussen, dan is dat hoogcomplex.
+[116] Student 5: Ja, dat snap ik.
+[117] Zorgmanager: De opleiders hebben ooit bedacht: “Deze operaties zijn laag, en die zijn
+middencomplex.” Dat is vanuit de opleiding zo ingedeeld. Studenten leren dat geleidelijk, zodat
+ze wennen aan het onderscheid en langzaam toegroeien naar hoogcomplexe operaties. Het is
+niet iets dat landelijk is vastgesteld, maar iets wat wij als ziekenhuizen hebben bepaald.
+[118] Student 2: Deze toepassingen zijn waarschijnlijk van toepassing op een andere situatie.
+Het kan zijn dat de details veranderen.
+[119] Zorgmanager: Ja, in een ander ziekenhuis kan dat inderdaad weer anders zijn.
+[120] Student 3: Over de data, als ik het goed begrijp: die moet natuurlijk nog goedgekeurd
+worden. Maar de grote vraag is hoe de categorieën zijn ingedeeld. Hoe ziet de data eruit?
+[121] Zorgmanager: Je kunt filteren welke kolommen jullie allemaal nodig hebben. Wat ik nu
+heb, is eigenlijk de operaties zelf. Dat zijn de namen van de operaties. Dus bijvoorbeeld een
+liesbreukoperatie wordt weergegeven als "liesbreuk".
+[122] Zorgmanager: En daar hangt dan 30 minuten aan vast, en dat is uitgevoerd op een
+bepaalde datum.
+[123] Student 3: En staat dat er ook bij, of wordt alleen "liesbreuk" weergegeven en moeten we
+uiteindelijk zelf bepalen bij welke categorie dat hoort?
+[124] Zorgmanager: Dat zouden jullie zelf moeten categoriseren. Het wordt dan bijvoorbeeld
+"laagcomplex", zodat je weet hoe dat aansluit bij het lijstje van de opleiding.
+[125] Student 3: En staat er in dat lijstje van de opleiding ook iets bij, zoals "buik", "benen", of
+hoe dat afgesteld is?
+[126] Zorgmanager: Daar kunnen wel discrepanties in ontstaan, vooral in het lijstje van de
+opleiders. Sommige operaties hebben vijf verschillende namen, afhankelijk van wat de
+operateur heeft ingetikt in de diagnose of bij de operatie.
+39
+
+[127] Zorgmanager: Dus daar kunnen we struikelen.
+[128] Student 3: Ik denk dat als er veel discrepanties zijn, dat het meeste werk gaat kosten. Ik
+weet niet hoe groot de lijst is.
+[129] Zorgmanager: Ja, snap ik. Maar misschien kunnen we daarover nadenken. Als die lijst
+heel groot is, kunnen we kijken hoe we dat over drie maanden aanpakken. Dan hebben we in
+ieder geval een globaal beeld.
+[130] Student 3: Wat we ook kunnen doen, is kijken welke namen van operaties überhaupt in de
+lijst staan. Dan werk je terug. Misschien is het een lijst met een miljoen entries, of 5.000
+verschillende operaties.
+[131] Student 3: Dit zijn natuurlijk fictieve nummers die nergens op slaan, maar dan weet je dat
+we ze makkelijker kunnen indelen. Alleen unieke operaties eruit trekken, dat kan het proces
+versnellen.
+[132] Zorgmanager: Voor dat stuk heb ik jullie nodig.
+[133] Zorgmanager: Stuur die lijst gewoon door, dan zorgen wij dat we meteen helpen met het
+categoriseren en doorsturen.
+[134] Student 3: Ja, dat is iets wat we kunnen doen met een eenvoudige aanpak.
+[135] Zorgmanager: Ik zit in een functie waarbij ik altijd bereikbaar ben. Ik check twee of drie
+keer per dag mijn mail om te zien of ik vrij ben of niet. Ik zal jullie natuurlijk meteen
+terugkoppelen, want we hebben een gezamenlijk belang.
+40
+
+14.2 Bijlage B: probleemanalyse
+Wat zou het oplossen?
+Het project streeft naar een betere inzet van personeel op de operatiekamers van het HMC
+ziekenhuis Door laag- en middencomplexe operaties toe te wijzen aan MOZ (normaal gezien
+ondersteund personeel bij operaties), wordt de werkdruk voor hoogopgeleide doctoren
+verminderd en kunnen die focussen op hoog complexe operaties.
+Wie heeft het probleem?
+• Operatiepersoneel: De hoge werkdruk leidt tot uitval en uitstroom.
+• Zorgmanagement: Het tekort aan gekwalificeerd personeel bemoeilijkt de planning en bijv.
+de kwaliteit van de operaties.
+• Patiënten: Door personeelstekorten kunnen operaties worden uitgesteld.
+• Bestuur: het kwijtraken van gekwalificeerd personeel geeft problemen aan het draaien van
+een goed ziekenhuis
+Wanneer zal het probleem ontstaan?
+Het personeelstekort is al actueel, maar wordt vooral verergerd door de nieuwe wetgeving per
+januari 2024 die de inzet van zzp’ers beperkt. En in de toekomst de toenemende zorgvraag
+vanwege de vergrijzing.
+Waar doet het probleem zich voor?
+Het probleem speelt zich specifiek af binnen de OK-afdelingen van het HMC, verspreid over de
+drie locaties.
+Waarom is het een probleem?
+• Efficiëntie verlies: Hoogopgeleide operatieassistenten worden belast met “makkelijke”
+taken door het wegvallen van zzp’ers
+• Personeelstekort: Dit verslechtert de OK capaciteit en kan leiden tot langere wachttijden
+voor patiënten.
+• Hoge kosten: het aannemen van nieuwe medewerkers is duur of zijn er gewoon niet door
+personeelstekorten
+• Arbeidsklimaat: De hoge werkdruk leidt tot ontevredenheid tussen medewerkers
+Waartoe leidt de oplossing?
+Een goed georganiseerde inzet van medewerkers leidt tot:
+• Efficiëntere planning: Meer OK-tijd beschikbaar voor complexe operaties.
+• Werkdrukverlaging: Verbetering van het arbeidsklimaat voor hoogopgeleid personeel.
+41
+
+• Kostenbesparing: Minder afhankelijkheid van zzp’ers en lagere personeelskosten op de
+lange termijn.
+• Verbeterde patiënt ervaring: Minder uitval en wachttijden voor patiënten.
+Stakeholders
+• Interne stakeholders: Zorgmanagers, operatieassistenten, MOZ-medewerkers, bestuur.
+• Externe stakeholders: Patiënten, zorgverzekeraars, en overheidsinstanties.
+Welke afdeling heeft het grootste probleem?
+De operatiekamers en de afdeling personeelsplanning ervaren de meest directe impact.
+Wat is het echte probleem?
+Er komt een tekort aan personeel op de operatiekamers per 1 januari. Dit betekent dat er niet
+genoeg mensen zijn om alle operaties uit te voeren. De mensen die er wel zijn, moeten dan te
+veel doen, ook de eenvoudige taken.
+Het echte probleem is dat de operatiekamers niet efficiënt worden georganiseerd.
+Hoogopgeleide medewerkers doen werk dat ook door minder opgeleide mensen, zoals MOZ-
+medewerkers, gedaan kan worden.
+Welke informatie is nodig?
+• Operationele data van de afgelopen tijd, bijvoorbeeld 12 maanden (bijv. operatietijden,
+complexiteitsniveaus).
+• Een lijst met de benamingen voor operaties om ze te classificeren als laag- en
+middencomplexe operaties.
+Afgebakende probleemstelling (Hoofd Vraag)
+Hoe kunnen we een data-oplossing aanleveren aan de HMC zodat zei de inzet van MOZ-
+medewerkers optimaliseren, om zo de werkdruk te verlagen en het personeelstekort te
+verminderen, zonder de kwaliteit van zorg in gevaar te brengen?
+Deelvragen
+• Hoe kunnen we de complexiteit van operaties categoriseren en visualiseren om
+inzicht te geven in taken die door MOZ-medewerkers kunnen worden uitgevoerd?
+Doel: Identificeren van laag- en middel-complexe operaties om te bepalen welke taken
+geschikt zijn voor delegatie.
+• Hoe kunnen we de toekomstige personeelsbehoefte voorspellen op basis van
+operationele data en scenarioanalyses?
+Doel: Ontwikkelen van een data-gedreven planningstool die helpt bij het optimaliseren
+van de inzet van MOZ-medewerkers en het verlagen van de werkdruk
+42
+
+Een efficiëntere inzet van personeel op de operatiekamers van het ziekenhuis kan helpen om de
+beschikbare uren optimaal te benutten. Een van de oplossing die het ziekenhuis onderzoekt is
+het snel opleiden van ondersteunend zorgpersoneel (MOZ). Zodat operaties met een lage tot
+gemiddelde complexiteit toe te kunnen wijzen aan ondersteunend zorgpersoneel (MOZ),
+waardoor hoogopgeleide personeel bezig kan zijn met hoge complexiteit operaties. Ook wil het
+ziekenhuis graag een duidelijk beeld van het aantal benodigde FTE’s om de operaties uit te
+voeren, zodat het ziekenhuis kan bepalen hoeveel personeel er moet worden aangenomen om
+aan de nieuwe regelgeving te voldoen.
+14.3 Bijlage D: Bewijsvoering
+Voor de bewijsvoering die voor de onderbouwing gebruikt, verwijs ik u naar de notulen
+document: ‘GroepC8_Notulen”.
+Uit dit document zijn de volgende hoofdstukken gebruikt:
+1. Notulen van het kennismakingsgesprek (07-11-2024). (hoofdstuk 2.1)
+2. Mailcorrespondentie met de zorgmanager. (hoofdstuk 3)
+3. Samenvattingen van sprint reviews. (hoofdstuk 4)
+Daarnaast is de probleemanalyse gebruikt die te vinden is in dit document, hoofdstuk 14.2
+(vorige pagina).
+43
+
+14.4 Bijlage D: Thematische analyse
+In dit hoofdstuk wordt een thematische analyse gepresenteerd van een interview met Xandra
+Riswick, zorgmanager aan het Haaglanden Medisch Centrum. Hierbij ligt de focus op het proces
+van coderen, thematiseren en vaststellen van de belangrijkste onderwerpen.
+Thema's
+Hieronder volgt een overzicht van alle thema's op basis van het transcript:
+Thema Relevantie Geadresseerd in
+T01: Stakeholders Xanda Riswick is zorgmanager Casusbeschrijving: Sectie 4
+en de vertegenwoordiger van door Xandra Riswick
+het Haaglanden Medisch
+Centrum.
+De Raad van Bestuur ziet het Casusbeschrijving: Sectie 4
+belang in van het onderzoek door Xandra Riswick
+naar functiedifferentiatie en
+capaciteitsplanning.
+Studenten zijn Casusbeschrijving: Sectie 4
+verantwoordelijk voor de door Xandra Riswick
+uitvoering van een data-
+analyse en het opstellen van
+een adviesrapportage.
+T02: Constraints De dataoplossing dient te Casusbeschrijving: Sectie 7
+worden uitgevoerd op door Xandra Riswick
+operationele data van de
+afgelopen 12 maanden,
+afkomstig van drie OK-centra.
+De dataoplossing dient Casusbeschrijving: Sectie 111
+expliciet operationele data te door Xandra Riswick
+gebruiken die relevant is voor
+het behalen van de
+projectdoelstelling.
+De operatiecategorisatie dient Casusbeschrijving: Sectie 130
+te worden gebaseerd op een en 133 door Xandra Riswick
+door de opdrachtgever en Student 3
+aangeleverde lijst met
+complexiteitsniveaus.
+T03: Niet-functionele De dataoplossing dient Casusbeschrijving: Sectie 5
+requirements volledig te voldoen aan de door Xandra Riswick
+AVG-richtlijnen en de naleving
+van privacywetgeving te
+verzekeren.
+De data-analyse dient Casusbeschrijving: Sectie 133
+consistent te blijven, waarbij door Xandra Riswick
+ontbrekende waarden in
+complexe gevallen door de
+opdrachtgever gevalideerd
+moeten worden.
+T04: Functionele De applicatie dient operaties Casusbeschrijving: Sectie 16,
+requirements te categoriseren op 17, 20, 27, 28, 112 en 124
+44
+
+complexiteitsniveaus (laag, door Xandra Riswick en
+midden, hoog). Student 3
+De applicatie dient de OK-tijd Casusbeschrijving: Sectie 12
+per complexiteitsniveau te door Xandra Riswick
+berekenen door de data te
+groeperen op
+complexiteitsniveau en de
+som van de OK-tijd per
+categorie te bepalen.
+De applicatie dient de OK-tijd Casusbeschrijving: Sectie 17
+per specialisme te berekenen door Xandra Riswick
+door de data te groeperen op
+specialisme en de som van de
+OK-tijd per specialisme te
+bepalen.
+De applicatie dient het aantal Casusbeschrijving: Sectie 70
+benodigde FTE's per door Xandra Riswick
+specialisme te berekenen
+door de totale OK-tijd per
+specialisme te delen door de
+standaard werkbelasting per
+FTE.
+De applicatie dient de Casusbeschrijving: Sectie 15
+potentiële besparing te door Xandra Riswick
+berekenen door de OK-tijd van
+laag- en middencomplexe
+operaties om te zetten naar
+benodigde FTE's MOZ-
+medewerkers en verminderde
+FTE's operatieassistenten.
+De applicatie dient Casusbeschrijving: Sectie 71
+verschillende visualisaties te door Xandra Riswick
+genereren om inzicht te
+bieden, zoals grafieken,
+diagrammen en tabellen.
+De applicatie dient een Casusbeschrijving: Sectie 13
+simulatie te genereren door en 25 door Xandra Riswick
+de geanalyseerde gegevens
+over operatiecomplexiteit,
+OK-tijd en FTE-behoefte per
+specialisme te combineren.
+45
+
+14.5 Bijlage E : Desk Research Tabel Oplossing Onderzoek
+Onderdeel Zoekwoorden Gevonden Relevantie Bron
+informatie
+ETL Python, Jupyter Python en Jupyter Belangrijk voor GeeksforGeek
+(Oplossing A) Notebook, ETL Notebook bieden het voorbereiden s, n.d.
+krachtige tools voor van data voor
+het opschonen en verdere analyse
+normaliseren van en visualisatie.
+data, essentieel
+voor analyses.
+Visualisatie Plotly, Plotly maakt het Nuttig om trends Plotly, n.d.
+(A) interactieve mogelijk om visueel te
+dashboards interactieve presenteren en
+dashboards te inzichten
+bouwen met toegankelijk te
+functies zoals zoom maken.
+en filters.
+Consistentie Jupyter Notebook, Jupyter Notebook Verbetert de GeeksforGeek
+(A) transparantie combineert code, transparantie van s, n.d.
+data en analyses en
+visualisaties in één maakt
+document, wat samenwerking
+reproduceerbaarhei eenvoudiger.
+d bevordert.
+Complexiteit Python, Het gebruik van Belangrijk om de GeeksforGeek
+(A) programmeerken Python en Plotly leercurve en s, n.d.
+nis vereist technische trainingsbehoefte
+kennis, wat een n te evalueren.
+uitdaging kan zijn
+voor niet-
+technische
+gebruikers.
+ETL (B) Jupyter Notebook, PostgreSQL biedt Essentieel voor PostgreSQL
+PostgreSQL, data robuuste data- het efficiënt Documentatio
+opslag opslagmogelijkhed beheren en n, n.d.
+en, ideaal voor het analyseren van
+structureren van grote datasets.
+opgeschoonde
+gegevens.
+Visualisatie Power BI, data- Power BI biedt Nuttig voor het Microsoft
+(B) integratie uitgebreide maken van Power BI, n.d.
+visualisatieopties gebruiksvriendelij
+en kan eenvoudig ke dashboards
+worden gekoppeld voor technische
+aan databronnen en niet-
+zoals PostgreSQL. technische
+gebruikers.
+Cloud (B) Power BI, Power BI maakt het Bevordert Microsoft
+dashboards delen eenvoudig om samenwerking Power BI, n.d.
+46
+
+dashboards via de tussen teams en
+cloud te delen, wat externe
+realtime stakeholders.
+samenwerking
+mogelijk maakt.
+Configuratie Power BI, De koppeling Belangrijk om de Microsoft
+(B) PostgreSQL tussen Power BI en benodigde Power BI, n.d.
+integratie PostgreSQL vereist technische
+technische kennis, vaardigheden en
+vooral in ondersteuning te
+databasebeheer en overwegen.
+query-
+optimalisatie.
+Automatiseri Google Google Workflows Nuttig voor het Google
+ng (C) Workflows, automatiseert verminderen van Documentatio
+Looker Studio gegevensstromen handmatig werk n, n.d.
+tussen Google en het
+Sheets en Looker minimaliseren
+Studio. van fouten.
+Visualisatie Looker Studio, Looker Studio biedt Belangrijk voor Google
+(C) datavisualisatie flexibele opties voor het maken en Documentatio
+interactieve delen van n, n.d.
+datavisualisaties en toegankelijke
+kan eenvoudig dashboards.
+worden gedeeld via
+Google Workspace.
+Ecosysteem Looker Studio, Looker Studio werkt Belangrijk om Google
+(C) Google het beste binnen rekening te Documentatio
+Workspace het Google- houden met de n, n.d.
+ecosysteem, wat afhankelijkheid
+beperkend kan zijn van één
+bij integratie met ecosysteem.
+niet-Google tools.
+47
+
+15. TOGAF Model
+48

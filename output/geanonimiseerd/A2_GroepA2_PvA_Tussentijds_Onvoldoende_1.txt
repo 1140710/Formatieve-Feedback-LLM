@@ -1,0 +1,96 @@
+Plan van Aanpak
+Hogeschool Leiden - GGZ Rivierduinen
+TUSSENTIJDSE VERSIE
+Module: INDATAD Data Advanced
+Groep: A2
+Opdrachtgever: Jasper Duijndam
+Datum: 11-11-2024
+Versie: 0.3 (tussentijds)
+Studenten:
+(cid:127) [NAAM] ([STUDENTNR])
+(cid:127) [NAAM] ([STUDENTNR])
+(cid:127) [NAAM] ([STUDENTNR])
+(cid:127) [NAAM] ([STUDENTNR])
+(cid:127) [NAAM] ([STUDENTNR])
+Dit document betreft een tussentijdse oplevering en is bedoeld voor formatieve feedback.
+
+Inhoudsopgave
+1. Context
+2. Beschrijving van de organisatie
+3. Huidige Situatie
+4. Gewenste Situatie
+5. Probleemstelling
+6. Scope
+7. Requirementsanalyse
+8. Ethics by Design
+9. Oplossingsrichtingen
+10. Planning
+11. Risicoanalyse
+12. Bronnenlijst
+
+1. Context
+De organisatie waar het over gaat is GGZ, de branchevereniging voor geestelijke gezondheidszorg.
+De opdrachtgever werkt aan een project over werkgeluk van medewerkers. Er is een enquete
+afgenomen bij FNV-leden en daar komen resultaten uit die wij moeten analyseren.
+Werkgeluk is belangrijk want als medewerkers gelukkig zijn dan werken ze beter. Er zijn 8
+kenmerken van werkgeluk zoals vertrouwen, verbinding en autonomie. Deze komen uit een boek.
+2. Beschrijving van de organisatie
+GGZ Rivierduinen is een organisatie die zorg bied aan mensen met psychische problemen. Ze
+hebben verschillende afdelingen en werken met teams zoals FACT-teams. Het ziekenhuis heeft een
+HR-afdeling die verantwoordelijk is voor medewerkers.
+De missie van GGZ Rivierduinen is om goede zorg te bieden. De visie is om een goede werkgever
+te zijn.
+3. Huidige Situatie
+Op dit moment verzameld de opdrachtgever data door enquetes en interviews te doen. De enquete
+is 1800 keer ingevuld. De opdrachtgever telt de antwoorden handmatig op en dat kost veel tijd. Ook
+worden er interviews gedaan die opgenomen worden.
+4. Gewenste Situatie
+In de gewenste situatie kan de opdrachtgever op een dashboard zien welke data is geanalyseerd.
+Het dashboard moet op Looker Studio staan en de data word opgeslagen in een database.
+
+5. Probleemstelling
+Medewerkers in de GGZ hebben een hoge werkdruk. Volgens onderzoek voelt 20% van de
+psychologen zich emotioneel uitgeput. Dit is een probleem want het werkgeluk gaat omlaag en dan
+gaan mensen minder goed werken.
+Hoofdvraag
+Hoe kunnen we de data van de enquete en interviews analyseren zodat de opdrachtgever er inzicht
+in krijgt?
+Deelvragen
+(cid:127) Welke tools kunnen we gebruiken?
+(cid:127) Hoe gaan we de data analyseren?
+6. Scope
+6.1 In scope
+(cid:127) Analyseren van de enquete resultaten
+(cid:127) Dashboard maken
+(cid:127) Data opschonen
+6.2 Buiten scope
+(cid:127) Dingen die niet bij ons project horen
+(cid:127) De oplossingen zelf uitvoeren
+7. Requirementsanalyse
+Functionele requirements
+(cid:127) FR01: Het systeem moet data kunnen importeren
+(cid:127) FR02: Het systeem moet data kunnen analyseren
+(cid:127) FR03: Het systeem moet een dashboard tonen
+(cid:127) FR04: Het systeem moet visualisaties maken
+
+8. Ethics by Design
+Bij dit project is het belangrijk dat we rekening houden met ethiek. We letten op de volgende dingen:
+(cid:127) Privacy: data moet anoniem zijn
+(cid:127) Eerlijkheid: iedereen wordt gelijk behandeld
+(cid:127) Transparantie: we vertellen wat we doen
+9. Oplossingsrichtingen
+We denken dat een dashboard de beste oplossing is. We kunnen Looker Studio gebruiken of Power
+BI. Python zou ook kunnen voor het analyseren. We gaan later kijken wat het beste werkt.
+10. Planning
+(cid:127) Sprint 1: Plan van Aanpak maken en data opschonen
+(cid:127) Sprint 2: Ontwerpdocument en beginnen met dashboard
+(cid:127) Sprint 3: Dashboard afmaken
+(cid:127) Sprint 4: Adviesrapport en presentatie
+11. Risicoanalyse
+Er zijn een aantal risico's in dit project. Het kan zijn dat de data niet goed is of dat we te weinig tijd
+hebben. Ook kan het zijn dat de opdrachtgever niet snel genoeg reageert. We proberen dit op te
+lossen door goed te communiceren.
+
+12. Bronnenlijst
+1. Bergsma, A., Hamburger, O., & Klappe, E. (2020). Handboek Werkgeluk. Boom uitgevers Amsterdam.
+2. GGZ Rivierduinen. (2024). Wat is GGZ Rivierduinen? https://www.rivierduinen.nl/

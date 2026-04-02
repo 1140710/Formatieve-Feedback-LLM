@@ -1,0 +1,1416 @@
+Plan van Aanpak
+Hogeschool Leiden – Informatica
+Data Advanced Toets 2
+Groep B11 – MIZ6 Franciscus Ziekenhuis
+[NAAM] - [STUDENTNR]
+[NAAM] - [STUDENTNR]
+[NAAM] - [STUDENTNR]
+[NAAM] - [STUDENTNR]
+[NAAM] - [STUDENTNR]
+
+Versiebeheer
+Versie Datum Aanpassingen Groepsleden
+0.0 12/11/2024 Layout [NAAM]
+0.1 14/11/2024 Eerste opzet beschrijving [NAAM]
+organisatie en huidige situatie
+0.2 15/11/2024 Planning in Gantt-chart [NAAM]
+0.3 15/11/2024 Risicolijst [NAAM]
+0.4 16/11/2024 Eerste opzet ethics by design [NAAM]
+0.5 17/11/2024 Huidige situatie en gewenste [NAAM]
+situatie
+0.6 17/11/2024 Beschrijving van de organisatie [NAAM]
+0.7 17/11/2024 Ethics by design en non- [NAAM]
+functionele requirements
+0.8 18/11/2024 Context [NAAM]
+0.9 18/11/2024 Probleemstelling [NAAM]
+0.10 18/11/2024 Eerste hoofdstukken review allen
+0.11 19/11/2024 Scope [NAAM]
+0.12 19/11/2024 Constraints [NAAM]
+0.13 20/11/2024 Functionele requirements [NAAM]
+0.14 20/11/2024 Oplossingsrichtingen [NAAM] en [NAAM]
+0.15 20/11/2024 Nieuwe hoofdstukken review allen
+1.0 21/11/2024 Eerste versie af voor sprint -
+review
+1.1 26/11/2024 Belanghebbendenalayse [NAAM]
+1.2 27/11/2024 Functionele requirements [NAAM]
+verbeteren
+1.3 3/12/2024 TOGAF model toegevoegd [NAAM]
+1.4 4/12/2024 Belanghebbende analyse [NAAM]
+inclusief matrix toegevoegd als
+bijlage
+1.5 9/12/2024 Onopgeloste opmerkingen [NAAM]
+oplossen
+2.0 9/12/2024 Tweede versie af -
+2.1 20/12/2024 Requirements aangepast naar [NAAM]
+nieuwe opdracht
+2.2 14/1/2024 Versie gecontroleerd voor [NAAM]
+versturen naar opdrachtgever
+3.0 14/1/2024 Derde versie af -
+3.1 22/1/2025 Hoofd- en deelvragen toegevoegd [NAAM]
+in hoofdstuk oplossingsrichtingen
+4.0 23/01/2025 Eindversie voor oplevering -
+2
+
+Inhoud
+1 Context................................................................................................................. 7
+Maatschappelijke Ontwikkelingen ......................................................................... 7
+Personeelstekorten ........................................................................................... 7
+Groeiende zorgvraag .......................................................................................... 7
+No-shows en wachttijden ................................................................................... 7
+Technologische ontwikkelingen ............................................................................. 7
+Automatisering en digitalisering .......................................................................... 7
+AI en standaard berichten .................................................................................. 7
+Data-analyse ..................................................................................................... 7
+Actualiteiten ........................................................................................................ 8
+Datalekken ........................................................................................................ 8
+Andere ziekenhuizen .......................................................................................... 8
+2 Beschrijving van de organisatie ............................................................................... 9
+Om welke organisatie gaat het? ............................................................................. 9
+Organogram ....................................................................................................... 10
+Belangrijkste primaire processen......................................................................... 11
+Belangrijke partners ............................................................................................ 12
+Producten en diensten ........................................................................................ 12
+Missie en visie .................................................................................................... 13
+Belangrijke IT-systemen ...................................................................................... 13
+3 Huidige situatie en bedrijfsproces ........................................................................ 15
+Patiëntaanmelding ............................................................................................. 15
+Wachtrijbeheer en planning ................................................................................ 15
+Opvolging en communicatie ................................................................................ 15
+No-shows en herplanning ................................................................................... 17
+Verschillen tussen locaties ................................................................................. 18
+Impact op medewerkers en patiënten .................................................................. 19
+BPMN-diagram ................................................................................................... 19
+Huidige Situatie .................................................................................................. 19
+Functierollen (Swimlanes) ................................................................................... 20
+Start en registratieproces .................................................................................... 20
+3
+
+Workflowbeheer door het systeem ...................................................................... 20
+No-show proces ................................................................................................. 20
+Consultfase ....................................................................................................... 20
+4 Gewenste situatie ............................................................................................... 21
+Doelen ............................................................................................................... 21
+Verschillen met de huidige situatie ...................................................................... 21
+Gewenste procesflow ......................................................................................... 22
+BPMN-diagram ................................................................................................... 23
+Rollen en Verantwoordelijkheden ........................................................................ 23
+Patiënt ............................................................................................................ 23
+HiX Systeem .................................................................................................... 23
+Baliepersoneel ................................................................................................ 24
+Medische specialist ......................................................................................... 24
+Belangrijkste verbeteringen ................................................................................. 24
+Proactieve communicatie ................................................................................ 24
+Automatisering ................................................................................................ 24
+Herplanning .................................................................................................... 24
+Realtime rapportage ........................................................................................ 24
+Ondersteuning door HiX Systeem ........................................................................ 24
+5 Probleemstelling ................................................................................................. 25
+Het probleem ..................................................................................................... 25
+Potentiële problemen ......................................................................................... 25
+No-shows ....................................................................................................... 25
+Gebrek aan automatisering .............................................................................. 26
+Oudere medewerkers ...................................................................................... 26
+Laaggeletterdheid ............................................................................................ 26
+6 Scope beschrijving .............................................................................................. 27
+Wat valt binnen het project? ................................................................................ 27
+Wat valt buiten het project?................................................................................. 28
+Afspraken over standaarden ................................................................................ 28
+7 Requirementsanalyse .......................................................................................... 29
+Constraints ........................................................................................................ 29
+4
+
+Niet-functionele eisen ........................................................................................ 29
+Functionele eisen ............................................................................................... 30
+8 Risicoanalyse ...................................................................................................... 31
+9 Ethics by Design .................................................................................................. 32
+Respect voor menselijk handelen ........................................................................ 32
+Privacy en databeheer ........................................................................................ 32
+Rechtvaardigheid ............................................................................................... 33
+Individueel, sociaal en ecologisch welzijn ............................................................ 33
+Transparantie ..................................................................................................... 34
+Verantwoording en toezicht ................................................................................. 34
+Conclusie .......................................................................................................... 34
+10 Oplossingsrichtingen ......................................................................................... 35
+Vernieuwen van het aanmeldsysteem .................................................................. 35
+Standaardvragen en -berichten ........................................................................... 35
+AI chatbot .......................................................................................................... 35
+Verminderen no-shows ....................................................................................... 36
+Taalgerichte uitleg .............................................................................................. 37
+Hoofdvraag en deelvragen ................................................................................... 38
+Hoofdvraag ..................................................................................................... 38
+Deelvragen ...................................................................................................... 38
+Methodes .......................................................................................................... 38
+Observaties en interviews ................................................................................ 38
+Desk research ................................................................................................. 38
+Planning ................................................................................................................ 39
+Eerste versie planning ......................................................................................... 39
+Tweede versie planning ....................................................................................... 40
+Bibliografie ............................................................................................................ 41
+Bijlagen ................................................................................................................. 42
+TOGAF dashboard .............................................................................................. 42
+TOGAF AI spraak- en chatbot ............................................................................... 43
+Belanghebbendenanalyse ................................................................................... 44
+Stakeholder Matrix.............................................................................................. 47
+5
+
+Interviews .............................................................................................................. 48
+Eerste interview ............................................................................................... 48
+Tweede interview ............................................................................................. 50
+Derde interview ............................................................................................... 51
+6
+
+1 Context
+Maatschappelijke Ontwikkelingen
+Personeelstekorten
+De zorgsector heeft te maken met een tekort aan medewerkers, dat betekent dat de
+werkprocessen van personeel efficiënter moeten worden gemaakt. In ons project gaat
+het om baliepersoneel van de MDL-afdeling.
+Groeiende zorgvraag
+Patiënten hebben vaker en complexere zorg nodig, wat leidt tot een verhoogde
+werkdruk van het personeel. Ook de eisen die patiënten stellen aan de zorg die zij
+krijgen groeien. Daarnaast zijn er meer patiënten aanwezig die laaggeletterd zijn
+waardoor het overbrengen van informatie moeilijker voor het personeel wordt.
+No-shows en wachttijden
+Patiënten die niet komen opdagen voor afspraken verhogen de werkdruk.
+Zorgpersoneel heeft een zorgplicht en moet dus achter deze patiënten aan gaan, wat
+meer tijd kost. Daarnaast verlengen no-show patiënten hiermee dus ook de
+wachtlijsten. Op basis van data van de opdrachtgever over alle patiënten die een
+afspraak hadden, wordt duidelijk dat 5 tot 10% niet op komt dagen, dus als dit
+probleem grotendeels wordt opgelost kan de werkdruk op dit vlak ook afnemen.
+Technologische ontwikkelingen
+Automatisering en digitalisering
+Er is momenteel weinig geautomatiseerd bij de balie, er is geen ticket systeem of online
+mogelijkheid om je te kunnen aanmelden. Het implementeren van een automatische
+manier van aanmelden kan het aanmeldproces verbeteren en versnellen.
+AI en standaard berichten
+Het ontwikkelen van chatten met bots of standaardberichten kan handmatig chatten
+vervangen en werkdruk verminderen van het baliepersoneel.
+Data-analyse
+Door data uit het SQL-bestand (behandelcodes, patiëntaantallen) te analyseren,
+kunnen piekmomenten duidelijk worden gemaakt. Dit kan ervoor zorgen dat er betere
+planningen kunnen worden gemaakt voor de bezetting van de bedden.
+7
+
+Actualiteiten
+Datalekken
+Het is erg belangrijk dat de persoonsgegevens goed worden beveiligd en opgeslagen
+zoals het is vermeld in de Algemene verordening gegevensbescherming (AVG). Hierdoor
+verminderen we de kans dat er gevoelige informatie op straat komt te liggen.
+Andere ziekenhuizen
+Het is handig om te gaan kijken bij andere ziekenhuizen met een geautomatiseerd
+aanmeldproces om te zien hoe zij met dit probleem omgaan. Hierbij denken wij aan een
+ziekenhuis in Delft dat mogelijk verder is met deze automatisering.
+8
+
+2 Beschrijving van de organisatie
+Om welke organisatie gaat het?
+Dit project wordt uitgevoerd voor het Franciscus Gasthuis & Vlietland. Dit is een
+ziekenhuisorganisatie die in 2015 ontstaan is uit de fusie van het Sint Franciscus
+Gasthuis te Rotterdam en het Vlietland Ziekenhuis te Schiedam. Als topklinisch
+opleidingsziekenhuis biedt Franciscus niet alleen zorg aan, maar is het ook een
+opleidingsplek voor toekomstige zorgverleners die hun opleiding en stage in de praktijk
+kunnen brengen. Het ziekenhuis legt hierbij specifieke nadruk op patiëntvriendelijkheid,
+professionaliteit en het toepassen van innovatieve oplossingen binnen de
+gezondheidszorg.
+Met ruim 4.600 medewerkers, 320 medisch specialisten en 120 vrijwilligers zet
+Franciscus zich dagelijks in om hoogwaardige zorg te bieden aan de inwoners van
+Rotterdam, Schiedam en omliggende regio's (Franciscus, sd). De organisatie is sinds
+2007 onderdeel van de vereniging Samenwerkende Topklinische
+(opleidings)Ziekenhuizen (STZ), wat Franciscus onderscheidt op het gebied van
+zorgopleiding en het aanbieden van complexe, specialistische behandelingen
+(Samenwerkende Topklinische Ziekenhuizen, 2024). Door intensieve samenwerking
+tussen zorgprofessionals en een breed scala aan medische disciplines biedt het
+ziekenhuis zowel basiszorg als gespecialiseerde behandelingen voor complexe
+medische vraagstukken aan.
+Dit project richt zich specifiek op één afdeling binnen het ziekenhuis, namelijk de Maag
+Darm Lever (MDL-)afdeling. Op de verpleegafdeling worden voornamelijk patiënten
+verpleegd met maag-, darm- en /of leverziekten (MDL centrum, n.d.).
+9
+
+Organogram
+Franciscus Gasthuis & Vlietland heeft een hiërarchische structuur, waarbij de Raad van
+Bestuur eindverantwoordelijk is voor de gehele organisatie, zowel voor de
+bedrijfsvoering als de kwaliteit van zorg. Onder deze raad vallen verschillende
+afdelingen, zoals Medische Zorg, Poliklinieken, ICT, en Administratie. De Raad van
+Toezicht van Franciscus houdt toezicht op het algemene beleid van de Raad van
+Bestuur en de algemene gang van zaken in Franciscus.
+Voor een duidelijk overzicht van de gehele organisatie, zie onderstaand organogram,
+afkomstig van het bestuursverslag uit 2024 (Stichting Sint Franciscus Vlietland Groep,
+2024).
+Figuur 1: Organogram Franciscus Gasthuis & Vlietland
+10
+
+Belangrijkste primaire processen
+De primaire processen die relevant zijn voor dit project omvatten verschillende
+aspecten van de patiëntenzorg. Het begint met de patiëntaanmelding, waarbij
+patiënten handmatig of telefonisch worden geregistreerd, vaak met bijbehorende
+wachttijden. Dit proces is van belang voor ons project, omdat wachttijden bijdragen aan
+inefficiënties die de werkdruk van het baliepersoneel verhogen. Het optimaliseren van
+de patiëntaanmelding kan direct bijdragen aan een efficiëntere afhandeling en daarmee
+een lagere werkdruk.
+Vervolgens is er de behandelplanning, die bestaat uit het organiseren van afspraken en
+diagnostische onderzoeken, zoals scopie procedures. Het optimaliseren van de
+behandelplanning kan de administratieve lasten voor het baliepersoneel verminderen
+en wachttijden voor patiënten verkorten, wat de algehele zorg en de werkdruk voor het
+baliepersoneel uiteindelijk ten goede komt.
+Daarnaast speelt patiëntencontact een belangrijke rol, waarbij vragen telefonisch
+worden afgehandeld en afspraken worden aangepast indien nodig. Dit contact vindt
+ook uitvoerig plaats via de BeterDichtbij-applicatie. Dit contact is enorm tijdrovend,
+vooral tijdens piekmomenten. Het verbeteren van de patiëntencontactprocessen kan
+de werkdruk verlagen en de beschikbaarheid van het baliepersoneel verhogen voor
+andere belangrijke taken.
+Het afhandelen van een no-show is een ander essentieel proces, waarbij patiënten
+worden nagebeld om te voorkomen dat ze hun afspraken missen. Dit proces kost veel
+tijd en moeite, en het verminderen van no-shows kan de planning en werkdruk van het
+baliepersoneel aanzienlijk verbeteren. Door bijvoorbeeld automatische herinneringen
+te implementeren, kan dit proces efficiënter worden gemaakt.
+Ten slotte omvatten de processen ook de diagnose en het opstellen van zorgpaden,
+waarbij behandelplannen worden opgesteld op basis van de diagnose van de patiënt.
+Dit proces is cruciaal voor de kwaliteit van zorg en vereist zorgvuldige administratieve
+vastlegging. Optimalisatie van deze zorgpaden kan niet alleen de werkdruk verlagen,
+maar ook de patiënttevredenheid verhogen door een snellere en duidelijkere
+communicatie over behandelplannen.
+11
+
+Belangrijke partners
+Franciscus werkt al langere tijd samen met het Maasstad Ziekenhuis aan de
+niertumorenzorg. In september 2018 is het ziekenhuis gestart met een gezamenlijk
+multidisciplinair overleg tussen Franciscus, het Maasstad Ziekenhuis, Erasmus MC en
+het IJsselland Ziekenhuis (Samenwerken met zorgpartners, 2022).
+Daarnaast is Franciscus in 2008 al toegetreden tot de vereniging Samenwerkende
+Topklinische (opleidings)Ziekenhuizen (STZ), als onderdeel van het netwerk van 27
+vooraanstaande topklinische ziekenhuizen in Nederland (Samenwerkende Topklinische
+Ziekenhuizen, 2024). Andere ziekenhuizen in de STZ zijn Reinier de Graaf Ziekenhuis
+(Delft) en HagaZiekenhuis (Den Haag).
+Producten en diensten
+Franciscus Gasthuis & Vlietland biedt een grote variëteit aan zorgdiensten, waaronder
+diagnostiek, behandeling, en nazorg op zowel poliklinische als klinische basis. In
+tegenstelling tot academische ziekenhuizen zoals het LUMC, die zich richten op
+hooggespecialiseerde zorg en wetenschappelijk onderzoek, richt Franciscus zich op de
+combinatie van topklinische zorg en opleidingsmogelijkheden voor toekomstige
+zorgverleners. Dit betekent dat het ziekenhuis niet alleen complexe behandelingen
+aanbiedt, maar ook basiszorg verleent aan een brede groep patiënten uit de regio.
+De zorg die Franciscus biedt, onderscheidt zich door een hoge mate van
+patiëntvriendelijkheid en aandacht voor de individuele behoeften van patiënten. Het
+ziekenhuis streeft ernaar om de zorg zo toegankelijk mogelijk te maken, bijvoorbeeld
+door hybride zorgmodellen toe te passen. Dit betekent dat een deel van de zorg, zoals
+consulten, ook digitaal kan plaatsvinden, waardoor patiënten meer flexibiliteit ervaren
+in hoe en wanneer zij zorg ontvangen. Dit hybride zorgmodel past goed bij de
+doelstelling van Franciscus om de administratieve lasten te verlagen en de efficiëntie
+van zorgprocessen te verbeteren.
+Franciscus trekt een divers publiek aan, waaronder patiënten met zowel eenvoudige als
+complexe zorgvragen. Doordat het ziekenhuis onderdeel is van de STZ, biedt het
+gespecialiseerde zorg op hoog niveau, zoals oncologische behandelingen en complexe
+diagnostiek, die normaal gesproken niet door algemene ziekenhuizen worden geleverd
+(Samenwerkende Topklinische Ziekenhuizen, 2024). Hierdoor biedt Franciscus
+waardevolle zorg voor patiënten die anders mogelijk naar een academisch ziekenhuis
+zouden moeten gaan, maar wel in een omgeving waar persoonlijke aandacht en
+betrokkenheid centraal staan. Specifiek voor de MDL-afdeling worden patiënten
+geholpen met onderzoeken zoals gastroscopieën en coloscopieën en met chronische
+aandoeningen zoals IBD (Inflammatory Bowel Disease).
+12
+
+Missie en visie
+Franciscus Gasthuis & Vlietland heeft als missie om zorg te bieden voor en door
+mensen, waarbij de patiënt centraal staat. Het ziekenhuis streeft ernaar om
+verwachtingen te overtreffen in kwaliteit en service door te luisteren naar patiënten,
+mee te leven en hun emoties te begrijpen. Al generaties lang wordt zorg verleend met
+passie, en dit willen zij doorgeven aan toekomstige generaties. Franciscus Gasthuis &
+Vlietland staat dan ook bekend als 'zorg van generaties'.
+Om deze missie te verwezenlijken, staat het leveren van waardevolle zorg centraal bij
+alles wat het ziekenhuis doet. Door te investeren in opleiding, innovatie en
+wetenschappelijk onderzoek wordt voortdurend gewerkt aan het verbeteren van de
+kwaliteit van zorg. Franciscus is groot genoeg om hoogwaardige zorg te leveren, maar
+blijft persoonlijk genoeg om aandacht te hebben voor de patiënten. De samenwerking
+met netwerkpartners, zoals huisartsen, verloskundigen en zorginstellingen, speelt een
+belangrijke rol bij het leveren van doelmatige zorg aan de patiënten in de regio.
+Daarnaast investeert Franciscus in zijn huidige en toekomstige collega's, omdat het
+ziekenhuis wil dat zorgverleners zich ontwikkelen en zorg iedere dag beter maken. De
+kernwaarden die hierbij richting geven zijn: bekwaam, verbindend, betrouwbaar en
+inspirerend.
+Belangrijke IT-systemen
+Franciscus Gasthuis & Vlietland maakt gebruik van verschillende IT-systemen om de
+dagelijkse werkzaamheden en processen te ondersteunen. Het belangrijkste systeem is
+het HiX-systeem, dat fungeert als elektronisch patiëntendossier (EPD). Momenteel
+wordt versie 6.2 gebruikt, maar er staat een upgrade naar versie 6.3 gepland. Deze
+upgrade biedt kansen voor verbeteringen in gegevensbeheer en procesoptimalisatie,
+wat cruciaal is voor het succes van dit project. Naast het HiX-systeem maakt de
+organisatie gebruik van Microsoft Office 365 voor interne communicatie en
+samenwerking binnen teams. Dit systeem vergemakkelijkt het delen van informatie en
+zorgt voor een betere afstemming tussen verschillende afdelingen.
+Daarnaast maakt het nog gebruik van andere verschillende applicaties om de zorg- en
+administratieve processen te ondersteunen en te optimaliseren. AFAS Insite
+bijvoorbeeld is het intranetplatform van Franciscus, waar medewerkers toegang
+hebben tot interne informatie, nieuws, beleidsdocumenten en personeelszaken. Het
+speelt een cruciale rol in de communicatie binnen het ziekenhuis en het stroomlijnen
+van administratieve taken, waardoor medewerkers beter op de hoogte blijven van
+relevante ontwikkelingen en efficiënter kunnen werken.
+13
+
+Het Digitaal Leerplein is een platform voor e-learning en trainingen. Het biedt
+medewerkers de mogelijkheid om zichzelf verder te ontwikkelen door middel van
+onlinecursussen en trainingen. Dit draagt bij aan de kwaliteit van zorg, omdat
+medewerkers hun kennis up-to-date houden en nieuwe vaardigheden kunnen
+ontwikkelen die nodig zijn voor de dagelijkse praktijk. Ook kunnen teammanagers
+hierdoor bijhouden welke medewerkers nog cursussen moeten volgen en beter
+overzicht houden.
+Citrix is een applicatie waarmee medewerkers veilig en flexibel op afstand kunnen
+werken. Hiermee hebben zorgverleners overal toegang tot de benodigde medische
+dossiers en systemen, wat belangrijk is voor het leveren van hybride zorg en het
+ondersteunen van efficiënte samenwerking tussen verschillende locaties van
+Franciscus.
+Monaco is een planning softwaresysteem dat gebruikt wordt voor urenregistratie. Het
+zorgt ervoor dat gewerkte uren van medewerkers eenvoudig en nauwkeurig worden
+bijgehouden. Hiermee kunnen ook urenrapportages worden gemaakt.
+Franc is een intern portaal voor medewerkers van Franciscus, vergelijkbaar met een
+soort Facebook. Het biedt een centrale plek waar medewerkers elkaar kunnen vinden,
+communiceren, en toegang hebben tot relevante informatie, zoals nieuws,
+documenten en afdelingsupdates.
+Daarnaast zijn Excel-bestanden een belangrijk hulpmiddel voor het baliepersoneel en
+ondersteunende medewerkers, die deze gebruiken voor het registreren en analyseren
+van patiëntgegevens. Hoewel Excel momenteel veel wordt ingezet, kan de
+afhankelijkheid van dit systeem leiden tot inefficiënties, zoals foutgevoeligheid en
+tijdsintensieve processen.
+Een ander relevant systeem is de BeterDichtbij-app. Deze applicatie wordt gebruikt
+voor beveiligde communicatie met patiënten, wat bijdraagt aan een snellere en
+efficiëntere serviceverlening.
+Echter, de implementatie hiervan kent uitdagingen, met name op het gebied van
+acceptatie door oudere patiënten. Daarnaast heeft het gebruik van deze applicatie de
+werkdruk voor de baliepersoon verhoogd, omdat zij alle binnenkomende berichten
+handmatig moeten beoordelen en beantwoorden, wat tijdrovend is en extra
+werkbelasting oplevert.
+De combinatie van deze systemen vormt de technologische basis voor de organisatie,
+maar biedt ook ruimte voor verbetering in termen van efficiëntie, integratie en
+gebruiksvriendelijkheid. Dit project richt zich op het optimaliseren van de inzet van deze
+systemen, zodat de werkdruk afneemt en de kwaliteit van de zorg verbetert.
+14
+
+3 Huidige situatie en bedrijfsproces
+Patiëntaanmelding
+Het proces start bij de aanmelding van een patiënt, die telefonisch of via een fysiek
+bezoek aan de balie wordt geregistreerd. De registratie wordt uitgevoerd door
+baliemedewerkers die patiëntgegevens controleren en invoeren in het HiX-systeem. Dit
+proces kent handmatige tussenstappen die vertragingen en inefficiënties veroorzaken.
+Er wordt geen gebruik gemaakt van geautomatiseerde oplossingen zoals aanmeldzuilen
+of online registratie, waardoor patiënten afhankelijk zijn van medewerkers om hun
+gegevens vast te leggen.
+Wachtrijbeheer en planning
+Na registratie worden patiënten toegevoegd aan de planning, die eveneens handmatig
+wordt beheerd in het HiX-systeem. Het opstellen van een behandelplanning en het
+toewijzen van beschikbare tijdsloten zijn arbeidsintensieve processen die volledig door
+baliemedewerkers worden uitgevoerd. De werklijsten zijn omvangrijk en vereisen
+continue aandacht, wat resulteert in een verhoogde kans op fouten, vooral tijdens
+piekmomenten.
+Er zijn ook aanzienlijke verschillen tussen de werkwijzen van de twee locaties
+(Franciscus Gasthuis en Vlietland). De gebruikte codes en procedures verschillen, wat
+verwarrend kan zijn voor medewerkers die locatie-overstijgend werken (blijkt uit,
+Interview 2 in de bijlage). Dit verschil in werkwijzen maakt het werk foutgevoeliger,
+bijvoorbeeld bij het invoeren van opnames of het plannen van afspraken, aangezien
+verschillende locaties met verschillende terminologieën werken. De diversiteit aan
+regels en procedures tussen de locaties verhoogt de kans op fouten en zorgt ervoor dat
+medewerkers extra tijd nodig hebben om aan beide werkwijzen te wennen.
+Opvolging en communicatie
+Patiënten worden meestal op de hoogte gebracht van afspraken en verdere instructies
+via digitale of postale berichten. Echter, bij korte termijnwijzigingen wordt er telefonisch
+contact opgenomen. Een probleem hierbij is dat patiënten de brieven en digitale
+berichten niet altijd lezen (blijkt uit Interview 3 in de bijlage), waardoor zij vaak alsnog
+bellen om informatie te verkrijgen. Dit veroorzaakt extra werkdruk bij
+baliemedewerkers.
+15
+
+De communicatie verloopt deels via de BeterDichtbij-app, die door veel patiënten als
+een WhatsApp-service wordt gebruikt (blijkt uit Interview 1 in de bijlage). Een
+bijkomende uitdaging is dat sommige patiënten laaggeletterd zijn, wat ervoor zorgt dat
+medewerkers extra tijd aan de telefoon besteden om informatie duidelijk uit te leggen
+en vragen te beantwoorden vooral aan oudere patiënten of patiënten met beperkte
+digitale vaardigheden (blijkt uit Interview 3 in de bijlage). Deze aanvullende
+tijdsinvestering legt extra druk op de baliemedewerkers, met name tijdens
+piekmomenten.
+Figuur 2: Verdeling van calls per categorie (X = percentage, Y = categorie)
+Uit de data van de bijgehouden telefoniegesprekken, verstrekt door Sandra, hebben we
+een grafiek gemaakt die inzicht geeft in de verdeling van de telefoongesprekken over
+verschillende categorieën. Hieruit blijkt dat afspraken maken of verzetten voor de poli
+de grootste categorie vormt, goed voor ongeveer 27,5% van de gesprekken. Andere
+belangrijke categorieën zijn medische klachten of vragen, die 17,3% van de gesprekken
+uitmaken, en overige vragen, zoals labformulieren, die ongeveer 22,7% beslaan.
+Daarnaast zijn gesprekken over medicatievragen goed voor 15,3%, terwijl onderwerpen
+zoals het herhalen van recepten en uitleg over scopie voorbereiding respectievelijk
+5,5% en 4,8% van de gesprekken vertegenwoordigen.
+Deze percentages illustreren hoe de tijd van baliemedewerkers verdeeld wordt over
+verschillende taken. Het benadrukt dat een groot deel van de gesprekken routineuze
+onderwerpen betreft, die mogelijk anders georganiseerd of ondersteund zouden
+kunnen worden.
+16
+
+No-shows en herplanning
+Een groot probleem in de huidige situatie is het hoge aantal no-shows. Wanneer een
+patiënt niet verschijnt op een afspraak, moet het personeel handmatig contact
+opnemen en een nieuwe afspraak inplannen. Hoewel patiënten nu al enkele dagen voor
+hun afspraak een herinnering (blijkt uit interview 1 in de bijlage) krijgen via een sms,
+wordt dit herinneringsproces pas sinds eind november 2023 toegepast. Hierdoor is het
+nog te vroeg om conclusies te trekken over de effectiviteit ervan. De redenen voor de no
+shows zijn onder andere onduidelijkheden over de afspraak, vergeten afspraken, en
+beperkte motivatie bij patiënten om te verschijnen. Automatische herinneringen en
+real-time notificaties voor andere patiënten om vrijgekomen tijdsloten te benutten
+zouden mogelijk een positief effect kunnen hebben op zowel de efficiëntie als de
+kwaliteit van zorg.
+Uit de grafiek van 2024 blijkt dat het percentage no-shows nog steeds relatief hoog is en
+varieert tussen de 6% en 9% afhankelijk van de maand. Deze data laten zien dat in veel
+maanden een aanzienlijk deel van de afspraken niet wordt nagekomen door patiënten,
+dit komt doordat sommige patiënten hun afspraak zijn vergeten of pas te laat erachter
+komen dat ze een afspraak hebben.
+Figuur 3: Percentage no-shows per maand (X = maand, Y = percentage)
+Dit zorgt voor inefficiëntie en een verhoogde werkdruk voor het personeel. Het
+handmatig opvolgen van deze no-shows zorgt er namelijk voor dat baliemedewerkers
+tijd kwijt zijn aan administratieve taken. Zij moeten de patiënt terugbellen en een
+nieuwe afspraak inplannen, wat extra werk toevoegt aan de werklijsten.
+17
+
+Verschillen tussen locaties
+Een aanvullende complicatie wordt gevormd door de culturele en organisatorische
+verschillen tussen de twee locaties van de afdeling:
+• Franciscus Rotterdam (Gasthuis): Dynamisch en hectisch, met een grotere
+druk op het personeel. De artsen zijn meer in de buurt en ook staat de balie in
+het openbaar waardoor patiënten gemakkelijk langs kunnen komen met vragen.
+Dit leidt tot meer afleiding voor de baliemedewerkers, die hierdoor vaak tijd kwijt
+zijn aan het beantwoorden van spontane vragen en veel prikkels ervaren door de
+rumoerige werkplek.
+• Franciscus Schiedam (Vlietland): Rustiger en kleinschaliger, met een meer
+gemoedelijk werkklimaat. De meeste balies zijn hier minder centraal geplaatst,
+vaak enigszins afgeschermd, waardoor baliemedewerkers minder snel worden
+afgeleid door patiënten. Hierdoor kunnen zij zich beter concentreren op hun
+taken.
+Verder nog verschillen tussen Franciscus Gasthuis in Rotterdam en Franciscus
+Vlietland in Schiedam zijn de werkwijzen en codes die gebruikt worden voor
+bijvoorbeeld opnames en procedures verschillen per locatie. Dit zorgt voor verwarring,
+vooral wanneer medewerkers op beide locaties werken. Baliemedewerkers moeten
+voortdurend schakelen tussen verschillende systemen, wat foutgevoelig en inefficiënt
+is. Medewerkers gaven aan dat uniformiteit in codes en werkwijzen de efficiëntie zou
+kunnen verbeteren (blijkt uit Interview 2 in de bijlage). Op de locatie in Rotterdam geef je
+een labformulier mee , dan wordt de afspraak gemaakt en vervolgens gaan de patiënten
+naar het laboratorium. In het Franciscus Vlietland moeten baliemedewerkers in die
+situatie zelf de afspraak plannen. Er werd verteld dat er voor het inplannen van een
+afspraak in de agenda moet worden gekeken, vervolgens de poli-on functie (een functie
+om te kijken of baliemedewerkers op de correcte afdeling zitten om een afspraak te
+maken) wordt bekeken en via daar een afspraak moet worden ingepland (blijkt uit
+Interview 2).
+18
+
+Impact op medewerkers en patiënten
+De beschreven knelpunten hebben aanzienlijke gevolgen:
+• Voor medewerkers: de hoge werkdruk leidt tot stress en verhoogt het
+ziekteverzuim. Ziekte zorgt voor een nog hogere druk op het werkende personeel.
+Het is een gat die niet opgevuld kan worden in verband met de kosten.
+• Voor patiënten: lange wachttijden en de beperkte tijd die er voor een patiënt is,
+leiden tot een verminderde patiënttevredenheid. Patiënten ervaren vaak
+onzekerheid over hun afspraken, ondanks de uitgebreide folders en
+voorbereidingsvideo’s. Ze hebben een voorkeur voor menselijk contact voor de
+uitleg over afspraken of voorbereidingen voor onderzoek, maar dit is niet altijd
+mogelijk. Bovendien hebben laaggeletterde patiënten of patiënten met een
+taalbarrière nog meer extra ondersteuning nodig, wat meer tijd vraagt van
+baliemedewerkers.
+BPMN-diagram
+Figuur 4: BPMN-diagram
+Huidige Situatie
+Het diagram beschrijft het patiëntbezoek en beheerproces in een kliniek. Het proces
+start zodra een patiënt arriveert en loopt door verschillende stappen, afhankelijk van de
+specifieke situatie, zoals de aanwezigheid van de patiënt of de werkdruk in de kliniek.
+19
+
+Functierollen (Swimlanes)
+Het diagram is opgedeeld in drie swimlanes:
+• Baliepersoneel: verantwoordelijk voor administratieve taken, zoals registratie,
+het inplannen van afspraken, en het contact opnemen met patiënten.
+• Kliniek: ondersteunende activiteiten, zoals het beheren van dagelijkse
+werklijsten en het afhandelen van telefoontjes.
+• Medisch personeel: behandelt de patiënt tijdens het consult en verzorgt
+medische aspecten van het bezoek.
+Deze indeling maakt de verantwoordelijkheden van elke rol duidelijk en helpt om
+inefficiënties te identificeren.
+Start en registratieproces
+Het proces begint wanneer een patiënt zich aanmeldt. Dit kan leiden tot een
+succesvolle aanmelding, waarna de patiënt wordt ingepland en later op de afspraak
+wacht. Bij een mislukte aanmelding wordt de patiënt hierover geïnformeerd, maar het
+proces stopt voor die patiënt. Dit toont aan hoe afhankelijk het proces is van een
+correcte aanmelding.
+Workflowbeheer door het systeem
+Het HiX-systeem speelt een centrale rol in het bijwerken van de digitale werklijsten. Dit
+gebeurt direct nadat de registratie succesvol is verwerkt door het baliepersoneel. Dit
+reflecteert de semi-geautomatiseerde ondersteuning die momenteel wordt geboden in
+het ziekenhuis, met HiX als primaire digitale tool.
+No-show proces
+Als een patiënt niet verschijnt, wordt dit geregistreerd door het baliepersoneel.
+Vervolgens wordt een herplanning gestart, wat handmatige opvolging vereist. Deze stap
+benadrukt een belangrijke inefficiëntie in de huidige situatie: de afhankelijkheid van
+menselijke tussenkomst voor no-shows, wat leidt tot extra werkdruk voor het
+personeel.
+Consultfase
+Wanneer de patiënt verschijnt, voert de medisch specialist het consult uit. Het consult
+wordt afgesloten en de gegevens worden geregistreerd in het systeem. Dit onderdeel
+van het proces verloopt doorgaans zonder grote problemen, maar het succes ervan
+hangt af van de eerdere stappen (zoals een correcte registratie en aanwezigheid van de
+patiënt).
+20
+
+4 Gewenste situatie
+De gewenste situatie richt zich op het realiseren van een efficiënter en
+gebruiksvriendelijk proces rondom patiëntregistratie, workflowbeheer en opvolging van
+no-shows. Door de inzet van digitale technologieën en automatisering wil de
+organisatie zowel de werkdruk voor het personeel verlagen als de ervaring voor
+patiënten verbeteren. Deze aanpak is gericht op praktische, goed werkende
+oplossingen die duurzaam en effectief zijn.
+Doelen
+In de ideale situatie zijn de processen zodanig geoptimaliseerd dat zowel het personeel
+als de patiënten direct de voordelen ervaren. Het voornaamste doel is om efficiëntie te
+verhogen, werkdruk te verminderen en de kwaliteit van de dienstverlening te
+verbeteren. Efficiëntie wordt vergroot door automatisering in het registratieproces,
+patiëntcommunicatie en workflowbeheer. Werkdruk wordt verlaagd doordat
+baliemedewerkers minder tijd hoeven te besteden aan handmatige taken, zoals het
+opvolgen van no-shows of het beheren van werklijsten. De patiëntbeleving wordt
+verbeterd doordat zij tijdig herinneringen en updates ontvangen over hun afspraken,
+wat onzekerheid en miscommunicatie voorkomt. Daarnaast wordt er meer inzicht
+gecreëerd in operationele processen dankzij realtime data-analyse.
+Verschillen met de huidige situatie
+Aspect Huidige Situatie Gewenste Situatie
+No-show- Handmatig geregistreerd Automatisch geregistreerd door het
+proces en opgevolgd door systeem en direct notificaties naar andere
+baliemedewerkers. patiënten gestuurd.
+Herinnering Handmatig verzonden of Automatische herinneringen verstuurd
+en aan volledig afwezig. vóór de afspraak.
+patiënten
+Communica Geen directe opvolging Automatische meldingen naar patiënten
+tie bij no- of vervanging van no- over vrijgekomen tijdsloten, met
+shows shows. mogelijkheid tot snelle acceptatie.
+Digitale Handmatige updates Automatisch bijgewerkt door het systeem,
+werklijsten door baliemedewerkers, foutloos en real-time.
+met risico op fouten.
+Balieproces Baliemedewerkers Niet-complexe taken (zoals
+sen voeren zowel aanmeldingen) volledig geautomatiseerd,
+eenvoudige als waardoor baliemedewerkers zich op
+complexe taken uit, wat complexe zaken kunnen richten.
+de werkdruk verhoogt.
+Patiëntregi- Meestal handmatig bij Online registratie als standaardoptie,
+stratie de balie, wat sneller en efficiënter voor patiënten.
+wachttijden veroorzaakt.
+21
+
+Rapportages Handmatig Automatisch gegenereerd, met
+samengesteld en gedetailleerde data over no-shows en
+beperkt in inzicht. prestaties.
+Efficiëntie Hoge werkdruk voor Verminderde werkdruk dankzij
+personeel en automatisering, gestroomlijnde processen
+inconsistentie in en verbeterde patiëntbeleving.
+communicatie met
+patiënten.
+Gewenste procesflow
+Het ideale proces start met een eenvoudige registratie, zowel online als in persoon. Het
+systeem valideert de gegevens en stuurt direct een bevestiging naar de patiënt.
+Vervolgens wordt de afspraak toegevoegd aan de digitale workflow, wat automatisch
+beschikbaar wordt gesteld aan het betrokken personeel. Patiënten ontvangen enkele
+dagen voorafgaand aan de afspraak een herinnering. Wanneer een patiënt niet
+verschijnt, registreert het systeem automatisch een no-show en initieert een
+herplanningsproces. Dit voorkomt vertragingen en minimaliseert extra werk voor de
+baliemedewerkers.
+De medisch specialist voert het consult uit zoals gepland. Na afloop registreert het
+systeem de consultgegevens en stelt deze beschikbaar voor rapportages. Het gehele
+proces verloopt soepel en zonder onnodige handmatige stappen.
+22
+
+BPMN-diagram
+Figuur 5: BPMN-diagram
+Rollen en Verantwoordelijkheden
+Patiënt
+De patiënt voert de initiële acties uit, zoals het online registreren, en ontvangt
+meldingen en bevestigingen. Wanneer een tijdslot door een no-show vrijkomt, wordt de
+patiënt geïnformeerd en krijgt deze de mogelijkheid om dit tijdslot te accepteren of te
+weigeren. Deze flexibiliteit vergroot de efficiëntie en optimaliseert het gebruik van
+beschikbare tijdsloten.
+HiX Systeem
+Het HiX-systeem automatiseert de meeste administratieve taken, zoals het valideren
+van gegevens, verzenden van meldingen, bijwerken van workflows en genereren van
+rapporten. Het systeem informeert proactief andere patiënten over vrijgekomen
+afspraken en minimaliseert handmatige tussenkomst. Hierdoor wordt het proces
+sneller en consistenter uitgevoerd.
+23
+
+Baliepersoneel
+Het baliepersoneel houdt toezicht op de processen, met focus op uitzonderlijke
+situaties zoals no-shows en herplanningen. Door niet-complexe taken te
+automatiseren, kunnen baliemedewerkers zich richten op gespecialiseerde
+ondersteuning en uitzonderlijke situaties.
+Medische specialist
+De medische specialist voert consultaties uit en registreert de resultaten direct in het
+systeem. Dit zorgt voor een vloeiende integratie van patiëntenzorg en dataverwerking en
+minimaliseert de handmatige administratieve last.
+Belangrijkste verbeteringen
+Proactieve communicatie
+Patiënten ontvangen tijdige meldingen en herinneringen, waardoor no-shows worden
+verminderd. Vrijgekomen tijdsloten worden direct aangeboden aan andere patiënten,
+wat de efficiëntie verhoogt en wachttijden minimaliseert.
+Automatisering
+Het systeem neemt taken zoals validatie, workflow-updates en patiëntcommunicatie
+over, waardoor menselijke tussenkomst wordt verminderd. Dit verhoogt de consistentie
+en verlaagt het risico op fouten.
+Herplanning
+Bij no-shows start het systeem zelfstandig een herplanningsproces, terwijl
+baliepersoneel alleen toezicht hoeft te houden. Dit verlaagt de werkdruk en verhoogt de
+snelheid en efficiëntie van het proces.
+Realtime rapportage
+Het HiX-systeem genereert automatisch rapporten met gedetailleerde gegevens over
+no-shows en operationele prestaties. Deze rapporten ondersteunen datagestuurde
+besluitvorming en bieden inzichten om toekomstige processen te verbeteren.
+Ondersteuning door HiX Systeem
+Het HiX-systeem speelt een sleutelrol in de gewenste situatie. Het neemt de meeste
+administratieve en communicatieve taken over, ondersteunt de workflow door data
+consistent bij te werken en verzendt meldingen proactief. Het systeem integreert alle
+acties in een digitale workflow, waardoor fouten worden geminimaliseerd en processen
+efficiënter worden. Deze digitale integratie optimaliseert de samenwerking tussen
+personeel en patiënten, waardoor de beschikbare tijd en middelen beter benut worden.
+24
+
+5 Probleemstelling
+Het probleem
+Het baliepersoneel van het Franciscus Ziekenhuis speelt een cruciale rol in de
+dagelijkse zorgverlening en het bieden van een gastvrije ervaring. Helaas groeit de
+werkdruk achter de balie elk jaar, waardoor medewerkers steeds vaker extra uren
+moeten maken. Dit verhoogt niet alleen de belasting op het team, maar brengt ook
+risico's met zich mee voor zowel de financiële gezondheid als de reputatie van het
+ziekenhuis en natuurlijk de gezondheid van de patiënten. Hieronder zetten we de
+belangrijkste uitdagingen op een rij.
+Potentiële problemen
+No-shows
+Mensen die niet op hun afspraken verschijnen (zogenaamde no-shows) vormen een
+groot probleem voor het ziekenhuis. Volgens het Power BI-overzicht, gebaseerd op data
+van Sandra Mohan-Khemon, is het percentage no-shows gestegen van ongeveer 5,95%
+in 2019 naar 8,38% in de periode 2020-2023. Hoewel dit percentage in 2024 is gedaald
+naar 7,19%, blijft het probleem aanzienlijk.
+Figuur 6: Percentage no-shows per maand (X = tijd in maanden, Y = percentage no-shows)
+Door de toename van no-shows vergeleken met 2019, moet het personeel veel tijd
+besteden aan het bellen van patiënten om nieuwe afspraken in te plannen. Dit verhoogt
+de werkdruk achter de balie aanzienlijk.
+25
+
+Gebrek aan automatisering
+Volgens Sandra Mohan-Khemon, teammanager van de MDL-afdeling in het
+Franciscusziekenhuis, worden veel administratieve processen nog handmatig
+uitgevoerd, zoals het inschrijven van patiënten en het maken van nieuwe afspraken.
+Hoewel er een chatapplicatie beschikbaar is waarmee patiënten direct contact kunnen
+opnemen met de balie, heeft deze oplossing de werkdruk niet verminderd. Daarentegen
+verhoogt de chatapplicatie de werkdruk, omdat de baliemedewerkers hun tijd moeten
+besteden aan het reageren op berichtjes. Daarnaast worden inkomende telefoontjes
+niet gecategoriseerd, maar komen ze allemaal bij de balie terecht. Dit zorgt voor een
+grote tijdsbelasting op het personeel.
+Bovendien blijft bij een no-show een tijdslot openstaan dat niet efficiënt kan worden
+hergebruikt, omdat het een laatste moment gebeurtenis is, een patiënt voorbereid moet
+zijn op een afspraak en het patiënten systeem niet optimaal werkt. Dit leidt tot een
+verlies van kostbare tijd en middelen.
+Oudere medewerkers
+Het baliepersoneel bestaat niet alleen uit jonge medewerkers, maar ook uit
+medewerkers van oudere leeftijd. Helaas zijn oudere medewerkers vaak minder
+digitaal vaardig, wat zorgt voor vertragingen bij taken zoals e-mails verzenden, werken
+met HiX (het elektronisch patiëntendossier) en het afdrukken van documenten.
+Op piekmomenten, zoals maandagochtend of vrijdagmiddag, leidt dit tot extra
+vertragingen, wat de werkdruk verder verhoogt.
+Laaggeletterdheid
+Het Franciscus Ziekenhuis verwelkomt iedereen, ongeacht hun achtergrond. Echter,
+niet alle patiënten hebben een goede beheersing van de Nederlandse taal of zijn
+voldoende taalvaardig. Dit leidt vaak tot misverstanden over hoe het ziekenhuis en haar
+processen werken.
+Deze taalbarrière zorgt voor extra werk aan de balie, omdat medewerkers meer tijd
+moeten besteden aan uitleg en begeleiding.
+26
+
+6 Scope beschrijving
+Om de scope van dit project helder te definiëren, is het belangrijk om duidelijk aan te
+geven welke onderdelen binnen het project vallen en welke niet. Dit zorgt ervoor dat alle
+partijen die betrokken zijn bij dit project realistische verwachtingen hebben en
+voorkomt dat het project zich onbedoeld uitbreidt (dat er scope creep optreedt). Om
+scope creep te voorkomen worden de projectdoelen en deliverables gedocumenteerd
+en gecommuniceerd met de opdrachtgever. Wijzigingen hierin moeten expliciet
+goedgekeurd worden door alle betrokken partijen en er wordt regelmatig afgestemd
+over de verwachtingen.
+Wat valt binnen het project?
+Als eerste is het verzamelen van data over bezoekersaantallen, wachttijden, piekuren
+en de herkomst van patiëntenverzoeken (bijv. telefonische vragen, afspraken,
+administratieve handelingen) onderdeel van dit project. Hiervoor hebben wij direct
+contact met de opdrachtgever die ons data kan verstrekken die bruikbaar is voor het
+project. Het opschonen van deze data, zoals het verwijderen van onvolledige of
+onbekende records zodat het gebruikt kan worden voor analyse, valt ook binnen de
+scope.
+Vervolgens is het uitvoeren van beschrijvende statistieken en analyses om inzicht te
+krijgen in de piekuren en de werkdruk ook onderdeel van de scope van dit project. Het
+identificeren van patronen, zoals piekmomenten gedurende de dag of balie-interacties
+die direct bijdragen aan de werkdruk horen hier ook bij. Het onderzoeken van deze
+patronen en correlaties om hier meer inzicht in te krijgen valt ook binnen de scope van
+dit project. Hieruit kunnen we conclusies trekken over de belangrijkste factoren die de
+werkdruk veroorzaken.
+Kwalitatief onderzoek, zoals het houden van interviews met baliepersoneel en andere
+belanghebbenden, of veldwerk doen op locatie vallen ook binnen de scope van dit
+project. Hierover beschrijven we onze inzichten in de hoge werkdruk van het
+baliepersoneel en de observaties van de dagelijkse gang van zaken. Dit als
+ondersteuning van de data-analyse, wat leidt tot een completer onderzoek.
+Het rapporteren van onze bevindingen in visualisaties, zoals grafieken of dashboards, is
+ook onderdeel van de scope. We kunnen gebruikmaken van Python, SQL en Power BI
+om onze bevindingen te ondersteunen.
+27
+
+Daarnaast stellen we een onderbouwd ontwerpdocument op voor een data-
+infrastructuur die geschikt is voor de wensen van de opdrachtgever. We onderzoeken
+verschillende oplossingsrichtingen en het ontwerp begint met een gedetailleerde
+beschrijving van de data referentiearchitectuur. In ons ontwerp houden we rekening
+met Ethics by Design, zodat het ontwerp voldoet aan de morele en ethische wensen van
+de opdrachtgever en de organisatie. Aansluitend voor dit ontwerp, ontwikkelen we een
+Proof of Concept (PoC) dat een werkende versie van de belangrijkste functionaliteiten
+bevat. Hierover schrijven we een roadmap en implementatieplanning om de data-
+oplossing in fases te implementeren.
+Binnen de scope van dit project valt ook het opstellen van een adviesrapport voor de
+opdrachtgever, waarin de analyse van de data, de ontwerpkeuzes, ethische
+overwegingen en maatschappelijke relevantie worden beschreven. Hierin nemen we
+omgevingsfactoren kosten en baten mee, die we met bewijsvoering vanuit onderzoek
+onderbouwen.
+Wat valt buiten het project?
+De daadwerkelijke implementatie van de voorgestelde data-infrastructuur en het
+uitvoeren van het volledige advies valt buiten de scope. Dit project blijft beperkt tot de
+analyse, ontwerp met daarin het PoC, en de analyse. De focus ligt alleen op het
+ontwikkelen van een plan en ontwerp, niet op de technische realisatie daarvan. Dat
+betekent dat het wijzigen van de bestaande systemen of de integratie van nieuwe
+systemen in de infrastructuur van de polikliniek niet worden uitgevoerd.
+Het uitvoeren van een risicoanalyse na de implementatie van de oplossing en het
+monitoren van de oplossing op lange termijn valt niet binnen de scope van het project.
+Daarmee wordt een beoordeling van de maatschappelijke impact van het product ook
+buiten beschouwing gelaten.
+Het trainen van medewerkers in het gebruik van het nieuwe ontwikkelde systeem of
+proces wordt niet opgenomen in de scope. Het project beperkt zich tot het aanbevelen
+van oplossingen en een PoC, zonder de daadwerkelijke inzet en instructie van
+personeel te betrekken.
+Afspraken over standaarden
+Het project gebruikt data dat is toegestuurd door de opdrachtgever. Aanvullende data
+kan verzameld worden tijdens de fysieke ontmoeting op locatie.
+Het PoC beperkt zich tot de belangrijkste basisfunctionaliteiten en dient als opzet van
+de oplossing, niet als volledig werkende oplossing.
+Er wordt gebruikgemaakt van technologieën als Python, SQL, Power BI en machine-
+learning modellen. Het bouwen van nieuwe infrastructuren valt buiten de scope.
+28
+
+7 Requirementsanalyse
+Constraints
+Code Eis Toelichting
+C01 Tijdsbeperking De oplevering van het systeem zal zijn in de week
+van 20 januari 2025.
+C02 Gebruikte technologieën Bij de ontwikkeling van het systeem zal waar
+mogelijk gebruik worden gemaakt van Microsoft-
+applicaties, omdat dit dataveiligheid garandeert.
+Bij non-Microsoftapplicaties zullen wij gebruik
+maken van dummy-data, zodat gevoelige
+gegevens altijd veilig blijven.
+C03 Opslag data Data zal uitsluitend opgeslagen worden op lokale
+systemen en op het SharePoint van Hogeschool
+Leiden.
+Niet-functionele eisen
+Code Eis Toelichting
+NF01 Gegevensbescherming Het systeem moet voldoen aan de Algemene
+Verordening Gegevensbescherming (AVG).
+NF02 Toegangscontrole Het systeem mag alleen worden bekeken en
+aangepast door geautoriseerd personeel.
+Toegang zal worden verleend door middel van
+authenticatie.
+NF03 Anonimisering data Gevoelige data moet geanonimiseerd worden.
+NF04 Transparantie Er moet transparante communicatie
+plaatsvinden over het gebruik van data richting de
+opdrachtgever en andere belanghebbenden.
+NF05 Inclusief voor Het systeem moet te gebruiken zijn door minder
+medewerkers digivaardige medewerkers van de polikliniek.
+NF06 Fysieke alternatieven Naast digitale oplossingen moet het altijd
+voor digitale oplossing mogelijk zijn voor een patiënt om fysiek vragen te
+stellen.
+NF07 Autonomie voor Baliemedewerkers moeten autonomie hebben
+baliemedewerkers over het kiezen van hun werkprocessen,
+ongeacht de mate van automatisering.
+NF08 Rechtvaardigheid Het systeem moet ervoor zorgen dat patiënten
+niet oneerlijk worden geprioriteerd.
+NF09 Inclusief voor patiënten Bij interacties van de klant met het systeem moet
+het begrijpelijk zijn voor laaggeletterde en
+cultureel diverse patiënten.
+29
+
+Functionele eisen
+Code Eis Toelichting
+F01 Verlaging werkdruk Door middel van automatisatie moet de werkdruk
+baliemedewerkers door van de baliemedewerkers worden verlaagd. Dat
+automatisatie wil zeggen, er moeten automatische systemen
+komen die bepaalde taken van het personeel
+overnemen, zodat ze deze taken niet handmatig
+uit hoeven te voeren.
+F02 Inzicht in no-shows Er moet inzicht zijn in het aantal patiënten dat
+niet naar hun afspraak komt (no-shows). Hierbij
+moet er inzicht zijn in de periodes van het jaar
+waarin het aantal no-shows het hoogst is, maar
+ook welke momenten op de dag de meeste no-
+shows vergaren.
+F03 Inzicht in werktaken Er moet inzicht zijn in de taken die het
+baliepersoneel baliepersoneel op hun werkdagen uitvoeren.
+Hierbij gaat het om welke taken het zijn en
+hoeveel tijd hieraan kwijt is.
+F04 Inzicht in onderwerpen Er moet inzicht zijn in de telefoontjes die de balie
+telefoon per dag krijgt en wat de onderwerpen daarvan
+zijn. Zo kunnen we analyseren of er een
+alternatief systeem kan worden opgesteld om het
+aantal telefoontjes te verminderen.
+F05 Inzicht in afspraken Er moet inzicht zijn in de medische afspraken van
+de polikliniek. Hierbij moet er inzicht komen in
+het type afspraak, de duur van de afspraak en of
+een patiënt wel of niet is komen opdagen.
+F06 Verdeling werkdruk De werkdruk moet zoveel mogelijk verdeeld
+tussen worden tussen de medewerkers van de
+ziekenhuismedewerkers polikliniek. Het nieuwe systeem moet dus
+werkdruk verlichten voor alle functies van de
+kliniek. Zo is de ene persoon niet meer belast dan
+de andere.
+F07 Verbeterde De digivaardigheid van de baliemedewerkers
+digivaardigheid moet worden verhoogd, wat een efficiëntere
+uitvoering van werktaken oplevert.
+F08 Taalgerichte uitleg Patiënten die laaggeletterd zijn en/of een diverse
+patiënten culture achtergrond hebben moeten een heldere
+uitleg krijgen over het zorgproces zonder dat
+baliepersoneel hier veel tijd aan kwijt is.
+30
+
+8 Risicolijst
+Het is niet gegarandeerd dat het project zonder problemen verloopt, dus moet elk risico
+worden afgewerkt. In dit hoofdstuk gaan we mogelijke scenario’s geven, en wat we in
+zulke gevallen kunnen doen, zodat het project toch goed afloopt en alles succesvol
+afgerond kan worden.
+Teamgenoot is absent voor lange tijd
+Het kan gebeuren dat een groepsgenoot er voor lange tijd niet is. We blijven met
+diegene zo veel mogelijk in contact. Als het mogelijk is, doet diegene zijn werk, anders
+verdelen we zijn werk tussen iedereen. In het geval, dat diegene niet in contact komt,
+gaan we het bespreken met de docenten, wat we ermee kunnen doen en het werk
+onder elkaar verdelen.
+Data te laat krijgen
+De opdrachtgever kan soms druk zijn, waardoor we niet altijd meteen data krijgen. In
+zulke situaties moeten we voor een korte tijd met dummy data gaan werken en pas
+nadat we het echte data hebben, het omzetten naar het correcte data.
+Gebrek aan contact met de opdrachtgever
+In zulke moeilijke situaties waar je gebrek aan contact hebt, kan het moeilijk zijn om te
+werken omdat je niet weet wat je moet doen. Om grotere problemen te voorkomen,
+moeten we als groep in zulke gevallen zo snel mogelijk proberen contact op te nemen
+met de opdrachtgever en de docenten, zodat de docenten van de situatie weten en de
+opdrachtgever meer met ons in contact blijft.
+Vertragingen in het project
+In geval van vertragingen, moet er zo snel mogelijk contact worden gemaakt met de
+teamgenoten, om in een meeting te overleggen wat de beste volgende stappen kunnen
+zijn en wie wat moet doen. Ook is het belangrijk van je fouten te leren, dus houden wij
+wekelijkse reflectiemomenten over het gemaakte werk.
+Wijzigingen in de opdracht door de opdrachtgever
+Het is altijd mogelijk, dat de opdrachtgever niet tevreden is met het resultaat, en toch
+een ander product wil hebben. Hiervoor moeten wij als team zo spoedig mogelijk een
+nieuwe meeting maken met de opdrachtgever, om alle aspecten van het product te
+overleggen en een nieuwe roadmap te maken.
+31
+
+9 Ethics by Design
+Tijdens het ontwikkelen van een oplossing voor deze casus komen er een aantal
+ethische kwesties aan bod, waar wij als ontwikkelaars zorgvuldig mee om moeten gaan.
+De Europese Commissie benoemt zes Ethische principes als het gaat om een AI-
+systeem (Research Ethics and Integrity Sector, 2021), die volgens ons ook van
+toepassing zijn bij de data-oplossing voor deze opdracht. Deze zes principes zijn:
+1. Respect voor menselijk handelen
+2. Privacy en databeheer
+3. Rechtvaardigheid
+4. Individueel, sociaal en ecologisch welzijn
+5. Transparantie
+6. Verantwoording en toezicht
+Voor elk van deze ethische principes zullen we beargumenteren hoe het van toepassing
+is op dit project.
+Respect voor menselijk handelen
+Mensen bezitten elk een intrinsieke waarde die nooit in compromis mag komen.
+Mensen mogen niet worden geobjectiveerd of gedehumaniseerd en moeten te allen
+tijde met respect worden behandeld. Het is belangrijk dat wij rekening houden met het
+feit dat ons project consequenties heeft voor echte mensen, namelijk de medewerkers
+en patiënten van Franciscus.
+Voor baliemedewerkers betekent dit dat zij de autonomie moeten behouden om keuzes
+te maken over hun eigen werkprocessen, ondanks de automatisering die wij
+introduceren. Voor patiënten betekent dit dat zij de keuzevrijheid moeten behouden in
+of zij wel of niet naar hun afspraak komen, ongeacht dat een no-show meer
+administratiewerk met zich meebrengt. We kunnen patiënten niet forceren naar hun
+afspraken te komen.
+Privacy en databeheer
+Bij het analyseren van drukte bij de polibalie zullen wij om moeten gaan met gevoelige
+gegevens van het ziekenhuis. Denk aan informatie over het aantal patiënten,
+wachttijden, piekmomenten en no-shows, maar ook over de taakverdelingen van het
+personeel. Ondanks dat deze data geanonimiseerd is blijft het gevoelige data waar wij
+zorgvuldig mee om moeten gaan.
+32
+
+Bij het verwerken van deze gegevens moeten wij privacy waarborgen door middel van
+het naleven van de Algemene Verordening Gegevensbescherming (AVG). Hierbij zullen
+we naar de opdrachtgever communiceren wat wij met deze data doen en met welk
+doel. Om een gegevenslek te voorkomen zullen wij de data enkel opslaan op onze
+lokale systemen en op het SharePoint van Hogeschool Leiden.
+Rechtvaardigheid
+Rechtvaardigheid houdt in dat ieder mens dezelfde rechten en mogelijkheden zou
+moeten hebben. Voor dit project betekent dat dat elke patiënt gelijk moet worden
+behandeld. Patiënten mogen niet voorgetrokken worden op basis van hun afkomst,
+gender, religie of leeftijd, tenzij dit een medische noodzaak met zich meebrengt. Elke
+patiënt moet een gelijke plek op de wachtlijst krijgen. Ook moet er bij no-shows een
+eerlijke aanpak zijn om de lege plek op te vullen met een nieuwe patiënt, zonder dat
+hierbij andere patiënten worden benadeeld.
+Individueel, sociaal en ecologisch welzijn
+De opdrachtgever benoemde dat veel patiënten moeite hebben met het begrijpen van
+het zorgproces dat ze ondergaan, wat mede veroorzaakt wordt door een hoge mate van
+laaggeletterdheid en diverse culturele achtergronden. Dit veroorzaakt extra werkdruk
+voor het baliepersoneel, omdat ze meer tijd en moeite moeten stoppen in het
+ophelderen van het zorgproces voor deze patiënten. Het is uiteraard noodzakelijk dat
+patiënten begrijpen welke zorg ze ondergaan, dus we kunnen deze taak niet simpelweg
+negeren. Wel is het een oorzaak van werkdruk bij het personeel, dus moet er hiervoor
+een oplossing komen. Om inclusiviteit en toegankelijkheid te waarborgen, zullen wij in
+ons advies rekening moeten houden met deze patiënten en hoe wij aan hen het
+zorgproces kunnen verduidelijken zonder dat het baliepersoneel hierbij extra druk
+ervaart.
+Het zou bijvoorbeeld mogelijk zijn om een AI-chatbot te ontwikkelen waaraan mensen
+in hun eigen taal(niveau) vragen kunnen stellen over het zorgproces. Hier moet echter
+wel rekening worden gehouden met ouderen en anderzijds minder digivaardige
+patiënten, die hierbij moeite kunnen ervaren. Het moet altijd mogelijk blijven om fysiek
+en telefonisch vragen te stellen.
+Ook moeten wij inclusiviteit waarborgen voor de werknemers van de polibalie. De
+opdrachtgever benoemde dat een aantal personeelsleden door hun leeftijd moeite
+hebben met de omgang met digitale systemen zoals Excel en HiX. Het zou dus niet
+inclusief zijn als wij een complex digitaal systeem zouden ontwikkelen waarmee
+verouderde medewerkers moeilijk om kunnen gaan. Dit zou juist averechts werken en
+meer werkdruk opleveren voor deze personeelsleden. Het is dus noodzakelijk dat onze
+oplossingen niet onnodig complex zijn voor de medewerkers en dat de nodige
+documentatie en handleidingen aanwezig zijn.
+33
+
+Transparantie
+Transparantie houdt in dat wij duidelijk communiceren naar de belanghebbenden van
+het project wat wij doen met gevoelige data. Zoals eerder benoemd zullen we naar de
+opdrachtgever communiceren wat wij doen met de data die zij ons verstrekt en met
+welk doel. Dit zullen we in detail bespreken tijdens elke sprint review, zodat het voor
+haar duidelijk is wat er gebeurt met de data die zij ons beschikbaar heeft gemaakt.
+Wanneer we op werkbezoek gaan bij Franciscus zullen we interviews houden met het
+baliepersoneel waar deze opdracht om draait. Hierbij zullen we ook transparantie
+moeten beoefenen en duidelijk maken aan het personeel wat het doel van ons
+onderzoek is. Ook moeten we hen verzekeren dat hun antwoorden geanonimiseerd
+worden gebruikt voor het onderzoek.
+Verantwoording en toezicht
+Verantwoording afleggen betekent dat wij, als ontwikkelaars van het project,
+verantwoordelijkheid nemen voor de manier waarop onze oplossing functioneert en wat
+de gevolgen daarvan zijn. Hierbij is het belangrijk dat wij vastleggen wat mogelijke
+ongewenste effecten van de oplossing zijn. Ook moeten wij openstaan voor ethische
+zorgen of klachten van de belanghebbenden en zorgen dat deze worden aangepakt.
+Conclusie
+In dit project staat het nakomen van ethische principes centraal. Wij streven naar een
+oplossing die privacy en rechtvaardigheid waarborgt en rekening houdt met het
+menselijk welzijn. Dit betekent dat de oplossing inclusief en begrijpelijk moet zijn voor
+zowel patiënten als medewerkers. Tijdens het project zullen wij dataveiligheid en
+transparantie waarborgen en verantwoording afleggen. Wij zullen de wet- en
+regelgeving over databeheer naleven en eventuele ethische zorgen van de
+belanghebbenden aanpakken.
+34
+
+10 Oplossingsrichtingen
+Vernieuwen van het aanmeldsysteem
+Het aanmelden voor afspraak gaat nu nog fysiek bij de balie, wat voor lange wachtrijen
+kan zorgen. Hierdoor kan tijdens piekmomenten de werkdruk hoog zijn voor het
+baliepersoneel.
+Een oplossing zou kunnen zijn het vernieuwen van het aanmeldsysteem. Denk hierbij
+aan een digitale aanmeldbalie. Bij binnenkomst kan de patiënt inloggen met een
+persoonlijke pas of bij een aanmeldscherm waarbij de patiënt wat gegevens moet
+invoeren om zichzelf aan te melden voor de afspraak.
+Door deze aanpassingen bij het aanmeldsysteem kunnen we de werkdruk van het
+baliepersoneel verlagen en kunnen ze zich meer op ander administratief werk richten.
+Standaardvragen en -berichten
+Door de BeterDichtbij- applicatie kunnen patiënten contact opnemen met personeel
+van het ziekenhuis, maar er kunnen veel standaardvragen worden gesteld door
+patiënten en kan het personeel vaak hetzelfde antwoord moeten geven. Hierdoor kan
+het personeel ook wat tijd kwijtraken.
+Een oplossing zou kunnen zijn een nieuwe chatfunctie maken voor de patiënten
+waaraan ze een vraag kunnen stellen. Hierbij kan de patiënt dan kiezen uit een lijst
+veelgestelde vragen. Deze vragen worden met een standaardberichten beantwoord. Als
+vragen op deze manier worden opgelost, kan de patiënt sneller antwoord krijgen. Als de
+patiënten geen antwoord kunnen krijgen op hun vraag door middel van een
+standaardbericht, kunnen ze de optie kiezen om contact op te nemen met het
+personeel van het ziekenhuis.
+Door de standaardberichten kunnen de patiënten gelijk een antwoord krijgen na het
+stellen van de vraag. Hierdoor kan het zo zijn dat het personeel minder vaak een
+antwoord moeten geven op patiënten die een vraag hebben en hebben ze meer tijd om
+administratief werk te verrichten.
+AI chatbot
+Om verder te bouwen op het idee van standaardberichten, is het ook een mogelijkheid
+om een AI-chatbot te bouwen, die door middel van Natural Language Processing
+specifieke antwoorden te geven op vragen van patiënten. In plaats van dat er
+standaardberichten worden gestuurd, genereert de AI zelf een antwoord op de vraag,
+op basis van beschikbare informatie.
+35
+
+De AI-chatbot zal getraind worden met data uit bestaande informatiefolders,
+-webpagina's en -video's die het ziekenhuis al beschikbaar heeft. Zo heeft de chatbot
+de benodigde informatie om specifieke vragen van patiënten te beantwoorden.
+Ook kan een AI-chatbot antwoord geven in veel verschillende talen, en kan het
+taalniveau waarmee de chatbot antwoord geeft automatisch worden aangepast naar
+het taalniveau van de patiënt.
+Het gebruik van een dergelijke AI-chatbot bespaart het baliepersoneel veel tijd bij het
+beantwoorden van vragen en het helpen van laaggeletterde patiënten. Zo heeft het
+personeel meer tijd om andere administratieve taken te verrichten.
+Verminderen no-shows
+De no-shows zijn een groot probleem voor het baliepersoneel. Door dat patiënten
+weleens een afspraak vergeten, komen ze niet opdagen en moet het baliepersoneel
+achter de patiënten aan om weer een nieuwe afspraak met de patiënten te maken. Dit
+verhoogt de werkdruk van het personeel.
+Een oplossing zou kunnen zijn om herinneringen te sturen naar de patiënt op bepaalde
+tijdstippen. Hierdoor worden de patiënten bewust dat er een afspraak gepland staat op
+een bepaalde datum. Denk hierbij aan een herinnering van een week van tevoren en een
+dag van tevoren die naar de desbetreffende persoon moet gaan.
+Door herinneringen te sturen naar patiënten kunnen ze bewust worden dat er een
+afspraak gepland staat. De kans wordt dus kleiner dat de patiënten hun afspraken niet
+vergeten en dus worden de no-shows verminderd en wordt de werkdruk van het
+baliepersoneel verlaagd.
+Ook kunnen we de mogelijkheid introduceren om een standaardbericht te sturen naar
+een patiënt wanneer die een afspraak heeft gemist. Zo kan de patiënt zelf een nieuwe
+afspraak inplannen zonder dat dit extra werk oplevert voor het baliepersoneel.
+36
+
+Taalgerichte uitleg
+Doordat patiënten laaggeletterd kunnen zijn of een lager niveau hebben van de
+Nederlandse taal is het soms moeilijk om te communiceren met de patiënten. Het
+personeel moet hun best doen om het papierwerk eenvoudig Nederlands te maken en
+de patiënten het te kunnen laten begrijpen. Dit kan dan veel tijd kosten.
+Een oplossing zou kunnen zijn door eenvoudig Nederlands te gaan gebruiken in het
+papierwerk voor de mensen die laaggeletterd zijn en kan het sneller gaan om
+laaggeletterde patiënten het te laten begrijpen. En voor de patiënten die een laag niveau
+in de Nederlandse taal hebben kunnen we de moedertaal gebruiken die de patiënt
+heeft. Hierdoor kan het ook makkelijker gaan en de patiënt kan het sneller begrijpen.
+Doordat de patiënten het mogelijk sneller kunnen begrijpen wat het personeel welke
+informatie wilt overbrengen, worden ook misverstanden en herhalingen verminderd. Als
+gevolg kan dit de werkdruk van het personeel verminderen.
+37
+
+Hoofdvraag en deelvragen
+Hoofdvraag
+Hoe kunnen de huidige werkprocessen binnen de polikliniek worden verbeterd om de
+werkdruk van het baliepersoneel te verlagen en de efficiëntie te verhogen?
+Deelvragen
+1. Welke processen binnen de polikliniek dragen het meest bij aan inefficiënties en
+hoe kunnen deze worden verbeterd om de werkdruk van het baliepersoneel te
+verlagen?
+2. Wat zijn de ervaringen van het baliepersoneel met de huidige werkprocessen en
+welke veranderingen kunnen hun werkdruk verlagen?
+3. Hoe kunnen succesvolle procesverbeteringen uit andere afdelingen en de
+zorgbehoeften van patiënten worden geïntegreerd om de processen binnen de
+polikliniek te optimaliseren?
+Methodes
+Observaties en interviews
+Om een goed inzicht te krijgen in de dagelijkse werkprocessen van het baliepersoneel
+en de ervaren hoge werkdruk, gaan we observaties uitvoeren op de werkvloer. Dit zullen
+we aanvullen met interviews met het baliepersoneel. Hierbij zullen we vragen naar de
+meest tijdrovende taken, de ervaren piekmomenten en hun ideeën voor mogelijke
+procesverbeteringen.
+Observaties op de werkvloer zullen een objectief beeld geven van de werkprocessen en
+interviews kunnen de ervaringen en ideeën van het personeel toelichten. Tijdens deze
+interviews kunnen we vragen stellen over onze observaties.
+Desk research
+Om te leren van andere afdelingen of vergelijkbare instellingen, gaan we desk research
+uitvoeren. Hierbij zullen we succesvolle oplossingen uit andere ziekenhuizen
+onderzoeken, zoals digitale aanmeldsystemen en AI-chatbots.
+Desk research naar andere ziekenhuizen maakt het mogelijk om bewezen effectieve
+oplossingen te vinden en aan te passen aan de specifieke behoeften van de polikliniek.
+38
+
+Planning
+Eerste versie planning
+Eerste versie planning , dit was onze eerste opzet qua planning . Aan het begin was onze doel om een
+dashboard te bouwen als een oplossing voor de hoofd- en deelvragen van de opdrachtgever.
+39
+
+Tweede versie planning
+Tweede versie van de planning , er kwam een andere oplossing erbij , rond week 3-4 na een Sprint review
+met de opdrachtgever. Hierdoor moesten we onze planning aanpassen.
+40
+
+Bibliografie
+Franciscus. (sd). Over ons, werken bij. Opgehaald van www.werkenbij.franciscus.nl:
+https://werkenbij.franciscus.nl/over-ons
+MDL centrum. (n.d.). Opgehaald van Franciscus.nl.
+Research Ethics and Integrity Sector. (2021). Ethics By Design and Ethics of Use
+Approaches. Brussels/Belgium: European Commission.
+Samenwerken met zorgpartners. (2022, Juli 6). Opgehaald van Franciscus Gasthuis &
+Vlietland: https://franciscus.maglr.com/franciscus-jaarverslag-
+2021/samenwerken-met-zorgpartners
+Samenwerkende Topklinische Ziekenhuizen. (2024, November 15). Opgehaald van
+STZ.nl: https://www.stz.nl/
+Stichting Sint Franciscus Vlietland Groep. (2024). Jaarstukken 2023. Opgehaald van
+https://www.franciscus.nl/uploads/2024-05/Jaarstukken%202023.pdf
+41
+
+Bijlagen
+TOGAF dashboard
+42
+
+TOGAF AI spraak- en chatbot
+43
+
+Belanghebbendenanalyse
+Belangh Rol Prioritering Categorisering
+ebbend
+e
+Patiënt De rol van Gemiddeld Invloed. Externe belanghebbende,
+en patiënten is die van Hoewel patiënten een Patiënten zijn niet direct
+ontvangers van de groot belang hebben verbonden aan de
+zorg en gebruikers bij de kwaliteit van organisatie; ze maken
+van de aangeboden zorg, hebben zij zelf gebruik van de
+diensten, zoals de geen directe invloed zorgdiensten van het
+BeterDichtBij-app op de ontwikkeling van ziekenhuis en hebben geen
+en de consulten. Ze het project. Hun invloed op interne
+zijn de medische gegevens besluitvorming.
+eindgebruikers van worden in het proces Primaire belanghebbende
+de zorgprocessen gebruikt om de zorg te De zorgverlening is primair
+en hun ervaring verbeteren, zoals het gericht op hun gezondheid,
+bepaalt mede het voorspellen van no- welzijn en het waarborgen
+succes van de shows en het van hun privacy. Zij zijn de
+dienstverlening. optimaliseren van directe doelgroep van alle
+consulten. Daarom is processen, waarbij hun
+het essentieel dat deze medische gegevens een
+data veilig wordt cruciale rol spelen in het
+beheerd en de privacy leveren van
+van patiënten gepersonaliseerde en
+gewaarborgd is. hoogwaardige zorg.
+Balieme Baliemedewerkers Middelmatig Invloed, Interne belanghebbende,
+dewerk zijn hun invloed op ze zijn medewerkers van
+ers verantwoordelijk strategische het ziekenhuis en maken
+voor de beslissingen binnen deel uit van de organisatie.
+operationele het project is beperkt. De belangrijkste focus van
+afhandeling van Een hoge werkdruk het project is namelijk het
+afspraken en heeft echter directe verlagen van de werkdruk
+patiëntvragen. Ze negatieve gevolgen van baliemedewerkers,
+vormen de eerste voor hun prestaties en wat direct hun dagelijkse
+schakel in het daarom is het taken en
+contact met belangrijk om werkomstandigheden zal
+patiënten. oplossingen te vinden verbeteren. Omdat zij dus
+om deze te verlagen. zowel de uitvoerders van
+de processen zijn als
+degenen die het meest
+profiteren van de
+oplossingen, vallen zij
+onder de categorie van
+44
+
+primaire
+belanghebbenden.
+Medisc Medische Lage invloed. Hoewel Interne Belanghebbende,
+he specialisten zij cruciaal zijn voor de Omdat ze binnen het
+speciali leveren de zorgverlening zelf, ziekenhuis werken.
+sten daadwerkelijke hebben ze weinig Zij zijn verantwoordelijk
+zorg aan patiënten directe invloed op voor de kernactiviteit van
+en zijn administratieve het ziekenhuis – het
+verantwoordelijk processen zoals verlenen van zorg aan
+voor het medische patiëntregistratie. patiënten. De planning en
+traject van Verbeterde efficiëntie van hun tijd
+diagnose en administratieve hebben een directe invloed
+behandeling. efficiëntie kan hun op de kwaliteit van zorg.
+werk wel positief Hoewel ze minder te
+beïnvloeden, maar hun maken hebben met de
+directe betrokkenheid administratieve kant, zijn
+bij het project is ze wel sterk betrokken bij
+beperkt. het gehele zorgproces.
+Daarom Primaire
+belanghebbende.
+ICT- De ICT-afdeling is Lage invloed, zij zijn Interne belanghebbende,
+afdeling verantwoordelijk niet de uiteindelijke De ICT-afdeling bestaat
+voor het beslissers over de namelijk uit medewerkers
+implementeren en zorgprocessen. Hun die onderdeel zijn van de
+onderhouden van technische expertise is organisatie.
+de technische van belang voor de Secundaire
+systemen die de implementatie van belanghebbende, hoewel
+zorgadministratieve veranderingen, maar de afdeling cruciaal is voor
+processen hun directe invloed op het beschikbaar houden en
+ondersteunen. de dagelijkse optimaliseren van IT-
+zorgprocessen is systemen, zijn zij niet
+beperkt. direct betrokken bij het
+verlenen van zorg aan
+patiënten. Daarom worden
+ze als secundaire
+belanghebbende gezien;
+Team De Team manager Hoge invloed, Sandra Sandra is een interne
+manage (Sandra) heeft een heeft een hoge invloed belanghebbende, omdat
+r leidinggevende rol op de implementatie zij onderdeel uitmaakt van
+(Sandra waarin zij van de data-oplossing de organisatie en
+) verantwoordelijk is omdat ze de verantwoordelijk is voor de
+voor het aansturen beslissingen moet dagelijkse aansturing van
+van het team, het goedkeuren en ervoor de polikliniek. Ze wordt
+waarborgen van zorgt dat het team in geclassificeerd als een
+een efficiënte staat is om de primaire belanghebbende
+operationele veranderingen effectief omdat ze een directe
+workflow en het door te voeren. Ze is impact heeft op zowel het
+45
+
+bewaken van de cruciaal in het succes team als op de processen
+kwaliteit van zorg. van de oplossing, die geoptimaliseerd
+Ze neemt aangezien ze ook een moeten worden. Haar
+beslissingen over belangrijke schakel betrokkenheid en
+de invoering van vormt tussen het goedkeuring zijn essentieel
+procesoptimalisati management, de voor het succes van de
+es baliemedewerkers en implementatie van de
+andere afdelingen. oplossing.
+Data Externe
+Analist Onze rol is om data Hoge invloed. De belanghebbende , wij
+te verzamelen, te data-analist is horen namelijk niet bij de
+analyseren en essentieel in het organisatie zelf , alleen
+inzichten te ontwikkelen van werken we wel naar een
+genereren die inzichten en oplossing toe om werkdruk
+bijdragen aan de aanbevelingen voor te verminderen.
+optimalisatie van procesverbeteringen.
+processen binnen De kwaliteit van de Primaire
+de polikliniek. Het analyse heeft een belanghebbende: de rol
+doel is om, met directe impact op de van de data-analist
+behulp van data- beslissingen en cruciaal is voor het
+analyse, de oplossingen die verkrijgen van inzichten die
+werkdruk van het worden voorgesteld. leiden tot de gewenste
+baliepersoneel procesoptimalisaties,
+structureel te wordt deze als primaire
+verlagen en de belanghebbende gezien.
+kwaliteit van zorg
+en
+patiënttevredenhei
+d te verhogen
+46
+
+Stakeholder Matrix
+47
+
+Interviews
+Eerste interview
+Locatie 1 (Rotterdam), baliemedewerkers
+Interviewer: Dus we hadden eigenlijk al een paar vragen opgeschreven die we aan u
+hadden. Er is één van die bijvoorbeeld vragen voor werkdruk. Hoe ervaart u de
+werkdruk? Of wat zijn zaken overdag die de werkdruk verhogen?
+Baliemedewerker: Ja, de werkdruk is altijd hoog omdat je gewoon heel veel werklijsten
+hebt. En dat je alles in moet plannen, wat niet altijd lukt. Spreekuren staan vaak vol.
+Interviewer: Oké, begrepen. Zijn er bepaalde momenten van de dag waarin je denkt dat
+de werkdruk hoger is? Misschien op een bepaalde dag of tijdstip, bijvoorbeeld 's
+ochtends of 's avonds?
+Baliemedewerker: Wij werken alleen overdag. Dus eigenlijk de hele dag door. Maar op
+vrijdag en maandag is de werkdruk wat hoger, omdat er meer afspraken worden
+ingepland en mensen meer bellen.
+Interviewer: Wat zijn de meest voorkomende vragen die aan u worden gesteld?
+Baliemedewerker: Afspraken inplannen of verzetten. Ook bellen mensen vaak over
+scopieën en hoe ze zich moeten voorbereiden.
+Interviewer: Hoe worden patiënten normaal gesproken geïnformeerd over hun
+afspraken? Krijgen ze een berichtje, een e-mailtje?
+Baliemedewerker: De afspraken worden digitaal of per post toegestuurd. Als iets op
+korte termijn moet, bellen we ze. Als het digitaal wordt verstuurd, is er ook een filmpje
+over de voorbereiding.
+Interviewer: En als het per post wordt verstuurd?
+Baliemedewerker: Dan krijgen ze boekjes met uitleg. Meestal hebben ze eerst een
+intakegesprek met de verpleegkundige, die ook alles uitlegt.
+Interviewer: Hoe is de communicatie als patiënten niet komen opdagen?
+Baliemedewerker: Sommige mensen bellen om af te zeggen, anderen niet. Dan bellen
+wij hen terug.
+Interviewer: Hoeveel tijd kost dat per dag?
+48
+
+Baliemedewerker: Dat kost wel tijd, maar ik kan niet precies zeggen hoeveel. Het hangt
+af van hoeveel mensen er zijn op een dag.
+Interviewer: Wat zou volgens u kunnen helpen om no-shows te verminderen?
+Baliemedewerker: We zijn begonnen om patiënten een paar dagen van tevoren te
+bellen als herinnering. Dat helpt al, maar er zijn nog steeds mensen die niet komen.
+Interviewer: Hoe ziet het proces eruit met de communicatie tussen u en de no-shows?
+Baliemedewerker: We bellen ze en laten soms een voicemail achter om contact op te
+nemen. We hebben ook gesprekken aan de balie waarbij ik bijvoorbeeld een afspraak
+verzet.
+Interviewer: Kunt u goed werken met de applicaties of heeft u problemen?
+Baliemedewerker: Alles werkt overzichtelijk. Het plannen van afspraken is ook
+duidelijk.
+Interviewer: Krijgt u vaak berichten van patiënten via de app?
+Baliemedewerker: Ja, patiënten sturen vragen via de app. Dat kost veel tijd, omdat ze
+het vaak als een chat gebruiken.
+Interviewer: Wat zijn de meest voorkomende vragen?
+Baliemedewerker: Meestal zijn het vragen over klachten of recepten. Soms willen ze
+een afspraak verzetten.
+Interviewer: Is er iets dat u zou willen veranderen in het proces?
+Baliemedewerker: Ik zou het voor de mensen duidelijker willen maken. Er is nog steeds
+veel onduidelijkheid, waardoor mensen blijven bellen.
+Interviewer: Wat denkt u van een app waarmee patiënten zelf afspraken kunnen
+maken?
+Baliemedewerker: Dat werkt voor ons niet, want we hebben nauwelijks ruimte. We
+werken met wachtlijsten en het is al snel volgeboekt.
+Interviewer: En automatische herinneringen?
+Baliemedewerker: Patiënten krijgen al een sms'je als herinnering. Dat gaat
+automatisch.
+Interviewer: Hoeveel tijd van de dag besteedt u aan administratieve taken?
+49
+
+Baliemedewerker: Bijna de hele dag. Het inplannen van afspraken en orders verwerken
+is de hoofdtaak.
+Interviewer: Zijn er specifieke tijden waarop het drukker is met telefoontjes?
+Baliemedewerker: Meestal in de ochtend. In de zomer wordt er minder gebeld,
+bijvoorbeeld tijdens vakantieperiodes.
+Tweede interview
+Locatie 1 (Rotterdam), baliemedewerker
+Baliemedewerker: Ja, eigenlijk zijn we één afdeling. Maar ik zit liever op mijn eigen
+locatie, omdat ik daar alles weet. Hier voel ik me minder zeker.
+Interviewer: Waarom is dat?
+Baliemedewerker: Er zijn andere regels en systemen. Dus ja het is gewoon heel
+anders. Bijvoorbeeld als je de verkeerde code erin doet zou dat best een probleem
+opbrengen, want die code is ook gekoppeld aan een opname. Dan staat de opname er
+ook niet in het systeem. Dus het is gewoon ook foutgevoelig. De codes verschillen per
+locatie. Dat kan foutgevoelig zijn.
+Interviewer: Hoe zou u dat willen oplossen?
+Baliemedewerker: Uniformiteit in werkwijzen zou helpen. Sommige dingen zijn al
+gelijkgetrokken, maar er zijn nog steeds verschillen.
+Interviewer: Wat zou er bijvoorbeeld gelijkgetrokken kunnen worden?
+Baliemedewerker: De codes en het regelen van opnames. Als ik een opname wil
+regelen op een andere locatie, moet ik de juiste code weten en soms verwar je omdat je
+sommige medewerkers zoals mijnzelf werken op beide locaties. Dat is onhandig.
+Interviewer: Zijn er nog andere verschillen tussen de locaties?
+Baliemedewerker: Nou, bijvoorbeeld als je een mantu-test moet aanvragen voor een
+patiënt. Hier geef je dus het labformulier mee en dan wordt er een afspraak en dan gaan
+ze naar het laboratorium. En in het Franciscus vlietland, dan moet je dat zelf, zeg maar,
+in het systeem doen. Je moet in de agenda kijken en dan van het poli-on functie en dan
+via daar bijvoorbeeld een afspraak inplannen.
+Interviewer: Vindt u het overzichtelijk om met verschillende werklijsten te werken?
+50
+
+Baliemedewerker: Het is veel werk, maar ik weet wat ik moet doen. Een oplossing
+hiervoor zou meer personeel zijn. We lopen nu achter door ziekte en werkdruk.
+Interviewer: Zijn er specifieke dagen waarop het drukker is?
+Baliemedewerker: Ja, maandagochtend en vrijdagmiddag. Dan bellen mensen net voor
+of na het weekend.
+Interviewer: Wat denkt u van automatisering van bepaalde processen?
+Baliemedewerker: In theorie zou het helpen, maar in de praktijk is het lastig.
+Automatische herinneringen zouden helpen, maar ik denk niet dat dat de werkdruk echt
+vermindert.
+Interviewer: Zou een contactcentrum helpen?
+Baliemedewerker: Misschien, maar ze mogen geen medische vragen beantwoorden.
+Dat zou juist meer werk voor ons betekenen.
+Opmerking tijdens interview--> baliemedewerkers zitten in centraal in het ziekenhuis
+en zijn hierdoor wat meer bereikbaar voor patiënten, we merkten dat hierdoor de
+medewerkers wat vaker werden afgeleid en dus meer tijd nodig hadden om aan hun
+werklijsten te komen.
+Derde interview
+Locatie 1 (Rotterdam) Telefoon balie
+Interviewer: Wij merken dat u veel telefoontjes krijgt over de voorbereiding van de
+afspraak, waardoor denkt u dat dat komt? Want patiënten krijgen wel een brief na de
+afspraak hebben we begrepen?
+Baliemedewerker: Ja, dat klopt patiënten krijgen brieven na de afspraak waarin
+instructies zitten. Alsnog bellen omdat ze of de brief niet ontvangen door de post, of
+omdat ze het gewoon niet lezen en bellen ze vaak door onzekerheid.
+Interviewer: Wat gebeurt er als patiënten op de verkeerde afdeling bellen?
+Baliemedewerker: Dat gebeurt vaak. Ze weten niet altijd welke afdeling ze nodig
+hebben. Bijvoorbeeld patiënten met een stoma bellen soms naar ons, terwijl ze bij de
+chirurg moeten zijn.
+Interviewer: Wat vindt u van het idee om een patiënten contactcentrum op te zetten?
+51
+
+Baliemedewerker: Het kan helpen om simpele vragen te filteren, maar het
+contactcentrum mag geen medische vragen beantwoorden. Dat betekent dat wij alsnog
+veel moeten terugbellen.
+Opmerkingen tijdens het analyseren van de gesprekken bij de telefoon balie:
+- Veel patiënten lezen de brieven niet die ze krijgen na de afspraak met de arts,
+hierin staat meestal belangrijke info zoals: instructies voor het voorbereiden voor
+de volgende afspraak.
+- Ouderen hebben moeite met digitalisering (ze zouden met Digid moeten
+inloggen om bij hun account van het Franciscus ziekenhuis te komen en krijgen
+ze alle informatie over hun afspraak) en bellen dus hierdoor wat vaker voor
+vragen over de afspraak.
+52

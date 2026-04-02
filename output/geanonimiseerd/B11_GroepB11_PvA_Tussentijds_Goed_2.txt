@@ -1,0 +1,318 @@
+Plan van Aanpak
+Hogeschool Leiden - Informatica
+Data Advanced Toets 2
+TUSSENTIJDSE VERSIE
+Groep: B11 - MIZ6 Franciscus Ziekenhuis
+Module: INDATAD Data Advanced
+Opdrachtgever: Sandra Mohan-Khemon
+Datum: 21-11-2024
+Versie: 0.8 (tussentijds)
+Studenten:
+(cid:127) [NAAM] ([STUDENTNR])
+(cid:127) [NAAM] ([STUDENTNR])
+(cid:127) [NAAM] ([STUDENTNR])
+(cid:127) [NAAM] ([STUDENTNR])
+(cid:127) [NAAM] ([STUDENTNR])
+Dit document betreft een tussentijdse oplevering en is bedoeld voor formatieve feedback.
+
+Inhoudsopgave
+1. Context
+2. Beschrijving van de organisatie
+3. Huidige situatie en bedrijfsproces
+4. Gewenste situatie
+5. Probleemstelling
+6. Scope beschrijving
+7. Requirementsanalyse
+8. Risicoanalyse
+9. Ethics by Design
+10. Oplossingsrichtingen
+11. Planning
+12. Bibliografie
+Bijlage A: TOGAF-modellen
+Bijlage B: Belanghebbendenanalyse en stakeholdermatrix
+Bijlage C: Interviewverslagen
+Bijlage D: Onderbouwing onderzoekskeuzes
+
+1. Context
+Maatschappelijke ontwikkelingen
+De zorgsector kampt met een structureel personeelstekort dat direct van invloed is op de
+werkprocessen van baliepersoneel binnen ziekenhuizen. Binnen het Franciscus Gasthuis &
+Vlietland speelt dit met name op de MDL-afdeling, waar het baliepersoneel te maken heeft met een
+groeiende zorgvraag, toenemende administratieve lasten, en een stijgend aantal no-shows dat de
+werkdruk verder verhoogt. Uit data van de opdrachtgever blijkt dat 5 tot 10% van de patienten niet
+op afspraken verschijnt, wat leidt tot inefficient gebruik van tijdsloten en extra administratief werk
+voor herplanning (Mohan-Khemon, 2024).
+Technologische ontwikkelingen
+Het Franciscus Ziekenhuis werkt met het HiX EPD-systeem (versie 6.2, upgrade naar 6.3 gepland)
+voor patientregistratie en werklijstbeheer. Daarnaast wordt de BeterDichtbij-app ingezet voor
+patientcommunicatie, hoewel deze app de werkdruk eerder heeft verhoogd doordat
+baliemedewerkers alle berichten handmatig moeten beoordelen en beantwoorden (Interview 1,
+bijlage C). De combinatie van handmatige processen en beperkte automatisering vormt de kern van
+het datavraagstuk.
+2. Beschrijving van de organisatie
+Het Franciscus Gasthuis & Vlietland is een topklinisch opleidingsziekenhuis dat in 2015 is ontstaan
+uit de fusie van het Sint Franciscus Gasthuis (Rotterdam) en het Vlietland Ziekenhuis (Schiedam).
+Met ruim 4.600 medewerkers, 320 medisch specialisten en 120 vrijwilligers biedt het ziekenhuis
+zowel basiszorg als gespecialiseerde behandelingen (Franciscus, z.d.). Het ziekenhuis is lid van de
+STZ-vereniging (Samenwerkende Topklinische Ziekenhuizen, 2024).
+Dit project richt zich specifiek op de MDL-afdeling (Maag Darm Lever), waar het baliepersoneel
+verantwoordelijk is voor patientaanmelding, afspraakplanning, telefonische communicatie en
+opvolging van no-shows. De twee locaties (Rotterdam en Schiedam) hanteren verschillende
+werkwijzen en codes, wat leidt tot foutgevoeligheid en extra werkdruk bij locatie-overstijgend werken
+(Interview 2, bijlage C).
+Organogram en relevante afdelingen
+Het organogram toont de hierarchische structuur van de Raad van Bestuur via managementteams
+naar de afdelingen. Voor dit project zijn relevant: de MDL-polikliniek (baliepersoneel en medisch
+specialisten), de ICT-afdeling (HiX-beheer), en de teammanager Sandra Mohan-Khemon als
+primaire opdrachtgever en beslisser over procesoptimalisaties.
+IT-systemen
+De relevante IT-systemen voor dit datavraagstuk zijn: HiX (EPD, versie 6.2) voor patientregistratie
+en werklijsten, BeterDichtbij-app voor patientcommunicatie, Microsoft Office 365 voor interne
+samenwerking, AFAS Insite als intranet, Monaco voor urenregistratie, en Excel-bestanden die het
+baliepersoneel gebruikt voor het bijhouden van patientgegevens. De afhankelijkheid van Excel
+vormt een belangrijk knelpunt vanwege foutgevoeligheid en tijdsintensiviteit.
+
+3. Huidige situatie en bedrijfsproces
+Het huidige proces op de MDL-polikliniek kent vier kernprocessen die bijdragen aan de werkdruk:
+(cid:127) Patientaanmelding: Patienten worden telefonisch of fysiek geregistreerd door
+baliemedewerkers in het HiX-systeem. Er is geen geautomatiseerde aanmelding (aanmeldzuil
+of online registratie), waardoor patienten volledig afhankelijk zijn van medewerkers.
+(cid:127) Wachtrijbeheer en planning: De behandelplanning wordt handmatig beheerd in HiX. De
+werkwijzen en codes verschillen per locatie, wat foutgevoelig is bij locatie-overstijgend werken
+(Interview 2, bijlage C).
+(cid:127) No-shows en herplanning: Het percentage no-shows varieert tussen 6% en 9% per maand
+(data 2024, verstrekt door opdrachtgever). Bij een no-show moet het personeel handmatig
+contact opnemen en een nieuwe afspraak inplannen.
+(cid:127) Communicatie: Een groot deel van de telefoongesprekken (27,5%) betreft het maken of
+verzetten van afspraken. Patienten gebruiken de BeterDichtbij-app als chatservice, wat extra
+werkdruk oplevert (Interview 1, bijlage C).
+BPMN-diagram huidige situatie
+Het BPMN-diagram toont het patientbezoek- en beheerproces met drie swimlanes: baliepersoneel
+(registratie, inplannen, no-show opvolging), kliniek (werklijstbeheer, telefoonafhandeling) en
+medisch personeel (consult). Het proces start bij patientaanmelding en loopt via registratie,
+werklijstupdate, en wachttijd naar het consult. Bij een no-show wordt een handmatig
+herplanningsproces gestart door het baliepersoneel. Het diagram laat duidelijk zien waar de
+bottlenecks zitten: bij de aanmelding (geen automatisering), bij no-show opvolging (handmatig), en
+bij communicatie (alle berichten komen bij de balie).
+4. Gewenste situatie
+De gewenste situatie richt zich op het automatiseren van routinetaken zodat baliemedewerkers zich
+kunnen richten op complexe ondersteuning. De belangrijkste verbeteringen zijn:
+Aspect Huidige situatie Gewenste situatie
+No-show proces Handmatig geregistreerd Automatisch geregistreerd,
+en opgevolgd notificatie naar wachtlijst
+Herinneringen Handmatig of afwezig Automatisch verstuurd
+voor de afspraak
+Werklijsten Handmatig bijgewerkt, Automatisch bijgewerkt
+foutgevoelig door HiX, realtime
+Patientregistratie Handmatig bij de balie Online registratie als
+standaardoptie
+Rapportages Handmatig samengesteld Automatisch gegenereerd
+met no-show data
+BPMN-diagram gewenste situatie
+
+Het gewenste BPMN-diagram toont vier swimlanes: patient, HiX-systeem, baliepersoneel en
+medische specialist. Het HiX-systeem neemt automatische taken over: validatie van gegevens,
+verzenden van herinneringen, registratie van no-shows, en notificatie naar wachtlijstpatienten over
+vrijgekomen tijdsloten. Baliepersoneel houdt toezicht op uitzonderingen. De medische specialist
+voert het consult uit en registreert direct in het systeem.
+
+5. Probleemstelling
+Het baliepersoneel van de MDL-afdeling van het Franciscus Ziekenhuis ervaart een structureel
+hoge en groeiende werkdruk. De belangrijkste oorzaken zijn: een no-show percentage van 6-9% dat
+handmatige herplanning vereist, een gebrek aan automatisering in het aanmeld- en
+communicatieproces, locatieverschillen in werkwijzen en codes, en een toenemend volume aan
+digitale berichten via de BeterDichtbij-app die handmatig moeten worden afgehandeld. Daarnaast
+bemoeilijken laaggeletterdheid bij patienten en beperkte digitale vaardigheden bij oudere
+medewerkers de dagelijkse werkprocessen.
+Hoofdvraag
+Hoe kunnen de huidige werkprocessen binnen de MDL-polikliniek van het Franciscus
+Ziekenhuis worden geoptimaliseerd om de werkdruk van het baliepersoneel aantoonbaar te
+verlagen en de operationele efficientie te verhogen?
+Deelvragen
+1. Welke werkprocessen dragen het meest bij aan de werkdruk van het baliepersoneel, en
+welke daarvan zijn het meest geschikt voor automatisering? (methode: observaties, interviews,
+data-analyse telefoniegegevens)
+2. Wat zijn de ervaringen en behoeften van het baliepersoneel ten aanzien van de huidige
+werkprocessen, en welke concrete verbeteringen identificeren zij zelf? (methode:
+semigestructureerde interviews)
+3. Welke bewezen procesverbeteringen uit vergelijkbare zorginstellingen kunnen worden
+toegepast op de MDL-polikliniek, en hoe sluiten deze aan bij de specifieke context van het
+Franciscus Ziekenhuis? (methode: desk research)
+6. Scope beschrijving
+Binnen het project
+(cid:127) Data-analyse: verzamelen en opschonen van data over bezoekersaantallen, wachttijden,
+piekuren, no-shows en telefoniecategorieen
+(cid:127) Kwalitatief onderzoek: semigestructureerde interviews met baliepersoneel en observaties op
+beide locaties
+(cid:127) Beschrijvende statistieken en patroonherkenning in piekmomenten en werkdrukfactoren
+(cid:127) Visualisatie van bevindingen in dashboards (Python, SQL, Power BI)
+(cid:127) Ontwerpdocument voor data-infrastructuur met Ethics by Design
+(cid:127) Proof of Concept (PoC) van de belangrijkste functionaliteiten
+(cid:127) Adviesrapport met onderbouwde aanbevelingen en implementatieplan
+Buiten het project
+(cid:127) Daadwerkelijke implementatie van de voorgestelde infrastructuur
+(cid:127) Wijzigen van bestaande systemen of integratie in de HiX-omgeving
+(cid:127) Training van medewerkers
+
+(cid:127) Risicoanalyse na implementatie en monitoring op lange termijn
+
+7. Requirementsanalyse
+7.1 Constraints
+Code Eis Toelichting Bron
+C01 Tijdsbeperking Oplevering week van 20 januari 2025 Modulehandleiding
+C02 Technologieen Waar mogelijk Microsoft-applicaties; Opdrachtgever
+bij non-Microsoft dummy-data
+C03 Data-opslag Uitsluitend lokale systemen en Opdrachtgever
+SharePoint Hogeschool Leiden
+7.2 Functionele requirements
+Code Eis Bron Prioriteit
+F01 Automatisatie van routinetaken Interview 1, 2 Must-have
+om werkdruk te verlagen
+F02 No-show percentage per maandData opdrachtgever Must-have
+visualiseren, uitgesplitst naar reden
+F03 Inzicht in taken baliepersoneel Interview 1, 3 Must-have
+en tijdsbesteding per taak
+F04 Telefoongesprekken categoriserDenata opdrachtgever Must-have
+en onderwerpen visualiseren
+F05 Medische afspraken visualiserenD:ata opdrachtgever Must-have
+type, duur, opkomst
+F06 Werkdruk verdelen tussen Interview 2 Should-have
+medewerkers en locaties
+F07 Digivaardigheid verbeteren via Interview 2 Should-have
+handleidingen en training
+F08 Taalgerichte uitleg voor laag- Interview 3 Could-have
+geletterde patienten
+7.3 Niet-functionele requirements
+Code Eis Prioriteit
+NF01 AVG-compliance: gegevensbescherming Must-have
+NF02 Toegangscontrole via authenticatie Must-have
+NF03 Anonimisering van gevoelige data Must-have
+NF04 Transparante communicatie over datagebruik Must-have
+NF05 Inclusief voor minder digivaardige medewerkers Should-have
+NF06 Fysieke alternatieven naast digitale oplossingen Should-have
+
+NF07 Autonomie baliemedewerkers in werkprocessen Should-have
+NF08 Rechtvaardige prioritering van patienten Must-have
+NF09 Inclusief voor laaggeletterde patienten Should-have
+
+8. Risicoanalyse
+Risico Kans Impact Bruto Maatregel Netto
+score score
+Teamlid langdurig Laag Hoog Gemiddeld Werk herverdelen, Laag
+afwezig contact houden, docenten informeren
+Data te laat ontvangGenemiddeld Hoog Hoog Parallel werken met Gemiddeld
+van opdrachtgever dummy-data, deadline afspreken
+Gebrek aan contactLaag Hoog Gemiddeld Proactief contact opnemen,Laag
+met opdrachtgever docenten als escalatiepunt
+Vertragingen door Gemiddeld Gemiddeld Gemiddeld Scope-wijzigingen expliciet Laag
+scope creep goedkeuren, backlog prioriteren
+Locatieverschillen Hoog Gemiddeld Hoog Beide locaties apart analyseGreenm,iddeld
+bemoeilijken analyse verschillen documenteren
+Weerstand baliepersGoenmeeidldeld Hoog Hoog Vroegtijdig betrekken via Gemiddeld
+tegen automatisering co-creatie en interviews
+9. Ethics by Design
+De ethische principes van de Europese Commissie (Research Ethics and Integrity Sector, 2021)
+vormen het kader voor de ethische afwegingen in dit project. Hieronder wordt per principe
+beschreven welke concrete keuzes wij hebben gemaakt:
+(cid:127) Respect voor menselijk handelen: Baliemedewerkers behouden autonomie over hun
+werkprocessen, ongeacht de mate van automatisering (NF07). Patienten behouden
+keuzevrijheid in het wel of niet verschijnen op afspraken. Wij forceren geen
+gedragsverandering.
+(cid:127) Privacy en databeheer: Alle data is geanonimiseerd door de opdrachtgever voordat wij deze
+ontvingen. Wij slaan data uitsluitend op binnen het Hogeschool Leiden-netwerk (C03). Tijdens
+elke sprint review communiceren wij aan de opdrachtgever welke data wij gebruiken en
+waarvoor (NF04).
+(cid:127) Rechtvaardigheid: Het systeem prioriteert patienten niet op basis van achtergrond, leeftijd of
+taalvaardigheid. Bij no-show herplanning wordt een eerlijke wachtlijstvolgorde gehanteerd
+(NF08).
+(cid:127) Individueel en sociaal welzijn: Wij houden rekening met laaggeletterde patienten (NF09) en
+minder digivaardige medewerkers (NF05). Het moet altijd mogelijk blijven om fysiek of
+telefonisch vragen te stellen (NF06). Wij ontwikkelen geen onnodig complex systeem.
+(cid:127) Transparantie: Wij communiceren het doel van ons onderzoek aan het baliepersoneel tijdens
+interviews en verzekeren hen dat antwoorden geanonimiseerd worden gebruikt.
+(cid:127) Verantwoording: Wij documenteren mogelijke ongewenste effecten van de oplossing en
+staan open voor ethische zorgen van belanghebbenden.
+
+10. Oplossingsrichtingen
+Methodologische verantwoording
+De oplossingsrichtingen zijn tot stand gekomen op basis van drie onderzoeksmethoden:
+semigestructureerde interviews met baliepersoneel op beide locaties (drie interviews, bijlage C),
+observaties op de werkvloer tijdens piekuren, en desk research naar vergelijkbare
+automatiseringsoplossingen in andere ziekenhuizen. De keuze voor semigestructureerde interviews
+is gemaakt omdat deze methode ruimte biedt voor verdiepende doorvragen terwijl de
+vergelijkbaarheid tussen respondenten behouden blijft (Baarda et al., 2018). De beperking van deze
+methode is dat de steekproef klein is (drie respondenten) en niet representatief voor alle
+baliemedewerkers.
+Vergelijkingsmatrix oplossingsrichtingen
+Oplossing Adresseert Haalbaarheid Primair
+requirements binnen project gekozen?
+Digitale aanmeldbalie F01, F03 Laag (HiX- Nee
+integratie nodig)
+Standaardberichten F01, F04 Gemiddeld Nee
+en FAQ-chatfunctie
+AI-chatbot met NLP F01, F04, F08 Laag (complexiteit, Nee
+training nodig)
+No-show reductie: F01, F02, F05 Hoog (SMS- Ja (PoC)
+herinneringen + integratie mogelijk)
+herplanningsberichten
+Taalgerichte uitleg F08 Gemiddeld Deels (advies)
+in eenvoudig NL
+De no-show reductie via automatische herinneringen en herplanningsberichten is gekozen als
+primaire oplossingsrichting voor het PoC, omdat deze het hoogste haalbaarheidsgehalte heeft
+binnen de projecttijd, direct het grootste werkdrukprobleem adresseert (F01, F02, F05), en geen
+complexe integratie met HiX vereist. De AI-chatbot is afgevallen vanwege de hoge complexiteit en
+de beperkte projecttijd.
+11. Planning
+Sprint Periode Activiteiten Verantwoordelijke
+Sprint 1 7-21 nov PvA, kennismaking opdrachtgever,Allen
+eerste interviews, data inventarisatie
+Sprint 2 21 nov - 5 dec Ontwerpdocument, data opschonenS,ara, [NAAM], [NAAM]
+dashboard v1, TOGAF-model
+Sprint 3 5-19 dec Dashboard v2, PoC ontwikkeling, [NAAM], [NAAM]
+analyse no-show data
+Sprint 4 2-16 jan Adviesrapport, presentatie, Allen
+eindoplevering
+
+12. Bibliografie
+1. Baarda, B., Bakker, E., Fischer, T., Julsing, M., Peters, V., van der Velden, T., & de Goede, M. (2018).
+Basisboek kwalitatief onderzoek. Noordhoff Uitgevers.
+2. Franciscus. (z.d.). Over ons, werken bij. https://werkenbij.franciscus.nl/over-ons
+3. MDL centrum. (z.d.). Opgehaald van Franciscus.nl.
+4. Research Ethics and Integrity Sector. (2021). Ethics By Design and Ethics of Use Approaches. European
+Commission.
+5. Samenwerken met zorgpartners. (2022). Franciscus Gasthuis & Vlietland.
+6. Samenwerkende Topklinische Ziekenhuizen. (2024). https://www.stz.nl/
+7. Stichting Sint Franciscus Vlietland Groep. (2024). Jaarstukken 2023.
+8. Mohan-Khemon, S. (2024). Data MDL-afdeling: no-shows en telefoniegegevens [interne data].
+Bijlagen
+Bijlage A: TOGAF-modellen
+Het TOGAF-model is opgebouwd uit vier lagen, passend bij het datavraagstuk van de
+MDL-polikliniek:
+(cid:127) Business Layer: Stakeholders (baliepersoneel, teammanager, medisch specialisten, ICT,
+patienten) en businessprocessen (patientaanmelding, no-show opvolging, werklijstbeheer). De
+keuze voor deze stakeholders is gebaseerd op de belanghebbendenanalyse (bijlage B).
+(cid:127) Data Layer: Brondata uit HiX (patientafspraken, no-shows), telefoniegegevens (Excel,
+verstrekt door opdrachtgever), en BeterDichtbij-berichten. Data wordt via ETL-processen
+opgeschoond en gestructureerd.
+(cid:127) Application Layer: Python voor ETL en analyse, PostgreSQL voor gestructureerde opslag,
+Power BI voor dashboardvisualisatie.
+(cid:127) Infrastructure Layer: Lokale ontwikkelomgeving (laptops studenten), SharePoint Hogeschool
+Leiden voor veilige opslag, VPN-verbinding voor databasetoegang.
+Bijlage B: Belanghebbendenanalyse en stakeholdermatrix
+De belanghebbendenanalyse identificeert zes stakeholders met hun rol, prioritering en
+categorisering. De teammanager Sandra Mohan-Khemon heeft de hoogste invloed en wordt
+geclassificeerd als 'manage closely'. Baliemedewerkers zijn primaire belanghebbenden met
+middelmatige invloed. De ICT-afdeling is een secundaire belanghebbende. De volledige
+stakeholdermatrix (macht/belang-model) is opgenomen als figuur.
+Bijlage C: Interviewverslagen
+Drie semigestructureerde interviews zijn afgenomen op locatie Rotterdam (twee interviews) en via
+analyse van telefoongesprekken (een interview). De interviews behandelen werkdruk,
+piekmomenten, no-show opvolging, locatieverschillen, en ervaringen met HiX en BeterDichtbij. De
+
+volledige transcripties zijn beschikbaar.
+Bijlage D: Onderbouwing onderzoekskeuzes
+De keuze voor semigestructureerde interviews is onderbouwd vanuit Baarda et al. (2018): deze
+methode biedt ruimte voor verdieping terwijl vergelijkbaarheid behouden blijft. De beperking (kleine
+steekproef, n=3) is erkend. Desk research is uitgevoerd naar digitale aanmeldsystemen in
+vergelijkbare ziekenhuizen (o.a. Reinier de Graaf, Delft). Observaties op de werkvloer zijn
+uitgevoerd om de interviewresultaten te valideren.
