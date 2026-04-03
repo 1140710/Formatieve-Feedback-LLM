@@ -1,0 +1,60 @@
+{
+  "qwen2.5:7b": {
+    "B11": {
+      "response": "FEEDUP (wat was het doel):\nHet doel is om een methodisch onderzoek en analyse uit te voeren op het gebied van infrastructuur voor een datavraagstuk, met aansluiting op de gegeven context.\n\nFEEDBACK (hoe staat het ervoor):\nDe student heeft een duidelijke risicolijst opgesteld, inclusief mogelijke maatregelen. De ethische principes zijn goed beschreven en koppelen aan de opdracht. Het document toont een goede intentie om methodisch te werken, maar er zijn enkele tekortkomingen die verbeterd kunnen worden.\n\n1. **Context**: Er is een duidelijke context gegeven, inclusief het baliepersoneel en patienten.\n2. **Probleemstelling**: De ethische principes vormen de basis van de problematiek, maar er is geen specifieke data-infrastructuurprobleem benoemd. Het blijft een algemeen kader zonder concreet vraagstuk.\n3. **Requirementsanalyse**: Er zijn ethische aspecten besproken, maar deze vallen niet direct onder de requirementsanalyse zoals functionele en niet-functionele vereisten die specifiek aansluiten op een data-infrastructuurprobleem.\n4. **Risicolijst**: De risico's zijn goed beschreven met mogelijke maatregelen, maar de koppeling hiermee aan het data-infrastructuurvraagstuk is niet duidelijk.\n\nFEEDFORWARD (wat is de volgende stap):\n1. **Verscherp de probleemstelling**: Formuleer een specifieke vraag over data-infrastructuur die aansluit op de context van het baliepersoneel en patienten.\n2. **Koppel ethische principes aan requirementsanalyse**: Voeg concrete functionele en niet-functionele requirements toe, die direct aansluiten op de geformuleerde vraagstelling. Bijvoorbeeld: \"Het systeem moet een veilig en anonimiebeschermend data-infrastructuur bieden om te voldoen aan de ethische principes van de Europese Commissie.\"\n3. **Voeg een stakeholderanalyse toe**: To",
+      "model": "qwen2.5:7b",
+      "temperatuur": 0.3,
+      "duur_seconden": 3827.85,
+      "timestamp": "2026-04-02T17:36:54.194918",
+      "prompt_lengte": 5990,
+      "response_lengte": 1786
+    },
+    "C8": {
+      "response": "FEEDUP (wat was het doel):\nHet doel is om een methodische analyse te leveren van het datavraagstuk, inclusief de probleemstelling, context, organisatiebeschrijving, huidige en gewenste situatie, requirementsanalyse, risicolijst, oplossingsrichtingen en planning. Dit onderbouwt de studenten bekwaamheid om een data-gerelateerde opdracht op methodische wijze aan te pakken.\n\nFEEDBACK (hoe staat het ervoor):\nDe documentatie is duidelijk en goed georganiseerd, wat positief is voor de lezer. De context van HMC en de organisatiebeschrijving zijn goed uitgewerkt, met een heldere beschrijving van de huidige situatie en bedrijfsprocesen. Het BPMN-schema biedt een duidelijke visie op het operatieproces.\n\nDe requirementsanalyse is aanwezig, maar er ontbreekt nog een koppeling tussen deze requirements en de probleemstelling. Ethische kwesties worden toegelicht, wat positief is, maar de risicolijst en oplossingsrichtingen zijn eveneens te kort aangehaald.\n\nFEEDFORWARD (wat is de volgende stap):\n1. Verscherp de probleemstelling: Formuleer een specifieke hoofdvraag die direct aansluit op het data-infrastructuurvraagstuk, bijvoorbeeld \"Hoe kan HMC zijn data-infrastructuur optimaliseren om het operatieproces te verbeteren?\"\n2. Koppel de requirements expliciet aan de probleemstelling: Voeg een paragraaf toe waarin je per requirement toelicht waarom deze relevant is voor het oplossen van het gestelde probleem.\n3. Verklaar de risicolijst en voeg er aan toe waarom deze relevante zijn in de context van HMC. Bijvoorbeeld, wat zijn de gevolgen van een data-leakage of systeemafschakeling?\n4. Voeg een stakeholderanalyse toe: Identificeer welke betrokkenen welke belangen hebben bij de oplossing en hoe deze in het requirementsdocument worden verwerkt.\n5. Volledig het",
+      "model": "qwen2.5:7b",
+      "temperatuur": 0.3,
+      "duur_seconden": 1612.96,
+      "timestamp": "2026-04-02T18:40:42.743590",
+      "prompt_lengte": 5990,
+      "response_lengte": 1767
+    },
+    "A2": {
+      "response": "FEEDUP (wat was het doel):\nHet doel bij criterium I-An 2.1 is om een methodisch onderzoek uit te voeren en een relevante analyse te leveren van de technische vraagstukken, organisatie, betrokkenen en omgevingsfactoren, die in verband staan met het data-infrastructuurprobleem.\n\nFEEDBACK (hoe staat het ervoor):\nDe student heeft een duidelijke context gegeven door de organisatie te beschrijven en de huidige situatie aan te geven. De probleemstelling is ook aanwezig, maar er zijn enkele tekortkomingen in de methodische kwaliteit van het onderzoek.\n\n1. **Context en Organisatie**: De context en organisatie worden goed beschreven, met een duidelijke vermelding van GGZ Rivierduinen en hun afdelingen.\n2. **Huidige Situatie**: De huidige situatie is helder en de problematiek wordt goed benadrukt: het handmatige telt van antwoorden in enquêtes.\n3. **Probleemstelling**: De hoofdvraag en de onderliggende delen zijn duidelijk, wat goedgevonden kan worden. Het probleem is echter nogal breed geformuleerd; er zou meer specifieke informatie over het data-infrastructuurprobleem moeten komen.\n4. **Scope Beschrijving**: De scope beschrijving is goed opgebouwd met in- en buiten-scope items, wat een goede basis biedt voor de volgende stappen.\n5. **Requirementsanalyse**: De functionele requirements zijn duidelijk genoemd, maar er ontbreekt nog een koppeling tussen deze requirements en de probleemstelling. Het is niet duidelijk hoe deze requirements specifiek helpen het probleem op te lossen.\n\nFEEDFORWARD (wat is de volgende stap):\n1. **Verscherp de probleemstelling**: Formuleer één concrete hoofdvraag die direct aansluit op het data-infrastructuurvraagstuk, bijvoorbeeld: \"Hoe kunnen we een automatische en efficiënte manier vinden om enquêtes te analyseren zodat de op",
+      "model": "qwen2.5:7b",
+      "temperatuur": 0.3,
+      "duur_seconden": 2662.6,
+      "timestamp": "2026-04-02T19:07:35.912782",
+      "prompt_lengte": 5990,
+      "response_lengte": 1773
+    }
+  },
+  "qwen2.5:3b": {
+    "B11": {
+      "response": "**FEEDUP (wat was het doel):**\n\nBij criterium I-An 2.1 wordt verwacht dat het Plan van Aanpak een methodische analyse bevat van het data-infrastructuurprobleem. Het document moet een relevante en afgebakende probleemstelling bevatten, plus een analyse van de organisatie, betrokkenen en omgevingsfactoren, verwerkt in een requirementsanalyse.\n\n**FEEDBACK (hoe staat het ervoor):**\n\nDe context is helder beschreven en geeft goed weer in welke setting het project plaatsvindt. De probleemstelling is aanwezig maar nog vrij breed geformuleerd — het is niet duidelijk welk specifiek data-infrastructuurprobleem wordt onderzocht. Het document bevat een risicolijst met relevante risico's en mitigaties, maar de koppeling met de probleemstelling ontbreekt.\n\nDe requirementsanalyse bevat functionele en niet-functionele requirements, maar de koppeling met de probleemstelling ontbreekt. De stakeholderanalyse is nog niet aanwezig in het document, wat betekent dat de relevante belangen van betrokkenen (bijvoorbeeld medewerkers, klanten, etc.) niet expliciet worden verwerkt.\n\n**FEEDFORWARD (wat is de volgende stap):**\n\n1. Verscherp de probleemstelling: formuleer één concrete hoofdvraag die direct aansluit op het data-infrastructuurvraagstuk.\n2. Koppel de requirements expliciet aan de probleemstelling — licht per requirement toe waarom deze relevant is voor het oplossen van het probleem.\n3. Voeg een stakeholderanalyse toe waarin je toelicht welke betrokkenen welke belangen hebben bij de oplossing.\n\nDoor dit te doen, zul jij een duidelijkere en verhelderder visie krijgen op wat precies moet worden gedaan om het probleem te kunnen oplossen. Dit zal ook helpen om de requirementsanalyse beter te verwerken in een geïntegreerde en logische requirementsdocumentatie.",
+      "model": "qwen2.5:3b",
+      "temperatuur": 0.3,
+      "duur_seconden": 571.12,
+      "timestamp": "2026-04-02T22:27:38.708269",
+      "prompt_lengte": 5990,
+      "response_lengte": 1765
+    },
+    "C8": {
+      "response": "FEEDUP (wat was het doel):\nBij criterium I-An 2.1 wordt verwacht dat het Plan van Aanpak een methodische analyse bevat van het data-infrastructuurprobleem. Het document moet een relevante en afgebakende probleemstelling bevatten, plus een analytische beschrijving van de betrokken organisatie(s) en omgevingsfactoren, verwerkt in een requirementsanalyse.\n\nFEEDBACK (hoe staat het ervoor):\nDe context is helder beschreven en geeft goed weer in welke setting het project plaatsvindt. De probleemstelling is aanwezig maar nog vrij breed geformuleerd — het is niet duidelijk welk specifiek data-infrastructuurprobleem wordt onderzocht. Het BPMN-schema van de huidige en gewenste operatieproces heeft een interessante structuur, maar de betrokken organisaties (bijv. personeel in OK-Planning, operatieassistenten, chirurg, specialist) zijn niet detaillerd genoemd of geanalyseerd.\n\nDe requirementsanalyse bevat functionele en niet-functionele requirements, maar de koppeling met de probleemstelling ontbreekt. De risicolijst is aanwezig en bevat relevante risico's met mitigaties. \n\nFEEDFORWARD (wat is de volgende stap):\n1. Verscherp de probleemstelling: formuleer één concrete hoofdvraag die direct aansluit op het data-infrastructuurprobleem.\n2. Koppel de requirements expliciet aan de probleemstelling — licht per requirement toe waarom deze relevant is voor het oplossen van het probleem.\n3. Voeg een stakeholderanalyse toe waarin je toelicht welke betrokkenen welke belangen hebben bij de oplossing, inclusief personeel in OK-Planning, operatieassistenten, chirurg en specialist.\n4. Verzamel en verwerk meer specifieke informatie over de huidige situatie van de IT-systemen binnen HMC, vooral met betrekking tot het HiX EPD-systeem en laboratoriumsystemen.\n5. Voeg een evaluatie toe van de huidige implementaties",
+      "model": "qwen2.5:3b",
+      "temperatuur": 0.3,
+      "duur_seconden": 326.37,
+      "timestamp": "2026-04-02T22:44:40.218565",
+      "prompt_lengte": 5990,
+      "response_lengte": 1813
+    },
+    "A2": {
+      "response": "**FEEDUP (wat was het doel):**\n\nBij criterium I-An 2.1 wordt verwacht dat het Plan van Aanpak een methodische analyse bevat van het data-infrastructuurprobleem. Het document moet een relevante en afgebakende probleemstelling bevatten, plus een analyse van de organisatie, betrokkenen en omgevingsfactoren, verwerkt in een requirementsanalyse.\n\n**FEEDBACK (hoe staat het ervoor):**\n\nDe context is helder beschreven en geeft goed weer in welke setting het project plaatsvindt. De probleemstelling is aanwezig maar nog vrij breed geformuleerd — het is niet duidelijk welk specifiek data-infrastructuurprobleem wordt onderzocht. De requirementsanalyse bevat functionele en niet-functionele requirements, maar de koppeling met de probleemstelling ontbreekt. De risicolijst is aanwezig en bevat relevante risico's met mitigaties.\n\n**FEEDFORWARD (wat is de volgende stap):**\n\n1. Verscherp de probleemstelling: formuleer één concrete hoofdvraag die direct aansluit op het data-infrastructuurvraagstuk.\n2. Koppel de requirements expliciet aan de probleemstelling — licht per requirement toe waarom deze relevant is voor het oplossen van het probleem.\n3. Voeg een stakeholderanalyse toe waarin je toelicht welke betrokkenen welke belangen hebben bij de oplossing.",
+      "model": "qwen2.5:3b",
+      "temperatuur": 0.3,
+      "duur_seconden": 458.62,
+      "timestamp": "2026-04-02T22:57:19.269555",
+      "prompt_lengte": 5990,
+      "response_lengte": 1253
+    }
+  }
+}

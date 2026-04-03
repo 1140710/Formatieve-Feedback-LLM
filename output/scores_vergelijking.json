@@ -1,0 +1,62 @@
+{
+  "B11": {
+    "docent": {
+      "feedup": 3,
+      "feedback": 3,
+      "feedforward": 3,
+      "specificiteit": 3,
+      "rubric_aansluiting": 3,
+      "constructieve_toon": 3,
+      "consistentie": 3
+    },
+    "llm_7b": {
+      "feedup": 2,
+      "feedback": 2,
+      "feedforward": 2,
+      "specificiteit": 2,
+      "rubric_aansluiting": 2,
+      "constructieve_toon": 3,
+      "consistentie": 2
+    }
+  },
+  "C8": {
+    "docent": {
+      "feedup": 3,
+      "feedback": 3,
+      "feedforward": 3,
+      "specificiteit": 3,
+      "rubric_aansluiting": 3,
+      "constructieve_toon": 3,
+      "consistentie": 3
+    },
+    "llm_7b": {
+      "feedup": 2,
+      "feedback": 2,
+      "feedforward": 2,
+      "specificiteit": 2,
+      "rubric_aansluiting": 2,
+      "constructieve_toon": 3,
+      "consistentie": 2
+    }
+  },
+  "A2": {
+    "docent": {
+      "feedup": 3,
+      "feedback": 3,
+      "feedforward": 3,
+      "specificiteit": 3,
+      "rubric_aansluiting": 3,
+      "constructieve_toon": 3,
+      "consistentie": 3
+    },
+    "llm_7b": {
+      "feedup": 2,
+      "feedback": 3,
+      "feedforward": 2,
+      "specificiteit": 2,
+      "rubric_aansluiting": 2,
+      "constructieve_toon": 3,
+      "consistentie": 2
+    }
+  }
+}
